@@ -1,0 +1,262 @@
+
+//=======Local-Font=========>
+@layer base {
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 100;
+      src: url('/fonts/Mont-100.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 200;
+      src: url('/fonts/Mont-200.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 300;
+      src: url('/fonts/Mont-300.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 400;
+      src: url('/fonts/Mont-400.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 500;
+      src: url('/fonts/Mont-500.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 600;
+      src: url('/fonts/Mont-600.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 700;
+      src: url('/fonts/Mont-700.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 800;
+      src: url('/fonts/Mont-800.otf');
+    }
+    #root{
+        font-family: 'Mont';
+    }
+}
+
+
+//========Custom SASS=========>
+header{
+    nav{
+        a{
+            @apply block transition uppercase text-[12px] font-[500] text-gray-700 hover:text-[#10b881] px-6;
+            &.active{
+                @apply text-[#10b881];
+            }
+        }
+    }
+}
+.nav-btn{
+    @apply cursor-pointer bg-transparent border-0 outline-0 text-gray-700 lg:hidden lg:opacity-0 visible opacity-100;
+}
+@media only screen and (max-width:1024px){
+    header{
+        nav{
+            @apply fixed top-0 left-0 z-10 h-[100vh] w-full flex flex-col items-center justify-center gap-2 bg-white/[0.5] backdrop-blur-lg transition-[1.5s] transform translate-y-[-100vh];
+            .close-btn{
+                @apply visible block absolute top-[1rem] right-[1rem];
+                @apply mt-0 #{!important};
+            }
+            a{
+                @apply text-[15px] text-[#000];
+            }
+        }
+        .no-respons{
+            @apply transform-none;
+        }
+    }
+}
+
+
+//skills
+.skill-item{
+    @apply flex items-center justify-between px-3 py-2 bg-[#f2f2f2] rounded-xl; 
+    .img-holder{
+        @apply relative flex h-10 w-10 flex-none items-center justify-center rounded-full ring-1 ring-gray-300;
+        img{
+            @apply h-7 w-7 overflow-hidden rounded-full;
+        }
+    }
+    dd{
+        @apply text-[13px] font-[500] tracking-wide text-gray-800 w-full;
+    }
+    .counter{
+        @apply flex items-center justify-center text-[#0a9d6c] font-medium text-[14px] w-12 h-6 rounded-full bg-[#10B881]/[.12];
+    }
+}
+
+
+//testimonial slider
+.swiper-button-prev,
+.swiper-button-next{
+    @apply h-full #{!important};
+    @apply top-[15px] #{!important};
+    @apply w-[170px] #{!important};
+    &::after{
+        @apply text-white font-[900] bg-[#0FB87F] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
+        @apply text-[16px] #{!important};
+    }
+}
+.swiper-button-prev{
+    @apply bg-gradient-to-r from-[#FDFBF8] via-[#FDFBF8] to-transparent;
+    @apply left-[-35px] #{!important};
+}
+.swiper-button-next{
+    @apply bg-gradient-to-l from-[#FDFBF8] via-[#FDFBF8] to-transparent;
+    @apply right-[-35px] #{!important};
+}
+@media only screen and (max-width:1023px){
+    .swiper{
+        @apply relative;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        @apply h-auto #{!important};
+        @apply top-auto #{!important};
+        @apply bottom-3 #{!important};
+        @apply w-auto #{!important};
+        @apply z-10 #{!important};
+    }
+    .swiper-button-prev{
+        @apply left-[35%] #{!important};
+    }
+    .swiper-button-next{
+        @apply right-[35%] #{!important};
+    }
+}
+
+
+//steps works
+.steplist{
+    span > .bgclr{
+        @apply bg-[#FF8045];
+    }
+}
+.steplist:first-child {
+    span > .bgclr{
+        @apply bg-[#B05BC3];
+    }
+}
+.steplist:last-child {
+    span > .bgclr{
+        @apply bg-[#0FB87F];
+    }
+    .bar{
+        @apply hidden;
+    }
+}
+.tags{
+    span{
+        @apply text-[#FF8045] bg-[#FF8045]/[.18] border-[#FF8045]/[.35];
+    }
+}
+.tags{
+    span:first-child{
+        @apply text-[#10B880] bg-[#10B880]/[.18] border-[#10B880]/[.35];
+    }
+}
+.tags{
+    span:last-child{
+        @apply text-[#b05bc3] bg-[#b05bc3]/[.18] border-[#b05bc3]/[.35];
+    }
+}
+
+//Loader Sass
+.loader-area{
+    @apply h-[100vh] w-full flex items-center justify-center bg-[#FAF4E7] text-[5rem] overflow-hidden;
+}
+.waveform {
+    @apply inline-flex h-[.8em] w-[1em] gap-[0.1em] items-center;
+}
+.wave-bar {
+    // animation: waves 250s linear infinite alternate;
+    @apply w-full h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#47CF63];
+}
+.wave-bar:nth-child(2) {
+	animation-delay: 100ms;
+	@apply bg-[#F97F40];
+}
+.wave-bar:nth-child(3) {
+	animation-delay: 200ms;
+	@apply bg-[#B05BC3];
+}
+.wave-bar:nth-child(4) {
+	animation-delay: 120ms;
+	@apply bg-[#47CF63];
+}
+.wave-bar:nth-child(5) {
+	animation-delay: 70ms;
+	@apply bg-[#F97F40];
+}
+.wave-bar:nth-child(6) {
+	animation-delay: 200ms;
+	@apply bg-[#B05BC3];
+}
+.wave-bar:nth-child(7) {
+	animation-delay: 20ms;
+	@apply bg-[#47CF63];
+}
+@keyframes waves {
+	from {
+		height: 10%;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+//statistics
+.statis:first-child {
+    div{
+        span{
+            @apply text-[#10B880];
+        }
+    }
+}
+.statis:nth-child(2){
+    div{
+        span{
+            @apply text-[#F97F40];
+        }
+    }
+}
+.statis:nth-child(3) {
+    div{
+        span{
+            @apply text-[#B05BC3];
+        }
+    }
+}
+.statis:nth-child(4){
+    div{
+        span{
+            @apply text-[#4895D9];
+        }
+    }
+}
+
+//experience
+.expo-link:first-child{
+    @apply bg-[#B05BC3]/[.09] hover:bg-[#B05BC3]/[.22];
+}
+.expo-link:nth-child(2){
+    @apply bg-[#10B881]/[.12] hover:bg-[#10B881]/[.25];
+}
+.expo-link:nth-child(3){
+    @apply bg-[#FF8045]/[.09] hover:bg-[#FF8045]/[.2];
+}
+.gradient-stops{
+    background-image:radial-gradient(rgba(65,211,102,1), rgba(65,211,102,.7), rgba(65,211,102,.4), rgba(65,211,102,.1), transparent ,transparent);
+}
