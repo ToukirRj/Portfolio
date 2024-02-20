@@ -15,7 +15,7 @@ const Myself = () => {
                     </div>
                     <div className="-mx-4 sm:mx-0 animate-fade-up">
                         <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px]">
-                            <div className="mb-8 w-full sm:py-4 lg:w-1/4 sm:w-1/2 lg:py-12">
+                            <div className="mb-8 w-full sm:py-4 lg:w-1/4 sm:w-1/2 lg:py-12 animatable">
                                 <div className="flex flex-wrap justify-start gap-6 p-4 sm:px-12 lg:block lg:space-y-6 lg:px-0">
                                     {statisticData.map(statistic => (
                                         <div key={statistic.id} className="statis flex snap-center items-center gap-4">
@@ -30,7 +30,7 @@ const Myself = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="lg:w-3/4 sm:1/2 w-full">
+                            <div className="lg:w-3/4 sm:1/2 w-full animatable">
                                 <div className="sm:rounded-[3.875rem] rounded-[30px] bg-white/[0.35] sm:p-12 p-8 flex lg:flex-row flex-col snap-center items-center gap-8 border border-[#10B880]/[0.23]">
                                     <img className="h-auto lg:w-[340px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px]" src={Abme} alt="cover"/>
                                     <div className="relative">

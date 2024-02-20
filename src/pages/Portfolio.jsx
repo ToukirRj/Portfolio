@@ -1,7 +1,6 @@
 
 import MainLayout from '../layout/MainLayout'
 import ProjectList from '../components/ProjectList'
-import Animation from '../props/Animation'
 
 const portfolio = () => {
     return (
@@ -12,7 +11,6 @@ const portfolio = () => {
                         <ProjectList/>
                     </div>
                 </div>
-                <Animation/>
             </MainLayout>
         </>
     )

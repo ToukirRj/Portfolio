@@ -1,7 +1,6 @@
 
 import MainLayout from '../layout/MainLayout'
 import Myself from '../components/Myself'
-import Animation from '../props/Animation'
 
 function About(){
   return (
@@ -12,7 +11,6 @@ function About(){
                     <Myself/>
                 </div>
             </div>
-            <Animation/>
         </MainLayout>
     </>
   )

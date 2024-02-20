@@ -1,6 +1,7 @@
 
 import Header from './Header'
 import Footer from './Footer'
+import Animation from '../props/Animation'
 
 function MainLayout({children}){
     window. scrollTo(0, 0)
@@ -9,6 +10,7 @@ function MainLayout({children}){
             <Header/>
                 {children}
             <Footer/>
+            <Animation/>
         </>
     )
 }
