@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Navigation, A11y} from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import testyData from '../datas/testyData'

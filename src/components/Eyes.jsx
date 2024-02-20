@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Mission from '/img/mission.webp'
 import { Link } from 'react-router-dom'
 import serviceData from '../datas/serviceData';

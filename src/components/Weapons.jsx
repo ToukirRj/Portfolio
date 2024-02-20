@@ -1,5 +1,4 @@
 
-import React from 'react';
 import skillsData from '../datas/skillsData';
 
 const Weapons = () => {

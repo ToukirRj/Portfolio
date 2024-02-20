@@ -1,7 +1,7 @@
-import React from 'react'
+
 import MainLayout from '../layout/MainLayout'
 import Weapons from '../components/Weapons'
-
+import Animation from '../props/Animation'
 
 function Skills(){
   return (
@@ -12,6 +12,7 @@ function Skills(){
                     <Weapons/>
                 </div>
             </div>
+            <Animation/>
         </MainLayout>
     </>
   )

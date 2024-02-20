@@ -10,7 +10,7 @@ const Myself = () => {
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="text-center sm:mb-8 mb-4 animate-fade-up">
+                    <div className="text-center sm:mb-8 mb-4 animatable">
                         <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective <span className="text-[#FF8045]">Facts</span> About Me </h2>
                     </div>
                     <div className="-mx-4 sm:mx-0 animate-fade-up">

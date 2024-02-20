@@ -260,3 +260,18 @@ header{
 .gradient-stops{
     background-image:radial-gradient(rgba(65,211,102,1), rgba(65,211,102,.7), rgba(65,211,102,.4), rgba(65,211,102,.1), transparent ,transparent);
 }
+
+
+.animatable{
+    opacity:0;
+    transform:translate3d(0,100px,0);
+    transition-delay:0;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-property: opacity, transform;
+}
+.animatable.animated{
+    opacity: 1;
+    transition-delay:.25s;
+    transform: translateZ(0);
+}

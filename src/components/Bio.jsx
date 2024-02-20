@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { experienceData1 } from '../datas/experienceData'
 import { experienceData2 } from '../datas/experienceData'

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Step from '/img/steps.webp'
 import stepsData from '../datas/stepsData'
 

@@ -1,7 +1,7 @@
-import React from 'react'
+
 import MainLayout from '../layout/MainLayout'
 import Bio from '../components/Bio'
-
+import Animation from '../props/Animation'
 
 function Experiences(){
   return (
@@ -12,6 +12,7 @@ function Experiences(){
                     <Bio/>
                 </div>
             </div>
+            <Animation/>
         </MainLayout>
     </>
   )

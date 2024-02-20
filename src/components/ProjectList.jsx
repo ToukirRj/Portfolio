@@ -1,5 +1,4 @@
 
-import React from 'react'
 import ProjectData from '../datas/projectData'
 
 const proImageSrc = (index) => `./img/projects/${index + 1}.webp`;

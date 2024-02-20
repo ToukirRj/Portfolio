@@ -1,8 +1,8 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import Selfsign from '/img/me.webp'
 import socialLinksData from '../datas/socialLinksData';
 
+// eslint-disable-next-line react/prop-types
 const Splash = ({aboutRef}) => {
     return (
         <>
@@ -10,7 +10,7 @@ const Splash = ({aboutRef}) => {
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-1'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div className="items-center sm:gap-12 gap-5 flex sm:flex-row flex-col animate-jump">
+                    <div className="items-center sm:gap-12 gap-5 flex sm:flex-row flex-col">
                         <div className="sm:w-3/5 w-full relative flex items-center justify-end">
                             <h1 className="sm:text-[71px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[65px] leading-[30px] absolute sm:left-[-50px] left-[-2px] sm:top-[6.25rem] top-[0.25rem]">
                                 Toukir<br/>&nbsp;&nbsp; Rahman.
@@ -31,7 +31,7 @@ const Splash = ({aboutRef}) => {
                             </Link>
                         </div>
                     </div>
-                    <div className="mt-12 border-t border-[#10B881]/[0.2] pt-4 relative z-10 animate-fade-up">
+                    <div className="mt-12 border-t border-[#10B881]/[0.2] pt-4 relative z-10">
                         <h1 className="text-[26px] font-semibold text-center tracking-tight text-[#1f2937] mb-4">Get Me Connect Now on</h1>
                         <div className="grid sm:grid-cols-4 grid-cols-1 sm:space-x-3 space-x-0 sm:gap-0 gap-4">
                             {socialLinksData.map(link => (
