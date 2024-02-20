@@ -6,7 +6,7 @@ import socialLinksData from '../datas/socialLinksData';
 const Splash = ({aboutRef}) => {
     return (
         <>
-            <section className="sm:pt-44 pt-[7rem] sm:pb-20 pb-0 relative">
+            <section className="sm:pt-44 pt-[7rem] sm:pb-20 pb-0 relative z-10">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-1'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -24,9 +24,10 @@ const Splash = ({aboutRef}) => {
                                 A safe hand to take your vision & the weight of the project off your shoulders, to getting your website done 
                                 perfectly. A website application designer with a passion for creating inspiring and influential designs.
                             </p>
-                            <Link to="/#about" onClick={() => {Splash(aboutRef.current);}} className="mt-[30px] text-white bg-[#10B881] hover:bg-[#10B881] font-medium rounded-full text-sm p-3 text-center inline-flex items-center mr-2 animate-bounce hover:animate-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 2048 2048">
-                                    <path fill="white" d="m1965 1101l-941 941l-941-941l90-90l787 787V0h128v1798l787-787l90 90z"/>
+                            <Link to="/#about" onClick={() => {Splash(aboutRef.current);}}>
+                                <svg className="mouse" width="40px" viewBox="0 0 247 390" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" stroke="#000" strokeWidth="8px" />
+                                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" fill="none" stroke="#000" strokeWidth="8px" />
                                 </svg>
                             </Link>
                         </div>

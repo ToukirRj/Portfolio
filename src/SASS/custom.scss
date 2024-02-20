@@ -51,7 +51,7 @@
 header{
     nav{
         a{
-            @apply block transition uppercase text-[12px] font-[500] text-gray-700 hover:text-[#10b881] px-6;
+            @apply block transition uppercase text-[13px] font-[500] text-gray-700 hover:text-[#10b881] px-6;
             &.active{
                 @apply text-[#10b881];
             }
@@ -277,18 +277,9 @@ header{
 }
 
 .header {
-    width: 100%;
-	height: 60px;
-	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 9;
-	pointer-events: none;
 	transform: translateY(0);
 	transition: all 0.9s;
 }
@@ -296,4 +287,17 @@ header{
     transform: translateY(-100%);
     transition-duration:.5s;
     transition-timing-function:ease;
+}
+
+
+svg.mouse #wheel {
+	animation: scrollmouse ease 1.5s infinite;
+}
+@keyframes scrollmouse {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
 }
