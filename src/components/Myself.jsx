@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Abme from '/img/toukir.webp'
 import { Link } from 'react-router-dom'
 import statisticData from '../datas/statisticData';
@@ -10,10 +10,10 @@ const Myself = () => {
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="text-center sm:mb-8 mb-4">
+                    <div className="text-center sm:mb-8 mb-4 animate-fade-up">
                         <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective <span className="text-[#FF8045]">Facts</span> About Me </h2>
                     </div>
-                    <div className="-mx-4 sm:mx-0">
+                    <div className="-mx-4 sm:mx-0 animate-fade-up">
                         <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px]">
                             <div className="mb-8 w-full sm:py-4 lg:w-1/4 sm:w-1/2 lg:py-12">
                                 <div className="flex flex-wrap justify-start gap-6 p-4 sm:px-12 lg:block lg:space-y-6 lg:px-0">
