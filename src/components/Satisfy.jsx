@@ -13,9 +13,9 @@ export default () => {
     const testimonials = testyData();
     return (
         <>
-            <section className="sm:py-20 py-12 relative bg-white/[.7]">
+            <section className="sm:pt-20 sm:pb-48 py-12 relative">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="relative mb-10">
+                    <div className="relative mb-10 animatable">
                         <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl">
                             Satisfaction <span className="text-[#FF8045]">Quotes</span>
                         </h2>
@@ -24,7 +24,7 @@ export default () => {
                         </p>
                     </div>
                 </div>
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 relative z-10">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 relative z-10 animatable">
                     <Swiper
                         modules={[Navigation, A11y]}
                         spaceBetween={20}

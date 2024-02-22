@@ -6,11 +6,11 @@ const proImageSrc = (index) => `./img/projects/${index + 1}.webp`;
 function ProjectList (){
     return (
         <div>
-            <section className="sm:py-20 py-12 relative">
+            <section className="sm:pt-20 sm:pb-48 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div className="text-center mb-8 relative z-10">
+                    <div className="text-center mb-8 relative z-10 animatable">
                         <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Best Recent <span className="text-[#FF8045]">Projects</span></h2>
                         <p className="mx-auto max-w-full mt-2 text-gray-600 sm:w-3/6 w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
                             Sample project of my some works. These will give you a good idea

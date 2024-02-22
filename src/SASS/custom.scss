@@ -93,7 +93,7 @@ header{
         @apply text-[13px] font-[500] tracking-wide text-gray-800 w-full;
     }
     .counter{
-        @apply flex items-center justify-center text-[#0a9d6c] font-medium text-[14px] w-12 h-6 rounded-full bg-[#10B881]/[.12];
+        @apply flex items-center justify-center text-[#1F2937] font-medium text-[14px] w-12 h-6 rounded-full bg-[#10B881]/[.12];
     }
 }
 
@@ -110,11 +110,11 @@ header{
     }
 }
 .swiper-button-prev{
-    @apply bg-gradient-to-r from-[#FDFBF8] via-[#FDFBF8] to-transparent;
+    @apply bg-gradient-to-r from-[#FAF4E7] via-[#faf4e7de] to-transparent;
     @apply left-[-35px] #{!important};
 }
 .swiper-button-next{
-    @apply bg-gradient-to-l from-[#FDFBF8] via-[#FDFBF8] to-transparent;
+    @apply bg-gradient-to-l from-[#FAF4E7] via-[#faf4e7de] to-transparent;
     @apply right-[-35px] #{!important};
 }
 @media only screen and (max-width:1023px){
@@ -141,12 +141,12 @@ header{
 //steps works
 .steplist{
     span > .bgclr{
-        @apply bg-[#FF8045];
+        @apply bg-[#1F2937];
     }
 }
 .steplist:first-child {
     span > .bgclr{
-        @apply bg-[#B05BC3];
+        @apply bg-[#1F2937];
     }
 }
 .steplist:last-child {
@@ -218,34 +218,34 @@ header{
 }
 
 //statistics
-.statis:first-child {
-    div{
-        span{
-            @apply text-[#10B880];
-        }
-    }
-}
-.statis:nth-child(2){
-    div{
-        span{
-            @apply text-[#F97F40];
-        }
-    }
-}
-.statis:nth-child(3) {
-    div{
-        span{
-            @apply text-[#B05BC3];
-        }
-    }
-}
-.statis:nth-child(4){
-    div{
-        span{
-            @apply text-[#4895D9];
-        }
-    }
-}
+// .statis:first-child {
+//     div{
+//         span{
+//             @apply text-[#10B880];
+//         }
+//     }
+// }
+// .statis:nth-child(2){
+//     div{
+//         span{
+//             @apply text-[#F97F40];
+//         }
+//     }
+// }
+// .statis:nth-child(3) {
+//     div{
+//         span{
+//             @apply text-[#B05BC3];
+//         }
+//     }
+// }
+// .statis:nth-child(4){
+//     div{
+//         span{
+//             @apply text-[#4895D9];
+//         }
+//     }
+// }
 
 //experience
 .expo-link:first-child{

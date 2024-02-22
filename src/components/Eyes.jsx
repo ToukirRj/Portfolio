@@ -6,19 +6,19 @@ import serviceData from '../datas/serviceData';
 const Eyes = () => {
     return (
         <>
-            <section className="sm:py-20 py-12 relative bg-white/[0.55]">
+            <section className="sm:py-10 sm:pb-40 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
                 <div className="mx-auto px-4 sm:px-12 max-w-6xl xl:px-0 relative z-10">
-                    <div className="text-center">
+                    <div className="text-center animatable">
                         <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl">My <span className="text-[#FF8045]">Eyes</span> to Work</h2>
                         <p className="mx-auto max-w-full mt-2 text-gray-600 sm:w-3/6 w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
                             My eyes are focused on using my understanding of customer needs and their satisfaction. My services crite are:
                         </p>
                     </div>
                     <div className="sm:mt-12 mt-8">
-                        <div className="gap-6 space-y-0 flex sm:flex-row flex-col items-center">
-                            <div className="sm:w-1/2 w-full">
+                        <div className="gap-6 space-y-0 flex sm:flex-row flex-col items-center animatable">
+                            <div className="sm:w-1/2 w-full animatable">
                                 <img src={Mission} className="mx-auto max-w-full" alt="me" loading="lazy"/>
                                 <div className="mt-3 flex justify-center">
                                     <Link target="_blank" to="https://wa.me/8801753778070" className="group h-[65px] relative flex items-center">
@@ -32,7 +32,7 @@ const Eyes = () => {
                             </div>
                             <div className="relative sm:w-1/2 w-full space-y-5 ">
                                 {serviceData.map(service => (
-                                    <div key={service.id} className="flex sm:flex-row flex-col items-center gap-4 bg-white/[0.5] bg-blur shadow-lg rounded-xl px-6 py-5">
+                                    <div key={service.id} className="flex sm:flex-row flex-col items-center gap-4 bg-white/[0.5] bg-blur shadow-lg rounded-xl px-6 py-5 animatable">
                                         <div className="w-[50px] h-auto text-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
                                         </div>

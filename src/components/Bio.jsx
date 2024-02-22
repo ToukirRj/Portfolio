@@ -6,11 +6,11 @@ import { experienceData2 } from '../datas/experienceData'
 const Bio = () => {
     return (
         <>
-            <section className="sm:py-20 py-12 relative">
+            <section className="sm:pt-20 sm:pb-48 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="relative text-center">
+                    <div className="relative text-center animatable">
                         <h2 className="text-[27px] font-bold text-[#1F2937] sm:text-4xl xl:text-5xl">Biography <span className="text-[#FF8045]">Experiences</span></h2>
                         <p className="mt-2 text-gray-600 sm:w-3/6 w-full mx-auto max-w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
                             Here are my accumulated experiences and current fields in official and freelancing marketplaces. 
@@ -18,8 +18,8 @@ const Bio = () => {
                     </div>
                     <div className="sm:mt-12 mt-8">
                         <div className="gap-6 space-y-0 flex sm:flex-row flex-col items-center">
-                            <div className="sm:w-1/2 w-full">
-                                <div className="rounded-[30px] bg-white/[.7] border border-[#FF8045]/[0.23] p-8">
+                            <div className="sm:w-1/2 w-full animatable">
+                                <div className="rounded-[30px] bg-white p-8">
                                     <h2 className="flex items-center">
                                     <div className="p-2 bg-[#FF8045]/[0.3] rounded-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#222" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
@@ -48,8 +48,8 @@ const Bio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="sm:w-1/2 w-full">
-                                <div className="rounded-[30px] bg-white/[.7] border border-[#FF8045]/[0.23] p-8">
+                            <div className="sm:w-1/2 w-full animatable">
+                                <div className="rounded-[30px] bg-white p-8">
                                     <h2 className="flex items-center">
                                     <div className="p-2 bg-[#FF8045]/[0.3] rounded-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#222" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
