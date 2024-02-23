@@ -34,7 +34,7 @@ const Eyes = () => {
                                 {serviceData.map(service => (
                                     <div key={service.id} className="flex sm:flex-row flex-col items-center gap-4 bg-white/[0.5] bg-blur shadow-lg rounded-xl px-6 py-5 animatable">
                                         <div className="w-[50px] h-auto text-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth=".75" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
                                         </div>
                                         <div className="w-full">
                                             <h4 className="text-[16px] font-[400] tracking-normal text-gray-900 sm:text-start text-center">{service.title}</h4>
