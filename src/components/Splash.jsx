@@ -11,13 +11,23 @@ const Splash = ({aboutRef}) => {
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-1'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
                     <div className="items-center sm:gap-12 gap-5 flex sm:flex-row flex-col animatable">
-                        <div className="sm:w-3/5 w-full relative flex items-center justify-end">
-                            <h1 className="sm:text-[71px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[65px] leading-[30px] absolute sm:left-[-50px] left-[-2px] sm:top-[6.25rem] top-[0.25rem]">
-                                Toukir<br/>&nbsp;&nbsp; Rahman.
+                        <div className="sm:w-1/2 w-full relative">
+                            <img className="w-[280px] max-w-full mx-auto" src={Selfsign} alt="me"/>
+                            <h1 className="mb-3 sm:text-[51px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
+                                Toukir Rahman.
                             </h1>
-                            <img className="w-[550px] max-w-full" src={Selfsign} alt="me"/>
+                            <div className="mt-4 border-t border-[#10B881]/[0.2] pt-4 relative z-10">
+                                <h1 className="text-[20px] font-semibold text-center tracking-tight text-[#1f2937] mb-3">Get Me Connect Now on</h1>
+                                <div className="flex items-center justify-center space-x-3">
+                                    {socialLinksData.map(link => (
+                                        <Link key={link.id} to={link.url} target={link.target}>
+                                            <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`}/>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                        <div className="sm:w-2/5 w-full sm:block flex flex-col items-center z-10">
+                        <div className="sm:w-1/2 w-full sm:block flex flex-col items-center z-10">
                             <span className="bg-[#1f2937] text-[#fff] text-[12px] font-[500] uppercase tracking-wider mr-2 px-3 py-1 rounded-full [text-shadow:_0_0_3px_rgb(0_0_0_/_40%)]">Website Strategic UI Expert</span>
                             <h1 className="my-[20px] text-[#1f2937] sm:text-[37px] text-[24px] font-[600] sm:leading-[45px] leading-[32px] tracking-normal sm:text-start text-center">Addicted to Advanced 
                             
@@ -34,23 +44,7 @@ const Splash = ({aboutRef}) => {
                             </Link>
                         </div>
                     </div>
-                    <div className="mt-12 border-t border-[#10B881]/[0.2] pt-4 relative z-10 animatable">
-                        <h1 className="text-[26px] font-semibold text-center tracking-tight text-[#1f2937] mb-4">Get Me Connect Now on</h1>
-                        <div className="grid sm:grid-cols-4 grid-cols-1 sm:space-x-2 space-x-0 sm:gap-0 gap-3">
-                            {socialLinksData.map(link => (
-                                <Link key={link.id} to={link.url} target={link.target}
-                                className="flex items-center space-x-3 py-3 px-4 bg-white/[0.45] bg-blur rounded-xl shadow-lg hover:bg-white/[0.9] hover:shadow-none transition-all">
-                                    <div className="flex-shrink-0">
-                                        <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`}/>
-                                    </div>
-                                    <div className="min-w-0 tracking-normal">
-                                        <p className="text-[15px] font-[600] text-[#333]">{link.platform}</p>
-                                        <p className="text-sm text-gray-500">{link.role}</p>
-                                    </div>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
         </>
