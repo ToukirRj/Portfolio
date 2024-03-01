@@ -1,4 +1,3 @@
-
 const projectData = [
   {
     title: 'aDiant Traveler',
@@ -85,6 +84,5 @@ const projectData = [
     tags: ['UI-UX', 'Prototype', 'Development'],
   }
 ];
-
 
 export default projectData;

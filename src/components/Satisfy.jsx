@@ -9,7 +9,7 @@ import 'swiper/css/navigation'
 
 const testyImageSrc = (index) => `./img/clients/${index + 1}.webp`;
 
-export default () => {
+function satisfy (){
     const testimonials = testyData();
     return (
         <>
@@ -69,4 +69,6 @@ export default () => {
             </section>
         </>
     );
-};
+}
+
+export default satisfy;
