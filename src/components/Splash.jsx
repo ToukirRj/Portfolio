@@ -10,7 +10,7 @@ const Splash = ({aboutRef}) => {
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-1'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
-                    <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col animatable">
+                    <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col">
                         <div className="sm:w-2/5 w-full relative">
                             <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                             <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
@@ -38,8 +38,8 @@ const Splash = ({aboutRef}) => {
                             </p>
                             <a href="#about" className='table'>
                                 <svg className="mouse" width="40px" viewBox="0 0 247 390" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" stroke="#000" strokeWidth="8px" />
-                                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" fill="none" stroke="#000" strokeWidth="8px" />
+                                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" stroke="#10B881" strokeWidth="8px" />
+                                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" fill="none" stroke="#10B881" strokeWidth="8px" />
                                 </svg>
                             </a>
                         </div>

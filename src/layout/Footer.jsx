@@ -2,12 +2,13 @@
 const Footer = () => {
     return (
         <>
-            <section className="sm:py-20 py-12">
+            <section className="sm:py-24 py-12 relative -z-10">
+                <div className='h-[800px] w-[800px] absolute left-0 right-0 mx-auto -top-[450px] opacity-40 gradient-stops'></div>
                 <div className="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0 animatable">
-                    <h2 className="sm:text-[39px] text-[21px] text-center font-bold sm:leading-[46px] leading-[26px] text-gray-800 w-full max-w-5xl mx-auto">
+                    <h2 className="sm:text-[49px] text-[21px] text-center font-bold sm:leading-[56px] leading-[26px] text-gray-800 w-full max-w-5xl mx-auto">
                         One step to connect with me <br/>from everywhere
                     </h2>
-                    <div className="mt-3 flex justify-center">
+                    <div className="mt-5 flex justify-center">
                         <a target="_blank" href="https://wa.me/8801753778070" className="group h-[65px] relative flex items-center">
                             <div className="absolute top-0 bottom-0 left-0 my-auto w-[65px] h-[65px] group-hover:left-[84%] group-hover:w-[20px] group-hover:h-[20px] rounded-[65px] bg-[#10B880] transition-all duration-[.5s]"></div>
                             <div className="relative ms-[32px] me-[5px] group-hover:me-[15px] transition-all duration-[.5s] text-[#1F2937]">WhatsApp Connect</div>
@@ -23,7 +24,7 @@ const Footer = () => {
             <footer className="sm:py-10 py-5 relative bg-white/[0.45]">
                 <div className="m-auto space-y-8 px-4 text-gray-600 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div className="flex sm:flex-row flex-col sm:justify-between justify-center tracking-normal text-[14px] sm:text-start text-center">
-                        <span>&copy; <b> Toukir Rahman</b> 2020 - Present.</span> 
+                        <span>&copy; <b> Toukir Rahman</b> 2023 - Present.</span> 
                         <span>All right reserved</span>
                     </div>
                 </div>

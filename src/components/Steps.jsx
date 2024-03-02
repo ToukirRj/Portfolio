@@ -5,7 +5,7 @@ import stepsData from '../datas/stepsData'
 const Steps = () => {
     return (
         <>
-            <section className="sm:pt-20 sm:pb-48 py-12 relative">
+            <section className="sm:py-24 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
@@ -22,7 +22,7 @@ const Steps = () => {
                                 <ol role="list" className="overflow-hidden pl-[20px]">
                                     {stepsData.map(step => (
                                         <li className="steplist relative w-full pb-5" key={step.id}>
-                                            <div className="bar bg-[#000] w-0.5 h-full top-4 left-4 absolute" aria-hidden="true"></div>
+                                            <div className="bar bg-[#1F2937] w-0.5 h-full top-4 left-4 absolute" aria-hidden="true"></div>
                                             <div className="flex items-center relative">
                                                 <span className="flex items-center h-10">
                                                     <span className="bgclr w-8 h-8 rounded-full flex justify-center items-center relative z-10">

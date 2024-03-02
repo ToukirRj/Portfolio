@@ -146,7 +146,7 @@ header{
 }
 .steplist:first-child {
     span > .bgclr{
-        @apply bg-[#1F2937];
+        @apply bg-[#FF8045];
     }
 }
 .steplist:last-child {
@@ -249,13 +249,13 @@ header{
 
 //experience
 .expo-link:first-child{
-    @apply bg-[#B05BC3]/[.09] hover:bg-[#B05BC3]/[.22];
+    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
 }
 .expo-link:nth-child(2){
-    @apply bg-[#10B881]/[.12] hover:bg-[#10B881]/[.25];
+    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
 }
 .expo-link:nth-child(3){
-    @apply bg-[#FF8045]/[.09] hover:bg-[#FF8045]/[.2];
+    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
 }
 .gradient-stops{
     background-image:radial-gradient(rgba(65,211,102,1), rgba(65,211,102,.7), rgba(65,211,102,.4), rgba(65,211,102,.1), transparent ,transparent);
