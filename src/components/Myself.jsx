@@ -6,7 +6,7 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="sm:py-40 py-12 relative">
+            <section id="about" className="sm:py-24 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10 animatable">
