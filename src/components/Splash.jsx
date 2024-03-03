@@ -7,10 +7,10 @@ const Splash = ({aboutRef}) => {
     return (
         <>
             <section className="sm:pt-48 pb-24 relative z-10">
-                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
-                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-1'></div>
+                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops z-0'></div>
+                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
-                    <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col">
+                    <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
                         <div className="sm:w-2/5 w-full relative">
                             <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                             <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
@@ -20,7 +20,7 @@ const Splash = ({aboutRef}) => {
                                 <h1 className="text-[20px] font-[500] text-center tracking-tight text-[#1f2937] mb-2">Get Me Connect Now on</h1>
                                 <div className="flex items-center justify-center space-x-3">
                                     {socialLinksData.map(link => (
-                                        <Link key={link.id} to={link.url} target={link.target} className='hover:opacity-70'>
+                                        <Link key={link.id} to={link.url} target={link.target} className='cursor-link hover:opacity-70'>
                                             <img className="w-9 h-9 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`}/>
                                         </Link>
                                     ))}
