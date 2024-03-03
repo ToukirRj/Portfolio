@@ -309,18 +309,14 @@ svg.mouse #wheel {
 /* CustomCursor.css */
 .custom-cursor {
     position: fixed;
-    z-index: 9999;
     width: 20px;
     height: 20px;
     background-color: #ff0000; /* Default cursor color */
     border-radius: 50%;
     pointer-events: none;
-    transition: transform 0.1s ease-out;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
   }
   
   .hovering-link {
-    width: 30px; /* Adjust the size of the cursor when hovering over links */
-    height: 30px;
-    background-color: #00ff00; /* Change cursor color when hovering over links */
+    transform: scale(1.5); /* Scale cursor when hovering over link */
   }
-  
