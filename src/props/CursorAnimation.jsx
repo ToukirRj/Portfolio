@@ -31,7 +31,7 @@ const CustomCursor = () => {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
 
-      document.querySelectorAll('a').forEach((link) => {
+      document.querySelectorAll('.cursor-link').forEach((link) => {
         link.removeEventListener('mouseenter', handleMouseEnterLink);
         link.removeEventListener('mouseleave', handleMouseLeaveLink);
       });

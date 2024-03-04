@@ -6,10 +6,8 @@ const portfolio = () => {
     return (
         <>
             <MainLayout>
-                <div className="pt-10">
-                    <div className="bg-white/50">
-                        <ProjectList/>
-                    </div>
+                <div className="pt-20">
+                    <ProjectList/>
                 </div>
             </MainLayout>
         </>

@@ -6,8 +6,8 @@ function About(){
   return (
     <>
         <MainLayout>
-            <div className="pt-10">
-                <div className="bg-white/50 animatable">
+            <div className="pt-20">
+                <div className="animatable">
                     <Myself/>
                 </div>
             </div>

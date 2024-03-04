@@ -6,8 +6,8 @@ function Skills(){
   return (
     <>
         <MainLayout>
-            <div className="pt-10">
-                <div className="bg-white/50">
+            <div className="pt-20">
+                <div className="animatable">
                     <Weapons/>
                 </div>
             </div>
