@@ -6,10 +6,10 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="sm:py-24 py-12">
+            <section id="about" className="sm:py-24 py-12 relative z-10">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-20">
                     <div className="text-center sm:mb-8 mb-4">
                         <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective <span className="text-[#FF8045]">Facts</span> About Me </h2>
                     </div>

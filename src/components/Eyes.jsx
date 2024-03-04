@@ -6,10 +6,10 @@ import serviceData from '../datas/serviceData';
 const Eyes = () => {
     return (
         <>
-            <section className="sm:py-24 py-12 relative">
-                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
-                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
-                <div className="mx-auto px-4 sm:px-12 max-w-6xl xl:px-0 relative z-10 animatable">
+            <section className="sm:py-24 py-12 relative z-10">
+                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops z-0'></div>
+                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
+                <div className="mx-auto px-4 sm:px-12 max-w-6xl xl:px-0 relative z-20 animatable">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl">My <span className="text-[#FF8045]">Eyes</span> to Work</h2>
                         <p className="mx-auto max-w-full mt-2 text-gray-600 sm:w-3/6 w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
