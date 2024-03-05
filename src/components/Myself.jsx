@@ -6,7 +6,7 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="sm:py-24 py-12 relative z-10">
+            <section id="about" className="sm:py-24 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-20">
@@ -24,7 +24,7 @@ const Myself = () => {
                                             </div>
                                             <div>
                                                 <h2 className="text-4xl font-bold text-[#1F2937]">{statistic.value}</h2>
-                                                <span className="block w-max text-[12px] font-medium uppercase tracking-wide text-[#1f2937ce]">{statistic.label}</span>
+                                                <span className="block w-max text-[12px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
                                             </div>
                                         </div>
                                     ))}
@@ -34,8 +34,8 @@ const Myself = () => {
                                 <div className="sm:rounded-[3.875rem] rounded-[30px] bg-white/[0.35] sm:p-12 p-8 flex lg:flex-row flex-col snap-center items-center gap-8 shadow-md">
                                     <img className="h-auto lg:w-[340px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px]" src={Abme} alt="cover"/>
                                     <div className="relative">
-                                        <h2 className="sm:text-[26px] text-[21px] font-semibold tracking-tight text-[#444]">Inner latent talentivity</h2>
-                                        <p className="mt-4 text-[12px] font-[400] text-gray-500 tracking-wide leading-[21px]"> 
+                                        <h2 className="sm:text-[26px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent talentivity</h2>
+                                        <p className="mt-4 text-[12px] font-[400] text-[#1F2937] tracking-wide leading-[21px]"> 
                                             Website application designer with a passion for creating inspiring and influential designs. Users will experience something new and get the interface according to their convenience. I love the latest technology projects as it keeps updated on the latest trends. A motivated, safe set of hands to take the weight of the project off your shoulders and getting the job done completely. Committed to working with honesty and dedication. <br/><br/>
 
                                             The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices. So, let’s have a chat and make sure we’re a great fit together.
