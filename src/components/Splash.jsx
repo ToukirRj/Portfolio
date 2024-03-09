@@ -7,7 +7,7 @@ import CanvasAnimation from '../props/CanvasAnimation';
 const Splash = ({aboutRef}) => {
     return (
         <>
-            <div className='relative z-30'>
+            <div className='relative z-20'>
                 <CanvasAnimation/>
                 <section className="sm:pt-48 pb-24 relative z-10">
                     <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-50 gradient-stops z-0'></div>
