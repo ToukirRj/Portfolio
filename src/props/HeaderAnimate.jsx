@@ -24,3 +24,4 @@ const HeaderAnimate = () => {
 };
 
 export default HeaderAnimate;
+//This is latest technology for the header sticky with conditionally animate
