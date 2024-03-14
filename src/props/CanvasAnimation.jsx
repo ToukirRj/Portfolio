@@ -16,7 +16,7 @@ const CanvasAnimation = () => {
     canvas.height = height * scale;
     ctx.scale(scale, scale);
 
-    const colors = ['#7D42E8', '#FD7423', '#008DFD', '#7D42E8', '#008DFD'];
+    const colors = ['#fd7e41', '#46D365'];
     const mousePosition = {
       x: undefined,
       y: undefined
