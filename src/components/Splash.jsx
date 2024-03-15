@@ -4,20 +4,18 @@ import socialLinksData from '../datas/socialLinksData';
 import CanvasAnimation from '../props/CanvasAnimation';
 
 // eslint-disable-next-line react/prop-types
-const Splash = ({aboutRef}) => {
+const Splash = () => {
     return (
         <>
             <div className='relative z-20'>
                 <CanvasAnimation/>
                 <section className="sm:pt-48 pb-24 relative z-10">
-                    {/* <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-50 gradient-stops z-0'></div>
-                    <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-50 gradient-stops z-0'></div> */}
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
                         <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
                             <div className="sm:w-2/5 w-full relative">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
-                                    Toukir Rahman.
+                                    Toukir Rahman
                                 </h1>
                                 <div className="mt-2 border-t border-[#10B881]/[0.2] pt-4 relative z-10">
                                     <h1 className="text-[20px] font-[500] text-center tracking-tight text-[#1f2937] mb-2">Get Me Connect Now on</h1>

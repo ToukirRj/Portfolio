@@ -60,7 +60,7 @@ html {
 header{
     nav{
         a{
-            @apply block transition uppercase text-[13px] font-[500] text-gray-700 hover:text-[#10b881] px-6;
+            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] hover:text-[#10b881] px-6;
             &.active{
                 @apply text-[#10b881];
             }
@@ -239,7 +239,7 @@ header{
     @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
 }
 .gradient-stops{
-    background-image:radial-gradient(rgba(65,211,102,1), rgba(65,211,102,.9), rgba(65,211,102,.5), rgba(65,211,102,.1), transparent ,transparent);
+    background-image:radial-gradient(rgba(255,128,69,1), rgba(255,128,69,.9), rgba(255,128,69,.5), rgba(255,128,69,.1), transparent ,transparent);
 }
 
 
@@ -306,12 +306,14 @@ svg.mouse #wheel {
 .custom-cursor {
     position: fixed;
     z-index: 99999;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background-color: transparent; /* Default cursor color */
     pointer-events: none;
     // transition: transform 0.3s ease;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 20 20'%3E%3Cpath fill='%2313B780' d='M6.636 2.287A1 1 0 0 0 5 3.059v13.998c0 .927 1.15 1.355 1.756.655l3.524-4.073a1.5 1.5 0 0 1 1.134-.518h5.592c.938 0 1.36-1.176.636-1.772z'/%3E%3C/svg%3E")
+    background-image:url("/img/cursor.png");
+    background-size:cover;
+    background-position: center;
 }
   
 .hovering-link {
@@ -323,8 +325,8 @@ svg.mouse #wheel {
 }
 
 .canvas {
-	filter: blur(250px);
-	opacity: 0.6;
+	filter: blur(350px);
+	opacity: 0.5;
     position:absolute;
     z-index:-1;
     top:0;
