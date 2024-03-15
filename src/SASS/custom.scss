@@ -327,7 +327,7 @@ svg.mouse #wheel {
 .canvas {
 	filter: blur(350px);
 	opacity: 0.5;
-    position:absolute;
+    position:fixed;
     z-index:-1;
     top:0;
     left:0;

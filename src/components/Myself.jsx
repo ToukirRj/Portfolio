@@ -7,11 +7,10 @@ const Myself = () => {
     return (
         <>
             <section id="about" className="sm:py-24 py-12 relative">
-                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops z-0'></div>
-                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-0'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-20">
-                    <div className="text-center sm:mb-8 mb-4">
-                        <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective <span className="text-[#FF8045]">Facts</span> About Me </h2>
+                    <div className="text-center sm:mb-20 mb-4 animatable">
+                        <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective 
+                        <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3">Facts</span> About Me </h2>
                     </div>
                     <div className="-mx-4 sm:mx-0">
                         <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">

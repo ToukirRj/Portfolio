@@ -32,7 +32,7 @@ const Splash = () => {
                                 <h4 className="bg-[#1f2937] text-[#fff] text-[14px] font-[500] uppercase tracking-wider mr-2 px-4 py-1 rounded-full table">Website Strategic UI Expert</h4>
                                 <h1 className="my-[30px] text-[#1f2937] sm:text-[47px] text-[24px] font-[700] sm:leading-[54px] leading-[32px] tracking-normal sm:text-start text-center">Addicted to Advanced 
                                 
-                                <span className='bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text '>Design and Coding</span></h1>
+                                <span className='bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
                                 <p className="text-[18px] font-[300] tracking-normal text-[#1F2937] sm:text-start text-center mb-[30px]">
                                     A safe hand to take your vision & the weight of the project off your shoulders, to getting your website done 
                                     perfectly. A website application designer with a passion for creating inspiring and influential designs. Committed to working with honesty and dedication.
