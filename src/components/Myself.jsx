@@ -43,13 +43,21 @@ const Myself = () => {
                                         easily navigable, and that keeps the user engaged longer. This is further complicated by the fact that users now use a variety of devices. 
                                         So, it has to be fit and responsiveness on all devices. Let's have a chat and make sure we are a great fit together.
                                     </p>
-                                    <div className="mt-3 flex justify-start">
-                                        <Link to="skype:live:to.toukir.rahman?chat" className="group h-[65px] relative flex items-center">
+                                    <div className="mt-5 flex justify-start">
+                                        {/* <Link to="skype:live:to.toukir.rahman?chat" className="group h-[65px] relative flex items-center">
                                             <div className="absolute top-0 bottom-0 left-0 my-auto w-[65px] h-[65px] group-hover:left-[84%] group-hover:w-[20px] group-hover:h-[20px] rounded-[65px] bg-[#10B880] transition-all duration-[.5s]"></div>
                                             <div className="relative ms-[32px] me-[5px] group-hover:me-[15px] transition-all duration-[.5s] text-[#1F2937]">Start Skype Chat</div>
                                             <div className="relative">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024"><path fill="#10B880" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/></svg>
                                             </div>
+                                        </Link> */}
+                                        <Link to="skype:live:to.toukir.rahman?chat" className="group h-[56px] w-auto relative flex items-center rounded-[56px] bg-gradient-to-r from-[#ff8144] to-[#10b881] hover:from-[#10b881] hover:to-[#10b881] ps-7 pe-[8px] transition-transform delay-150">
+                                            <span className='text-white group-hover pe-3'>Start Skype Chat</span>
+                                            <span className='w-[40px] h-[40px] rounded-full bg-[#FAF4E7] flex items-center justify-center'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024">
+                                                    <path fill="#10B880" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/>
+                                                </svg>
+                                            </span>
                                         </Link>
                                     </div>
                                 </div>
