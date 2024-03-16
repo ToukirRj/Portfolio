@@ -6,11 +6,12 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="sm:py-24 py-12 relative">
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-20">
-                    <div className="text-center sm:mb-20 mb-4 animatable">
+            <section id="about" className="sm:py-24 py-12 relative z-20">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
+                    <div className="text-center sm:mb-16 mb-4">
                         <h2 className="sm:text-3xl text-[23px] font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Effective 
                         <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3">Facts</span> About Me </h2>
+                        <p className='mx-auto max-w-full mt-2 text-[#1F2937] sm:w-3/6 w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]'>Unique strategy that further enhance career</p>
                     </div>
                     <div className="-mx-4 sm:mx-0">
                         <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">
@@ -36,7 +37,7 @@ const Myself = () => {
                                 <div className="px-3">
                                     <h2 className="sm:text-[29px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent talentivity</h2>
                                     <p className="mt-4 text-[14px] font-[400] text-[#1F2937] tracking-wide leading-[24px]"> 
-                                        I love latest technology projects as it keeps me updated on the latest trends Users will experience something new and get the interface according to their convenience.<br/><br/>
+                                        I love latest technology projects as it keeps me updated on the latest trends. Users will experience something new and get the interface according to their convenience.<br/><br/>
 
                                         The purpose of designing a site is that when users open the site, they see the information in a format that is easy to read and relevant, 
                                         easily navigable, and that keeps the user engaged longer. This is further complicated by the fact that users now use a variety of devices. 
