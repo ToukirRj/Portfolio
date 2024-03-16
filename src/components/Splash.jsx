@@ -17,7 +17,7 @@ const Splash = () => {
                                 <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
                                     Toukir Rahman
                                 </h1>
-                                <div className="mt-2 border-t border-[#10B881]/[0.2] pt-4 relative z-10">
+                                <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10">
                                     <h1 className="text-[20px] font-[500] text-center tracking-tight text-[#1f2937] mb-2">Get Me Connect Now on</h1>
                                     <div className="flex items-center justify-center space-x-3">
                                         {socialLinksData.map(link => (

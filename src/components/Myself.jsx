@@ -14,7 +14,7 @@ const Myself = () => {
                     </div>
                     <div className="-mx-4 sm:mx-0">
                         <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">
-                            <div className="lg:w-1/5 sm:1/2 w-full">
+                            <div className="lg:w-3/12 sm:1/2 w-full">
                                 <div className="flex flex-wrap justify-start gap-6 p-4 sm:px-12 lg:block lg:space-y-6 lg:px-0">
                                     {statisticData.map(statistic => (
                                         <div key={statistic.id} className="statis flex snap-center items-center gap-4">
@@ -29,16 +29,18 @@ const Myself = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="lg:w-2/5 sm:1/2 w-full">
-                                <img className="h-auto lg:w-[340px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px] mx-auto" src={Abme} alt="cover"/>
+                            <div className="lg:w-4/12 sm:1/2 w-full">
+                                <img className="h-auto lg:w-[340px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px] ring-2 ring-white" src={Abme} alt="cover"/>
                             </div>
-                            <div className="lg:w-3/5 sm:1/2 w-full">
-                                <div className="flex lg:flex-col snap-center items-center gap-8">
-                                    <h2 className="sm:text-[26px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent talentivity</h2>
-                                    <p className="mt-4 text-[12px] font-[400] text-[#1F2937] tracking-wide leading-[21px]"> 
-                                        Website application designer with a passion for creating inspiring and influential designs. Users will experience something new and get the interface according to their convenience. I love the latest technology projects as it keeps updated on the latest trends. A motivated, safe set of hands to take the weight of the project off your shoulders and getting the job done completely. Committed to working with honesty and dedication. <br/><br/>
+                            <div className="lg:w-5/12 sm:1/2 w-full">
+                                <div className="px-3">
+                                    <h2 className="sm:text-[29px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent talentivity</h2>
+                                    <p className="mt-4 text-[14px] font-[400] text-[#1F2937] tracking-wide leading-[24px]"> 
+                                        I love latest technology projects as it keeps me updated on the latest trends Users will experience something new and get the interface according to their convenience.<br/><br/>
 
-                                        The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices. So, let’s have a chat and make sure we’re a great fit together.
+                                        The purpose of designing a site is that when users open the site, they see the information in a format that is easy to read and relevant, 
+                                        easily navigable, and that keeps the user engaged longer. This is further complicated by the fact that users now use a variety of devices. 
+                                        So, it has to be fit and responsiveness on all devices. Let's have a chat and make sure we are a great fit together.
                                     </p>
                                     <div className="mt-3 flex justify-start">
                                         <Link to="skype:live:to.toukir.rahman?chat" className="group h-[65px] relative flex items-center">
