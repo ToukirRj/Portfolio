@@ -52,7 +52,7 @@ const Myself = () => {
                                             </div>
                                         </Link> */}
                                         <Link to="skype:live:to.toukir.rahman?chat" className="group h-[54px] w-auto relative flex items-center rounded-[15px] ps-6 pe-[7px] border-2 border-[#1F2937] bg-[#1F2937]">
-                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[17px] font-[500] pe-5 tracking-wide'>Let's Chat</span>
+                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[17px] font-[400] pe-5 tracking-wide'>Let's Chat</span>
                                             <span className='w-[36px] h-[36px] rounded-[10px] bg-[#fff] group-hover:bg-[#FB8245] flex items-center justify-center'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024">
                                                     <path fill="#1F2937" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/>
