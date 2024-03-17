@@ -1,28 +1,28 @@
 
 const socialLinksData = [
     {
-      id: 2,
+      id: 1,
       url: 'https://www.fiverr.com/toukirjoy',
       target: '_blank',
       imageSrc:'./img/jobs/fiverr.webp', // Assuming you have imported the image
     },
     {
-      id: 3,
-      url: 'https://dribbble.com/toukirjoy',
+      id: 2,
+      url: 'https://www.linkedin.com/in/toukirrj/',
       target: '_blank',
-      imageSrc:'./img/jobs/dribbble.webp', // Assuming you have imported the image
+      imageSrc:'./img/jobs/linkedin.webp', // Assuming you have imported the image
     },
     {
-      id: 1,
+      id: 3,
       url: 'https://www.upwork.com/freelancers/toukir',
       target: '_blank',
       imageSrc:'./img/jobs/upwork.webp', // Assuming you have imported the image
     },
     {
       id: 4,
-      url: 'https://www.linkedin.com/in/toukirrj/',
+      url: 'https://dribbble.com/toukirjoy',
       target: '_blank',
-      imageSrc:'./img/jobs/linkedin.webp', // Assuming you have imported the image
+      imageSrc:'./img/jobs/dribbble.webp', // Assuming you have imported the image
     },
   ];
   
