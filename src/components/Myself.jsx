@@ -44,17 +44,10 @@ const Myself = () => {
                                         So, it has to be fit and responsiveness on all devices. Let's have a chat and make sure we are a great fit together.
                                     </p>
                                     <div className="mt-6 flex justify-start">
-                                        {/* <Link to="skype:live:to.toukir.rahman?chat" className="group h-[65px] relative flex items-center">
-                                            <div className="absolute top-0 bottom-0 left-0 my-auto w-[65px] h-[65px] group-hover:left-[84%] group-hover:w-[20px] group-hover:h-[20px] rounded-[65px] bg-[#10B880] transition-all duration-[.5s]"></div>
-                                            <div className="relative ms-[32px] me-[5px] group-hover:me-[15px] transition-all duration-[.5s] text-[#1F2937]">Start Skype Chat</div>
-                                            <div className="relative">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024"><path fill="#10B880" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/></svg>
-                                            </div>
-                                        </Link> */}
-                                        <Link to="skype:live:to.toukir.rahman?chat" className="group h-[54px] w-auto relative flex items-center rounded-[15px] ps-6 pe-[7px] border-2 border-[#1F2937] bg-[#1F2937]">
-                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[17px] font-[400] pe-5 tracking-wide'>Let's Chat</span>
-                                            <span className='w-[36px] h-[36px] rounded-[10px] bg-[#fff] group-hover:bg-[#FB8245] flex items-center justify-center'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024">
+                                        <Link to="https://wa.me/8801753778070" target="_blank" className="group h-[54px] w-auto relative flex items-center rounded-full ps-6 pe-[7px] border-2 border-[#1F2937] bg-[#1F2937]">
+                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[17px] font-[500] pe-4 tracking-wide'>Let's Chat</span>
+                                            <span className='w-[36px] h-[36px] rounded-full bg-[#fff] group-hover:bg-[#FB8245] flex items-center justify-center'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 1024 1024">
                                                     <path fill="#1F2937" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/>
                                                 </svg>
                                             </span>
