@@ -4,8 +4,6 @@ import skillsData from '../datas/skillsData';
 const Weapons = () => {
   return (
     <section className="sm:py-24 py-12 relative">
-      <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
-      <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops z-10'></div>
       <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10 animatable">
         <div className="relative">
           <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl sm:text-start text-center">

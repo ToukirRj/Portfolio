@@ -33,12 +33,12 @@ const Eyes = () => {
                             <div className="relative sm:w-1/2 w-full space-y-5 animatable">
                                 {serviceData.map(service => (
                                     <div key={service.id} className="flex sm:flex-row flex-col items-center gap-4 bg-white/[0.5] bg-blur shadow-lg rounded-xl px-6 py-5 animatable">
-                                        <div className="w-[50px] h-auto text-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth=".65" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
+                                        <div className="w-[55px] h-auto text-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth=".7" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
                                         </div>
                                         <div className="w-full">
-                                            <h4 className="text-[16px] font-[400] tracking-normal text-gray-900 sm:text-start text-center">{service.title}</h4>
-                                            <p className="mt-1 text-[12px] font-[400] text-gray-500 tracking-wide sm:text-start text-center">{service.description}</p>
+                                            <h4 className="text-[19px] font-[600] tracking-tight text-[#1F2937] sm:text-start text-center">{service.title}</h4>
+                                            <p className="mt-1 text-[14px] font-[400] text-[#1F2937] tracking-wide sm:text-start text-center">{service.description}</p>
                                         </div>
                                     </div>
                                 ))}
