@@ -84,24 +84,6 @@ header{
 }
 
 
-//skills
-.skill-item{
-    @apply flex items-center justify-between px-3 py-2 bg-[#f2f2f2] rounded-xl; 
-    .img-holder{
-        @apply relative flex h-10 w-10 flex-none items-center justify-center rounded-full ring-1 ring-gray-300;
-        img{
-            @apply h-7 w-7 overflow-hidden rounded-full;
-        }
-    }
-    dd{
-        @apply text-[13px] font-[500] tracking-wide text-gray-800 w-full;
-    }
-    .counter{
-        @apply flex items-center justify-center text-[#1F2937] font-medium text-[14px] w-12 h-6 rounded-full bg-[#10B881]/[.12];
-    }
-}
-
-
 //testimonial slider
 .swiper-button-prev,
 .swiper-button-next{
@@ -223,17 +205,8 @@ header{
 
 
 //experience
-.expo-link:first-child{
+.expo-link{
     @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
-}
-.expo-link:nth-child(2){
-    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
-}
-.expo-link:nth-child(3){
-    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
-}
-.gradient-stops{
-    background-image:radial-gradient(rgba(255,128,69,1), rgba(255,128,69,.9), rgba(255,128,69,.5), rgba(255,128,69,.1), transparent ,transparent);
 }
 
 
