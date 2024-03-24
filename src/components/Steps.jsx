@@ -5,13 +5,13 @@ import stepsData from '../datas/stepsData'
 const Steps = () => {
     return (
         <>
-            <section className="sm:py-24 py-12 relative">
-                <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
-                <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
+            <section className="sm:py-24 py-12 relative z-20">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div className="relative animatable">
-                        <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl sm:text-start text-center">Steps of <span className="text-[#FF8045]">Project</span></h2>
-                        <p className="mt-2 text-gray-600 sm:w-3/6 w-full sm:text-[16px] text-[13px] font-[400] tracking-wide leading-[21px] sm:text-start text-center">
+                        <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl text-center">Steps of 
+                            <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3">Project</span>
+                        </h2>
+                        <p className="mt-2 mb-7 text-[#1F2937] sm:w-3/6 mx-auto w-full sm:text-[16px] text-[13px] font-[400] tracking-wide leading-[21px] text-center">
                             I combine my thoughts with the demands of your project. And it is done to get you to your destination. That is why we proceed according to these steps. 
                             The steps will be reduced or increased as per your demand according to the project. 
                         </p>
@@ -38,7 +38,7 @@ const Steps = () => {
                                 </ol>
                             </div>
                             <div className="sm:w-4/6 w-full animatable">
-                                <div className="rounded-[30px] bg-[#FF8045]/[0.15] sm:p-8 p-5">
+                                <div className="p-5">
                                     <img src={Step} alt="steps"/>
                                 </div>
                             </div>

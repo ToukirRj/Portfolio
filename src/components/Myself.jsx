@@ -19,7 +19,7 @@ const Myself = () => {
                                 <div className="flex flex-wrap justify-start gap-6 p-4 sm:px-12 lg:block lg:space-y-6 lg:px-0">
                                     {statisticData.map(statistic => (
                                         <div key={statistic.id} className="statis flex snap-center items-center gap-4">
-                                            <div className={`h-14 w-14 rounded-xl bg-white/[0.85] shadow-lg shadow-primary/10 flex items-center justify-center`}>
+                                            <div className={`h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                             </div>
                                             <div>

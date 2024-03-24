@@ -17,14 +17,14 @@ const Eyes = () => {
                         <div className="gap-6 space-y-0 flex sm:flex-row flex-col items-center">
                             <div className="relative w-full divide-y divide-[#1F2937]/[0.2]">
                                 {serviceData.map(service => (
-                                    <div key={service.id} className="flex sm:flex-row flex-col items-center gap-3 py-8 animatable">
+                                    <div key={service.id} className="flex sm:flex-row flex-col items-center gap-3 py-6 animatable">
                                         <div className="w-1/12">
                                             <span className='w-16 h-16 rounded-xl bg-white/[0.85] shadow-lg shadow-primary/10 flex items-center justify-center'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth=".85" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
                                             </span>
                                         </div>
                                         <div className='w-3/12'>
-                                            <h4 className="text-[37px] leading-[43px] font-[700] tracking-tight text-[#1F2937] sm:text-start text-center">{service.title}</h4>
+                                            <h4 className="text-[33px] leading-[36px] font-[700] tracking-tight text-[#1F2937] sm:text-start text-center">{service.title}</h4>
                                         </div>
                                         <div className='w-8/12'>
                                             <p className="mt-1 text-[15px] font-[400] text-[#1F2937] tracking-wide sm:text-start text-center">{service.description}</p>

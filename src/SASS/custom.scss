@@ -203,28 +203,6 @@ header{
 	}
 }
 
-
-//experience
-.expo-link{
-    @apply bg-[#0FB87F]/[.1] hover:bg-[#10B881]/[.25];
-}
-
-
-// .animatable{
-//     opacity:0;
-//     transform:translate3d(0,100px,0);
-//     transition-delay:0;
-//     transition-duration:.5s;
-//     transition-timing-function:ease;
-//     transition-property: opacity, transform;
-// }
-// .animatable.animated{
-//     opacity: 1;
-//     transition-delay:.25s;
-//     transform: translateZ(0);
-// }
-
-
 .animatable{
     opacity:0;
     transform:scale(.5);
