@@ -268,4 +268,6 @@ svg.mouse #wheel {
     height:100vh;
 }
 
-
+.group:hover .btn-left{
+    left:calc(100% - 43px);
+}
