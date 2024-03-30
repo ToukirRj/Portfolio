@@ -7,7 +7,7 @@ const Weapons = () => {
       <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
         <div className="relative">
           <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl text-center">
-            The <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3">Weapons</span> Power
+            My<span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3">Weapons</span> Power
           </h2>
           <p className="mt-2 text-[#1F2937] sm:w-3/6 w-full mx-auto sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px] text-center">
             The platforms and languages that I use to apply my thoughts to the needs. My skills about them are highlighted through charts.
@@ -20,7 +20,7 @@ const Weapons = () => {
               <div key={index} className="sm:w-1/3 w-full">
                 <div className="bg-blur animatable">
                   <h2 className="flex items-center mb-3">
-                    <span className="text-[27px] w-full font-[600] tracking-tight text-[#1F2937]">{category.title}</span>
+                    <span className="text-[28px] w-full font-[600] tracking-tight text-[#1F2937]">{category.title}</span>
                   </h2>
                   <div className="divide-y divide-[#1F2937]/[.2]">
                     {category.skills.map((skill, skillIndex) => (
