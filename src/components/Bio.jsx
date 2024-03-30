@@ -28,13 +28,13 @@ const Bio = () => {
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
                                             className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#10B881]/[.25] transition-all duration-500 sm:justify-between justify-start">
-                                                <div className="flex gap-4 items-center">
-                                                    <div className="relative flex h-14 w-14 flex-none items-center justify-center rounded-full bg-white shadow-lg shadow-primary/30">
+                                                <div className="flex gap-3 items-center">
+                                                    <div className="relative flex h-12 w-12 flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
                                                     <dl className="relative">
-                                                        <dd className="text-[19px] font-[600] text-[#1F2937] w-full">{expo.company}</dd>
-                                                        <dd className="text-[15px] font-[400] text-[#1F2937] w-full">{expo.position}</dd>
+                                                        <dd className="text-[17px] font-[600] text-[#1F2937] w-full">{expo.company}</dd>
+                                                        <dd className="text-[14px] font-[400] text-[#1F2937] w-full">{expo.position}</dd>
                                                     </dl>
                                                 </div>
                                                 <dd className="text-[14px] text-[#1F2937] font-[500] uppercase sm:ml-0 sm:mt-0 mt-1 ml-[52px]">
@@ -57,13 +57,13 @@ const Bio = () => {
                                         {experienceData2.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
                                             className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#10B881]/[.25] transition-all duration-500 sm:justify-between justify-start">
-                                                <div className="flex gap-4 items-center">
-                                                    <div className="relative flex h-14 w-14 flex-none items-center justify-center rounded-full bg-white shadow-lg shadow-primary/30">
+                                                <div className="flex gap-3 items-center">
+                                                    <div className="relative flex h-12 w-12 flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
                                                     <dl className="relative">
-                                                        <dd className="text-[19px] font-[600] text-[#1F2937] w-full">{expo.company}</dd>
-                                                        <dd className="text-[15px] font-[400] text-[#1F2937] w-full">{expo.position}</dd>
+                                                        <dd className="text-[17px] font-[600] text-[#1F2937] w-full">{expo.company}</dd>
+                                                        <dd className="text-[14px] font-[400] text-[#1F2937] w-full">{expo.position}</dd>
                                                     </dl>
                                                 </div>
                                                 <dd className="text-[14px] text-[#1F2937] font-[500] uppercase sm:ml-0 sm:mt-0 mt-1 ml-[52px]">
