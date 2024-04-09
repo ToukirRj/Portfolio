@@ -21,7 +21,7 @@ const Steps = () => {
                             <div className="sm:w-2/6 w-full animatable">
                                 <ol role="list" className="overflow-hidden pl-[20px]">
                                     {stepsData.map(step => (
-                                        <li className="steplist relative w-full pb-5" key={step.id}>
+                                        <li className="steplist relative w-full pb-2" key={step.id}>
                                             <div className="bar bg-[#1F2937] w-0.5 h-full top-4 left-4 absolute" aria-hidden="true"></div>
                                             <div className="flex items-center relative">
                                                 <span className="flex items-center h-10">

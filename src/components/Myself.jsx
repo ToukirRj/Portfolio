@@ -46,9 +46,9 @@ const Myself = () => {
                                         life with a creative and insightful approach.
                                     </p>
                                     <div className="mt-6 flex justify-start">
-                                        <Link to="https://wa.me/8801753778070" target="_blank" className="group h-[54px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] border-2 border-[#1F2937] bg-[#1F2937] text-[#FB8245] ease-in-out duration-500">
-                                            <span className='w-[36px] h-[36px] group-hover:w-[36px] group-hover:h-[36px] absolute -z-[1] left-[9px] opacity-20 group-hover:opacity-100 bg-white group-hover:bg-[#FB8245] rounded-full ease-in-out duration-500 btn-left'></span>
-                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[14px] font-[500] tracking-wider uppercase'>Let&apos;s Chat</span>
+                                        <Link to="https://wa.me/8801753778070" target="_blank" className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] border-2 border-[#1F2937] bg-[#1F2937] text-[#FB8245] ease-in-out duration-500">
+                                            <span className='w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-20 group-hover:opacity-100 bg-white group-hover:bg-[#FB8245] rounded-full ease-in-out duration-500 btn-left'></span>
+                                            <span className='text-[#fff] group-hover:text-[#FB8245] text-[15px] font-[400] tracking-wider'>Let&apos;s Chat</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 1024 1024" className='relative ms-[10px] group-hover:ms-[15px] ease-in-out duration-500'>
                                                 <path fill="#fff" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"/>
                                             </svg>
