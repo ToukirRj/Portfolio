@@ -32,21 +32,21 @@ export const experienceData1 = [
 export const experienceData2 = [
     {
         id : '1',
-        link: 'https://www.upwork.com/freelancers/toukir',
-        startDate: 'Aug 2020',
-        endDate: 'Present',
-        company: 'Upwork',
-        position: 'Frontend Engineer',
-        logo: './img/jobs/upwork.webp',
-    },
-    {
-        id : '2',
         link: 'https://www.fiverr.com/toukirjoy',
         startDate: 'Mar 2017',
         endDate: 'Present',
         company: 'Fiverr',
         position: 'Frontend Engineer',
         logo: './img/jobs/fiverr.webp',
+    },
+    {
+        id : '2',
+        link: 'https://www.upwork.com/freelancers/toukir',
+        startDate: 'Aug 2020',
+        endDate: 'Present',
+        company: 'Upwork',
+        position: 'Frontend Engineer',
+        logo: './img/jobs/upwork.webp',
     },
     {
         id : '3',

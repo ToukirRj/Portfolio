@@ -10,7 +10,7 @@ const Weapons = () => {
             My<span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Weapons</span> Power
           </h2>
           <p className="mx-auto max-w-full mt-2 text-[#1F2937] sm:w-4/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px] text-center">
-            Percentage of my skills by platform and language.
+            As a professional, the percentage of my skills by platform and language
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const Weapons = () => {
                           </div>
                           <dd className='text-[#1F2937] font-[600] text-[16px] tracking-normal'>{skill.name}</dd>
                         </div>
-                        <div className="px-3 py-[2px] flex items-center justify-center text-[#1F2937] font-medium text-[17px] rounded-full bg-white shadow-xl">{skill.percent}%</div>
+                        <div className="px-3 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[15px] rounded-full bg-white shadow-xl">{skill.percent}%</div>
                       </div>
                     ))}
                   </div>

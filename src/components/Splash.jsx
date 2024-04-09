@@ -1,14 +1,12 @@
 import { Link } from 'react-router-dom'
 import Selfsign from '/img/me.webp'
 import socialLinksData from '../datas/socialLinksData';
-import CanvasAnimation from '../props/CanvasAnimation';
 
 // eslint-disable-next-line react/prop-types
 const Splash = () => {
     return (
         <>
             <div className='relative z-20'>
-                <CanvasAnimation/>
                 <section className="sm:pt-48 pb-24 relative z-10">
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                         <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
@@ -44,7 +42,6 @@ const Splash = () => {
                                 </a>
                             </div>
                         </div>
-                        
                     </div>
                 </section>
             </div>
