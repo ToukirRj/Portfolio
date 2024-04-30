@@ -8,8 +8,9 @@ const Steps = () => {
             <section className="sm:py-24 py-12 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div className="relative animatable">
-                        <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">Steps of A
-                            <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Project</span>
+                        <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">
+                            <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Steps</span> 
+                            &nbsp;of A Project
                         </h2>
                         <p className="mx-auto max-w-full mt-2 text-[#1F2937] sm:w-4/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px] text-center">
                             I use these steps to reach the destination of your project needs

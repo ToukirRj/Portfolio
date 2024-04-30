@@ -1,6 +1,5 @@
 
 import ProjectData from '../datas/projectData'
-
 const proImageSrc = (index) => `./img/projects/${index + 1}.webp`;
 
 function ProjectList (){
@@ -41,6 +40,6 @@ function ProjectList (){
             </section> 
         </div>
     );
-};
+}
 
 export default ProjectList;
