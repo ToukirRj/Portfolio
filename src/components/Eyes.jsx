@@ -37,15 +37,15 @@ const Eyes = () => {
                         </div>
 
                         
-                        <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                        <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
                             {serviceData.map(service => (
-                            <div key={service.id} className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div key={service.id} className="group relative transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                                 <div className="relative space-y-8 py-12 p-8">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none" stroke={service.iconColor} strokeWidth=".5" strokeLinecap="round" strokeLinejoin="round" className={`feather feather-${service.iconPath}`} dangerouslySetInnerHTML={{ __html: service.iconStyle }}/>
 
 
                                     <div className="space-y-2">
-                                        <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                        <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
                                             {service.title}
                                         </h5>
                                         {/* <p className="text-gray-600 dark:text-gray-300">

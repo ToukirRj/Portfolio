@@ -18,7 +18,7 @@ const skillsData = [
     ],
   },
   {
-    title: 'Web Development',
+    title: 'Development',
     skills: [
       { name: 'JavaScript Frame', icon:'./img/skills/7.webp', percent: 85 },
       { name: 'React Library', icon:'./img/skills/8.webp', percent: 80 },
