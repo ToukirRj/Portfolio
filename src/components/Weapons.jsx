@@ -24,7 +24,7 @@ const Weapons = () => {
                   </h2>
                   <div className="space-y-3">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center justify-between py-3 px-4 bg-[#000]/[.045] rounded-[12px]">
+                      <div key={skillIndex} className="flex items-center justify-between py-3 px-4 bg-[#000]/[.05] rounded-[12px]">
                         <div className="flex gap-2 items-center">
                           <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-xl">
                             <img src={skill.icon} alt="icon" width="30" height="30" className='h-7 w-7 overflow-hidden rounded-full'/>
