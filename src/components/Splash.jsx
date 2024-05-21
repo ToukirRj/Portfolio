@@ -10,7 +10,7 @@ const Splash = () => {
                 <section className="sm:pt-48 pb-24 relative z-10">
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                         <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
-                            <div className="sm:w-2/5 w-full relative">
+                            <div className="sm:w-2/5 w-full relative bg-[#000]/[0.05] rounded-[30px] p-[30px]">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
                                     Toukir Rahman
@@ -26,7 +26,7 @@ const Splash = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="sm:w-3/5 w-full sm:block flex flex-col items-center z-10 mt-10">
+                            <div className="sm:w-3/5 w-full sm:block flex flex-col items-center z-10 mt-3">
                                 <h4 className="bg-[#1f2937] text-[#fff] text-[14px] font-[500] uppercase tracking-wider mr-2 px-4 py-1 rounded-full table">Website Strategic UI Expert</h4>
                                 <h1 className="my-[30px] text-[#1f2937] sm:text-[55px] text-[24px] font-[700] sm:leading-[67px] leading-[32px] tracking-normal sm:text-start text-center">
                                     Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
