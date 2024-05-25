@@ -12,15 +12,15 @@ import Satisfy from '../components/Satisfy'
 function Home(){
   return (
     <>
-        <MainLayout>
-            <Splash/>
-            <Myself/>
-            <Eyes/>
-            <Weapons/>
-            <Steps/>
-            <Bio/>
-            <Satisfy/>
-        </MainLayout>
+      <MainLayout>
+        <Splash/>
+        <Myself/>
+        <Eyes/>
+        <Weapons/>
+        <Steps/>
+        <Bio/>
+        <Satisfy/>
+      </MainLayout>
     </>
   )
 }
