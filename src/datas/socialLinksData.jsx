@@ -27,6 +27,14 @@ const socialLinksData = [
     },
     {
       id: 3,
+      url: 'https://github.com/ToukirRj',
+      target: '_blank',
+      imageSrc:'./img/jobs/github.webp', // Assuming you have imported the image
+      platform:'GitHub',
+      role:'Frontend Engineer'
+    },
+    {
+      id: 4,
       url: 'https://www.linkedin.com/in/toukirrj/',
       target: '_blank',
       imageSrc:'./img/jobs/linkedin.webp', // Assuming you have imported the image
