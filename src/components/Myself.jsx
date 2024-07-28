@@ -18,7 +18,7 @@ const Myself = () => {
                             <div className="lg:w-3/12 sm:1/2 w-full">
                                 <div className="p-4 sm:ps-12 lg:block lg:space-y-6 lg:ps-0 sm:pe-10 pe-0">
                                     {statisticData.map(statistic => (
-                                        <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 bg-[#000]/[0.07] py-2 px-3 rounded-[15px]">
+                                        <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 shadow backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[15px]">
                                             <div className={`h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                             </div>
@@ -31,7 +31,7 @@ const Myself = () => {
                                 </div>
                             </div>
                             <div className="lg:w-3/12 sm:1/2 w-full">
-                                <img className="h-auto lg:w-[375px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px] ring-2 ring-white" src={Abme} alt="cover"/>
+                                <img className="h-auto lg:w-[375px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px] ring-4 ring-white/[0.70]" src={Abme} alt="cover"/>
                             </div>
                             <div className="lg:w-6/12 sm:1/2 w-full">
                                 <div className="px-3 ps-10">
