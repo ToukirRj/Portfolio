@@ -10,7 +10,7 @@ const Splash = () => {
                 <section className="sm:pt-[160px] pb-20 relative z-10">
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                         <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
-                            <div className="sm:w-2/5 w-full relative shadow backdrop-blur-lg rounded-[30px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.25]">
+                            <div className="sm:w-2/5 w-full relative backdrop-blur-lg rounded-[30px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.25] shadow-[0_5px_60px_0px_rgba(2,24,93,0.075)]">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
                                     Toukir Rahman
@@ -43,7 +43,7 @@ const Splash = () => {
                                             className="flex items-center space-x-3 py-3 px-5 shadow backdrop-blur-lg bg-white/[0.25] rounded-xl hover:shadow-lg hover:bg-white transition-all">
                                             <div className="flex flex-col items-center mx-auto">
                                                 <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
-                                                <p className="text-[15px] font-[600] text-[#1f2937] mt-2">{link.platform}</p>
+                                                <p className="text-[14px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p>
                                             </div>
                                         </Link>
                                     ))}

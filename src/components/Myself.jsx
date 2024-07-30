@@ -18,7 +18,7 @@ const Myself = () => {
                             <div className="lg:w-3/12 sm:1/2 w-full">
                                 <div className="p-4 sm:ps-12 lg:block lg:space-y-6 lg:ps-0 sm:pe-10 pe-0">
                                     {statisticData.map(statistic => (
-                                        <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 shadow backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[15px]">
+                                        <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[15px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
                                             <div className={`h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                             </div>
@@ -36,7 +36,7 @@ const Myself = () => {
                             <div className="lg:w-6/12 sm:1/2 w-full">
                                 <div className="px-3 ps-10">
                                     <h2 className="sm:text-[41px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent behave</h2>
-                                    <p className="mt-4 text-[15px] font-[400] text-[#1F2937] tracking-wide leading-[24px]"> 
+                                    <p className="mt-4 text-[14px] font-[400] text-[#1F2937] tracking-wide leading-[29px]"> 
                                         I ensure latest technology as it keeps me updated with latest things always. Users will experience new and get 
                                         interface according to their convenience.<br/><br/>
 
@@ -48,7 +48,7 @@ const Myself = () => {
                                     <div className="mt-6 flex justify-start">
                                         <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#12B780] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
-                                            <span className="text-[#fff] group-hover:text-[#fff] text-[15px] font-[500] tracking-normal">Let&apos;s talk</span>
+                                            <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-normal">Let&apos;s talk</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
                                                 <path fill="#fff" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
                                                 <path fill="#fff" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
