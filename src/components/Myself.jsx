@@ -19,7 +19,7 @@ const Myself = () => {
                                 <div className="p-4 sm:ps-12 lg:block lg:space-y-6 lg:ps-0 sm:pe-10 pe-0">
                                     {statisticData.map(statistic => (
                                         <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[15px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
-                                            <div className={`h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center`}>
+                                            <div className="h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                             </div>
                                             <div>
@@ -36,7 +36,7 @@ const Myself = () => {
                             <div className="lg:w-6/12 sm:1/2 w-full">
                                 <div className="px-3 ps-10">
                                     <h2 className="sm:text-[41px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent behave</h2>
-                                    <p className="mt-4 text-[14px] font-[400] text-[#1F2937] tracking-wide leading-[29px]"> 
+                                    <p className="mt-4 text-[15px] font-[400] text-[#1F2937] tracking-wide leading-[29px]"> 
                                         I ensure latest technology as it keeps me updated with latest things always. Users will experience new and get 
                                         interface according to their convenience.<br/><br/>
 
