@@ -37,13 +37,13 @@ const Myself = () => {
                                 <div className="px-3 ps-10">
                                     <h2 className="sm:text-[41px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                     <p className="mt-4 text-[15px] font-[400] text-[#1F2937] tracking-wide leading-[29px]"> 
-                                        I ensure latest technology as it keeps me updated with latest things always. Users will experience new and get 
-                                        interface according to their convenience.<br/><br/>
+                                        I ensure the latest technology as it always keeps me updated with the latest things. Users will get new experiences and 
+                                        interfaces according to their convenience.<br/><br/>
 
                                         When users open the site, they will find information or data in a format that is easy to understand and relevant, easily 
-                                        navigable and that keeps the user engaged for a long time. This is further complicated by the fact that users use a 
-                                        variety of devices. So, it will be fit and responsive on all devices. I ensure all these points to bring your brand to 
-                                        life with a creative and insightful approach.
+                                        navigable and that keeps the user engaged for a long time. This is further complicated by the fact that users use various 
+                                        devices. So, it will be fit and responsive on all devices. I ensure all these points to bring your brand to life with a 
+                                        creative and insightful approach.
                                     </p>
                                     <div className="mt-6 flex justify-start">
                                         <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#12B780] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">

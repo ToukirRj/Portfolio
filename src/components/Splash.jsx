@@ -7,7 +7,7 @@ const Splash = () => {
     return (
         <>
             <div className='relative z-20'>
-                <section className="sm:pt-[160px] pb-20 relative z-10">
+                <section className="sm:pt-[200px] pb-20 relative z-10">
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                         <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20">
                             <div className="sm:w-2/5 w-full relative backdrop-blur-lg rounded-[30px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.25] shadow-[0_5px_60px_0px_rgba(2,24,93,0.075)]">
