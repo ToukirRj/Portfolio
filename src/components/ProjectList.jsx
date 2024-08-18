@@ -23,7 +23,7 @@ function ProjectList (){
                                         <img className="h-full w-full scale-100 hover:scale-125 opacity-80 group-hover:opacity-100 transition-all duration-300" src={proImageSrc(index)} alt="img"/>
                                     </div>
                                     <div className="px-5 pt-3 pb-5">
-                                        <h1 className="text-[19px] font-[500] text-gray-700 tracking-normal group-hover:text-[#10b881] pb-1">{project.title}</h1>
+                                        <h1 className="text-[19px] font-[500] text-gray-700 tracking-normal group-hover:text-[#17b057] pb-1">{project.title}</h1>
                                         <div className="flex gap-2 tags">
                                             {project.tags.map((tag, index) => (
                                                 <span key={index} className="border text-[11px] font-[600] px-[8px] py-[1.5px] rounded uppercase tracking-wider">

@@ -8,15 +8,10 @@ const Myself = () => {
         <>
             <section id="about" className="sm:py-24 py-12 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
-                    <div className="text-center sm:mb-16 mb-4">
-                        <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">Effective 
-                        <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Facts</span></h2>
-                        <p className='mx-auto max-w-full mt-2 text-[#1F2937] sm:w-3/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[21px]'>My unique strategy that makes the target more specific</p>
-                    </div>
-                    <div className="-mx-4 sm:mx-0">
-                        <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">
-                            <div className="lg:w-3/12 sm:1/2 w-full">
-                                <div className="p-4 sm:ps-12 lg:block lg:space-y-6 lg:ps-0 sm:pe-10 pe-0">
+                    <div className="mx-4 sm:mx-0">
+                        <div className="grid grid-cols-3 sm:px-0 px-[20px] mb-16 animatable">
+                            <div className="col-span-2">
+                                <div className="grid grid-cols-2 gap-7">
                                     {statisticData.map(statistic => (
                                         <div key={statistic.id} className="flex snap-center items-center justify-start gap-3 backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[15px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
                                             <div className="h-14 w-14 rounded-xl bg-white shadow-lg shadow-primary/10 flex items-center justify-center">
@@ -30,10 +25,19 @@ const Myself = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="lg:w-3/12 sm:1/2 w-full">
+                            <div className="col-span-1">
+                                <div className="ps-16">
+                                    <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">Effective 
+                                    <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text leading-[67px]">Facts</span></h2>
+                                    <p className='mt-2 text-[#1F2937] sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[21px]'>My unique strategy that makes the target more specific</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">
+                            <div className="lg:w-4/12 sm:1/2 w-full">
                                 <img className="h-auto lg:w-[375px] w-full max-w-full sm:rounded-[1.875rem] rounded-[20px] ring-4 ring-white/[0.70]" src={Abme} alt="cover"/>
                             </div>
-                            <div className="lg:w-6/12 sm:1/2 w-full">
+                            <div className="lg:w-8/12 sm:1/2 w-full">
                                 <div className="px-3 ps-10">
                                     <h2 className="sm:text-[41px] text-[21px] font-semibold tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                     <p className="mt-4 text-[15px] font-[400] text-[#1F2937] tracking-wide leading-[29px]"> 
@@ -46,7 +50,7 @@ const Myself = () => {
                                         creative and insightful approach.
                                     </p>
                                     <div className="mt-6 flex justify-start">
-                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#12B780] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
                                             <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-normal">Let&apos;s talk</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>

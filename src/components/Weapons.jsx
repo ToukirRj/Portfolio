@@ -7,7 +7,7 @@ const Weapons = () => {
       <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
         <div className="relative">
           <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">
-            My<span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Weapons</span> Power
+            My<span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Weapons</span> Power
           </h2>
           <p className="mx-auto max-w-full mt-2 text-[#1F2937] sm:w-4/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px] text-center">
             As a professional, the percentage of my skills by platform and language

@@ -17,7 +17,7 @@ const Splash = () => {
                                 </h1>
                                 <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10">
                                     <div className="flex justify-center">
-                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#12B780] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
                                             <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">WhatsApp</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
@@ -29,9 +29,9 @@ const Splash = () => {
                                 </div>
                             </div>
                             <div className="sm:w-3/5 w-full sm:block flex flex-col items-center z-10 mt-2">
-                                <h4 className="bg-[#12B780] text-[#fff] text-[14px] font-[500] uppercase tracking-wider mr-2 px-4 py-1 rounded-full table">Website Strategic UI Expert</h4>
+                                <h4 className="bg-[#17b057] text-[#fff] text-[14px] font-[500] uppercase tracking-wider mr-2 px-4 py-1 rounded-full table">Website Strategic UI Expert</h4>
                                 <h1 className="my-[23px] text-[#1f2937] sm:text-[55px] text-[24px] font-[700] sm:leading-[64px] leading-[32px] tracking-normal sm:text-start text-center">
-                                    Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
+                                    Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
                                 <p className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] sm:text-start text-center mb-[25px]">
                                     A safe hand to take your vision & the weight of your project off your shoulders, to getting done 
                                     perfectly. A Professional Website Application Engineer with a passion for creating inspiring and influential designs. Committed to working with honesty and dedication.

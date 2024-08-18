@@ -10,7 +10,7 @@ const Bio = () => {
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
                     <div className="relative text-center animatable">
                         <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">Biography 
-                            <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Experiences</span>
+                            <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Experiences</span>
                         </h2>
                         <p className="mx-auto max-w-full mt-2 text-[#1F2937] sm:w-4/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px] text-center">
                             My accumulated experiences on official and freelancing marketplaces 
@@ -26,7 +26,7 @@ const Bio = () => {
                                     <div className="mt-3 tracking-normal divide-y divide-[#1F2937]/[0.2]">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#10B881]/[.1] transition-all duration-500 sm:justify-between justify-start">
+                                            className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#17b057]/[.1] transition-all duration-500 sm:justify-between justify-start">
                                                 <div className="flex gap-3 items-center">
                                                     <div className="relative flex h-12 w-12 flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
@@ -54,7 +54,7 @@ const Bio = () => {
                                     <div className="mt-3 tracking-normal divide-y divide-[#1F2937]/[0.2]">
                                         {experienceData2.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#10B881]/[.1] transition-all duration-500 sm:justify-between justify-start">
+                                            className="flex sm:flex-row flex-col sm:items-center items-start px-4 py-4 hover:bg-[#17b057]/[.1] transition-all duration-500 sm:justify-between justify-start">
                                                 <div className="flex gap-3 items-center">
                                                     <div className="relative flex h-12 w-12 flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>

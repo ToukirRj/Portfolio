@@ -7,7 +7,7 @@ const Eyes = () => {
                 <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-0">
                     <div className="text-center animatable">
                         <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">My 
-                            <span className="bg-gradient-to-r from-[#ff8144] to-[#10b881] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Eyes</span> to Work
+                            <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Eyes</span> to Work
                         </h2>
                         <p className="mx-auto max-w-full mt-2 text-[#1F2937] sm:w-4/6 w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px]">
                             The services I provide are up to customer satisfaction

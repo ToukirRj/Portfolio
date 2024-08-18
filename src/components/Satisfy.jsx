@@ -21,7 +21,7 @@ function satisfy (){
                             <span className="text-[#FF8045]">Quotes</span>
                         </h2>
                         <p className="mt-2 text-[#1F2937] sm:w-3/6 w-full mx-auto sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
-                            My some of respected client's happiness after project completion
+                            My some of respected client&apos;s happiness after project completion
                         </p>
                     </div>
                 </div>

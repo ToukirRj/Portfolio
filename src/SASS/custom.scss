@@ -54,9 +54,9 @@ html {
 header{
     nav{
         a{
-            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] hover:text-[#10b881] px-6;
+            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] hover:text-[#17b057] px-6;
             &.active{
-                @apply text-[#10b881];
+                @apply text-[#17b057];
             }
         }
     }
@@ -91,7 +91,7 @@ header{
     @apply top-[15px] #{!important};
     @apply w-[170px] #{!important};
     &::after {
-        @apply text-white font-[900] bg-[#0FB87F] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
+        @apply text-white font-[900] bg-[#17b057] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
         @apply text-[16px] #{!important};
     }
 }
@@ -137,7 +137,7 @@ header{
 }
 .steplist:last-child {
     span > .bgclr{
-        @apply bg-[#0FB87F];
+        @apply bg-[#17b057];
     }
     .bar{
         @apply hidden;
@@ -150,7 +150,7 @@ header{
 }
 .tags{
     span:first-child{
-        @apply text-[#10B880] bg-[#10B880]/[.18] border-[#10B880]/[.35];
+        @apply text-[#17b057] bg-[#17b057]/[.18] border-[#17b057]/[.35];
     }
 }
 .tags{
@@ -168,7 +168,7 @@ header{
 }
 .wave-bar {
     // animation: waves 250s linear infinite alternate;
-    @apply w-full h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#47CF63];
+    @apply w-full h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#17b057];
 }
 .wave-bar:nth-child(2) {
 	animation-delay: 100ms;
@@ -180,7 +180,7 @@ header{
 }
 .wave-bar:nth-child(4) {
 	animation-delay: 120ms;
-	@apply bg-[#47CF63];
+	@apply bg-[#17b057];
 }
 .wave-bar:nth-child(5) {
 	animation-delay: 70ms;
@@ -192,7 +192,7 @@ header{
 }
 .wave-bar:nth-child(7) {
 	animation-delay: 20ms;
-	@apply bg-[#47CF63];
+	@apply bg-[#17b057];
 }
 @keyframes waves {
 	from {
@@ -270,4 +270,57 @@ svg.mouse #wheel {
 
 .group:hover .btn-left{
     left:calc(100% - 43px);
+}
+
+
+
+.card {
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1;
+	background: #fbceb1;
+	border-radius: 1em;
+	position: relative;
+}
+
+.holder {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	width: 4em;
+	height: 4em;
+	background: transparent;
+}
+.holder::before, 
+.holder::after {
+  position: absolute;
+  content: "";
+  width: 1.25em;
+  height: 1.25em;
+  background: transparent;
+}
+.one {
+	inset: calc(100% - 4em) 0 0 calc(100% - 4em);
+	border-top-left-radius: 1.25em;
+	transition: 1s ease 0.5s;
+}
+.one::before {
+	inset: calc(100% - 1.25em) 0 0 -1.25em;
+  border-bottom-right-radius: 1.25em;
+  box-shadow: 0.3em 0.3em 0 0.3em rgba($color: #000000, $alpha:0);
+	transition: 1s ease;
+}
+.one::after {
+	inset: -1.25em 0 0 2.75em;
+  border-bottom-right-radius: 1.25em;
+  box-shadow: 0.3em 0.3em 0 0.3em rgba($color: #000000, $alpha:0);
+	transition: 1s ease;
+}
+
+.circle {
+	width: 3em;
+	aspect-ratio: 1;
+	background: blue;
+	border-radius: 50%;
+	z-index: 1;
 }

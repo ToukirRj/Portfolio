@@ -29,7 +29,7 @@ function Header() {
                             </button>
                         </nav>
                         <Link to="https://wa.me/8801753778070" target="_blank" 
-                            className="relative py-1 px-4 before:absolute before:inset-0 before:rounded-full before:transition-transform before:duration-300 hover:before:scale-110 before:bg-gradient-to-r from-[#ff8144] to-[#10b881]">
+                            className="relative py-1 px-4 before:absolute before:inset-0 before:rounded-full before:transition-transform before:duration-300 hover:before:scale-110 before:bg-gradient-to-r from-[#ff8144] to-[#17b057]">
                             <span className="relative text-[14px] tracking-wider font-medium text-white">Get Start</span>
                         </Link>
                         <button className='nav-btn' onClick={showNavbar}>
