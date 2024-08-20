@@ -12,26 +12,26 @@ const statisticData = [
     {
       id: 2,
       iconColor: "#17B057",
-      iconPath: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>`,
-      value: 660,
-      label: "Finished projects",
+      iconPath: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
+      value: 17564,
+      label: "Total Working hours",
       image: "../../img/statistics/s-1.svg"
     },
     {
       id: 3,
       iconColor: "#17B057",
-      iconPath: `<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line>
-      <line x1="15" y1="9" x2="15.01" y2="9"></line>`,
-      value: 590,
-      label: "Happy customers",
+      iconPath: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>`,
+      value: 660,
+      label: "Finished projects",
       image: "../../img/statistics/s-2.svg"
     },
     {
       id: 4,
       iconColor: "#17B057",
-      iconPath: `<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>`,
-      value: 17564,
-      label: "Total Working hours",
+      iconPath: `<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line>
+      <line x1="15" y1="9" x2="15.01" y2="9"></line>`,
+      value: 590,
+      label: "Happy customers",
       image: "../../img/statistics/s-3.svg"
     }
   ];
