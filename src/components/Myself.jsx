@@ -6,10 +6,10 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="sm:py-24 py-12 relative z-20">
+            <section id="about" className="py-20 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                     <div className="mx-4 sm:mx-0">
-                        <div className="grid grid-cols-12 sm:px-0 px-[20px] mb-16 animatable items-center">
+                        <div className="grid grid-cols-12 sm:px-0 px-[20px] mb-12 items-center">
                             <div className="col-span-3">
                                 <div className="ps-4 mt-5">
                                     <h2 className="xl:text-[51px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">Effective 
@@ -46,7 +46,7 @@ const Myself = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px] animatable">
+                                    <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px]">
                                         <div className="lg:w-2/12 sm:1/2 w-full">
                                             <div className="flex items-center justify-center border-2 border-[#17b057] p-2 rounded-full mt-4">
                                                 <img className="h-auto w-full max-w-full rounded-full ring-4 ring-white/[0.70]" src={Abme} alt="cover"/>
@@ -66,7 +66,7 @@ const Myself = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-4 gap-4 sm:px-0 px-[20px] mb-16 animatable">
+                        <div className="grid grid-cols-4 gap-6 sm:px-0 px-[20px] mb-16">
                             {statisticData.map(statistic => (
                                 <div key={statistic.id} className="snap-center backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[40px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
                                     <div className='flex flex-row items-center justify-between'>
@@ -76,8 +76,8 @@ const Myself = () => {
                                         </div>
                                     </div>
                                     <h2 className="ms-4 text-[2.6rem] font-bold text-[#1F2937]">{statistic.value}</h2>
-                                    <div className='flex items-center justify-center py-8'>
-                                        <img className='max-w-[220px] w-full' src={statistic.image} alt='chart'/>
+                                    <div className='flex items-center justify-center py-6'>
+                                        <img className='max-w-[240px] w-full opacity-80' src={statistic.image} alt='chart'/>
                                     </div>
                                 </div>
                             ))}

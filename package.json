@@ -13,8 +13,10 @@
   "dependencies": {
     "flowbite": "^2.1.1",
     "flowbite-react": "^0.6.4",
+    "framer-motion": "^11.3.28",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.13.0",
     "react-router-dom": "^6.19.0",
     "sass": "^1.69.5",
     "swiper": "^11.0.4",
