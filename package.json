@@ -15,6 +15,7 @@
     "flowbite-react": "^0.6.4",
     "framer-motion": "^11.3.28",
     "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.13.0",
     "react-router-dom": "^6.19.0",

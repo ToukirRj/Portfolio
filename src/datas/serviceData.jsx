@@ -20,7 +20,7 @@ const serviceData = [
     "id": 3,
     "img": "./img/services/3.svg",
     "imgPath": "./img/services/frontend.webp",
-    "title": "Fontend Dev.",
+    "title": "Front-End Development",
     "description":"From design to development, we manage it all.",
     "tools": ["UI-UX", "Prototype", "Development"]
   }

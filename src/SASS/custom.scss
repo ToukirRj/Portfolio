@@ -203,6 +203,18 @@ header{
 	}
 }
 
+.circular-progress-wrapper {
+    position: relative;
+}
+
+.circular-progress-wrapper .CircularProgressbar .CircularProgressbar-path {
+    stroke-width: var(--path-stroke-width);
+}
+
+.circular-progress-wrapper .CircularProgressbar .CircularProgressbar-trail {
+    stroke-width: var(--trail-stroke-width);
+}
+
 .animatable{
     opacity:0;
     transform:translateY(100px);

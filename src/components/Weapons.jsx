@@ -1,5 +1,8 @@
 
 import skillsData from '../datas/skillsData';
+import CircularProgress from '../props/CircularProgress';
+
+
 
 const Weapons = () => {
   return (
@@ -40,6 +43,11 @@ const Weapons = () => {
             ))}
           </div>
         </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <CircularProgress percentage={46} strokeWidth={5} />
+      </div>
+
       </div>
     </section>
   );
