@@ -331,3 +331,7 @@ svg.mouse #wheel {
 	border-radius: 50%;
 	z-index: 1;
 }
+
+.each-service:nth-child(3){
+    @apply relative -top-[150px];
+}

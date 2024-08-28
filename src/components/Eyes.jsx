@@ -8,17 +8,17 @@ const Eyes = () => {
                     <div className="sm:mt-12 mt-8 ">
                         <div className='grid grid-cols-2 gap-10 mx-[70px]'>
                             <div className='text-start'>
-                                <div className='w-[70%] mx-auto'>
-                                    <h2 className="text-[82px] font-bold text-[#1F2937] leading-[100px]">My 
-                                        <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[82px]">Eyes</span> <br/>to Work
+                                <div className='w-[65%] mx-auto mt-[50px]'>
+                                    <h2 className="text-[77px] font-bold text-[#1F2937] leading-[89px]">My 
+                                        <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[79px]">Eyes</span> <br/>to Work
                                     </h2>
-                                    <p className="mx-auto max-w-full mt-2 text-[#1F2937] w-full sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[27px]">
+                                    <p className="mx-auto max-w-full mt-2 text-[#1F2937] w-full sm:text-[27px] text-[14px] font-[200] leading-[39px]">
                                         The services I provide are up to customer satisfaction
                                     </p>
                                 </div>
                             </div>
                             {serviceData.map(service => (
-                                <div key={service.id} className="backdrop-blur-lg bg-white/[.45] shadow-[0_3px_35px_0px_rgba(2,24,93,0.075)] rounded-[64px] overflow-hidden">
+                                <div key={service.id} className="each-service backdrop-blur-lg bg-white/[.45] shadow-[0_3px_35px_0px_rgba(2,24,93,0.075)] rounded-[64px] overflow-hidden">
                                     <div className='w-full relative'>
                                         <div className='flex items-center justify-between'>
                                             <h4 className="ms-[60px] px-[15px] h-[28px] rounded-full bg-[#1F2937] flex items-center w-max text-[13px] font-medium uppercase tracking-wider text-white">
