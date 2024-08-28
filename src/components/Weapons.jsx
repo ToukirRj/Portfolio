@@ -18,36 +18,34 @@ const Weapons = () => {
         </div>
 
         <div className="sm:mt-16 mt-8 relative z-10">
-          <div className="gap-8 space-x-7 flex sm:flex-row flex-col items-center">
+          <div className="grid grid-cols-2 gap-8">
             {skillsData.map((category, index) => (
-              <div key={index} className="sm:w-1/3 w-full">
-                <div className="bg-blur animatable">
-                  <h2 className="flex items-center mb-3">
-                    <span className="text-[28px] w-full font-[600] text-center tracking-tight text-[#1F2937] border-b-2 border-dotted border-[#1F2937]/[.5]">{category.title}</span>
-                  </h2>
-                  <div className="space-y-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center justify-between py-3 px-4 bg-[#000]/[.05] rounded-[12px]">
-                        <div className="flex gap-2 items-center">
-                          <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-xl">
-                            <img src={skill.icon} alt="icon" width="30" height="30" className='h-7 w-7 overflow-hidden rounded-full'/>
-                          </div>
-                          <dd className='text-[#1F2937] font-[600] text-[16px] tracking-normal'>{skill.name}</dd>
-                        </div>
-                        <div className="px-3 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[15px] rounded-full bg-white shadow-xl">{skill.percent}%</div>
+              <div key={index} className="w-full backdrop-blur-lg bg-white/[.45] shadow-[0_3px_35px_0px_rgba(2,24,93,0.075)] rounded-[64px] overflow-hidden p-8">
+                <h2 className="flex items-center mb-3">
+                  <span className="text-[28px] w-full font-[600] text-center tracking-tight text-[#1F2937] border-b-2 border-dotted border-[#1F2937]/[.5]">{category.title}</span>
+                </h2>
+                <div className="flex items-center justify-center">
+                  {category.skills.map((skill, skillIndex) => (
+                    // <div key={skillIndex} className="flex items-center justify-between py-3 px-4 bg-[#000]/[.05] rounded-[12px]">
+                    //   <div className="flex gap-2 items-center">
+                        
+                    //     <dd className='text-[#1F2937] font-[600] text-[16px] tracking-normal'>{skill.name}</dd>
+                    //   </div>
+                    //   <div className="px-3 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[15px] rounded-full bg-white shadow-xl">{skill.percent}%</div>
+                    // </div>
+                    <div key={skillIndex} className='flex flex-col items-center justify-center'>
+                      <CircularProgress percentage={skill.percent} strokeWidth={5} />
+                      <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-xl">
+                        <img src={skill.icon} alt="icon" width="30" height="30" className='h-7 w-7 overflow-hidden rounded-full'/>
                       </div>
-                    ))}
-                  </div>
+                      <dd className='text-[#1F2937] font-[600] text-[16px] tracking-normal'>{skill.name}</dd>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
         </div>
-
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <CircularProgress percentage={46} strokeWidth={5} />
-      </div>
-
       </div>
     </section>
   );
