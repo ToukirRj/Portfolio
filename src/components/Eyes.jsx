@@ -12,7 +12,7 @@ const Eyes = () => {
                                     <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[79px]">Eyes</span> <br/>to Work
                                 </h2>
                                 <p className="mx-auto max-w-full mt-2 text-[#1F2937] w-full text-[23px] font-[300] leading-[37px]">
-                                    The services I provide are up to customer satisfaction
+                                    Depend on customer satisfaction, Here are the services I provide
                                 </p>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Eyes = () => {
                                         </div>
                                     </div>
                                     <img className='absolute -bottom-10 -right-10 -z-10 w-[420px]' src={service.img} alt="img"/>
-                                    <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FF8045]/[0.85] to-transparent -z-10'></span>
+                                    <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FF8045]/[0.65] to-transparent -z-10'></span>
                                 </div>
                             </div>
                         ))}
