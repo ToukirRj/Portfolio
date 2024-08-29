@@ -7,7 +7,7 @@ const Eyes = () => {
                 <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-8">
                     <div className='grid grid-cols-2 gap-10 mx-[70px]'>
                         <div className='text-end'>
-                            <div className='w-[65%] mx-auto mt-[80px]'>
+                            <div className='w-[65%] mx-auto mt-[50px]'>
                                 <h2 className="text-[69px] font-bold text-[#1F2937] leading-[80px]">My 
                                     <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[79px]">Eyes</span> <br/>to Work
                                 </h2>
@@ -31,14 +31,14 @@ const Eyes = () => {
                                         </h4>                      
                                         <div className='flex gap-2 mt-[200px]'>
                                             {service.tools.map((tool, index) => (
-                                                <span key={index} className="px-3 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[13px] rounded-full bg-white shadow-xl tracking-wide">
+                                                <span key={index} className="px-2 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[13px] rounded-[5px] bg-white shadow-xl tracking-wide">
                                                     {tool}
                                                 </span>
                                             ))}
                                         </div>
                                     </div>
                                     <img className='absolute -bottom-10 -right-10 -z-10 w-[420px]' src={service.img} alt="img"/>
-                                    <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FAF4E7]/[0.85] to-transparent -z-10'></span>
+                                    <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FF8045]/[0.85] to-transparent -z-10'></span>
                                 </div>
                             </div>
                         ))}

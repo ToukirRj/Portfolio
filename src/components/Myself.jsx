@@ -29,7 +29,7 @@ const Myself = () => {
                             </div>
                             <div className="col-span-9">
                                 <div className='backdrop-blur-lg bg-white/[0.25] py-8 px-10 rounded-[45px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]'>
-                                    <div className='flex flex-row justify-between'>
+                                    <div className='flex flex-row justify-between items-center'>
                                         <h2 className="text-[26px] font-[600] tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                         <div className='flex flex-row text-[14px] font-[500] text-[#1F2937] tracking-wide gap-2'>
                                             <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.25]'>
@@ -48,8 +48,8 @@ const Myself = () => {
                                     </div>
                                     <div className="flex items-center sm:flex-row flex-col sm:px-0 px-[20px]">
                                         <div className="lg:w-2/12 sm:1/2 w-full">
-                                            <div className="flex items-center justify-center border-2 border-[#17b057] p-2 rounded-full mt-4">
-                                                <img className="h-auto w-full max-w-full rounded-full ring-4 ring-white/[0.70]" src={Abme} alt="cover"/>
+                                            <div className="flex items-center justify-center border-2 border-[#17b057] p-1 rounded-full mt-4">
+                                                <img className="h-auto w-full max-w-full rounded-full" src={Abme} alt="cover"/>
                                             </div>
                                         </div>
                                         <div className="lg:w-10/12 sm:1/2 w-full">
