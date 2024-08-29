@@ -2,7 +2,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider,} from "react-router-dom";
-import { useState } from 'react';
 import './SASS/index.scss';
 
 import App from './App'
@@ -26,8 +25,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={router}/>
   </React.StrictMode>
 )
-
-function main(){
-  const [count, setCount] = useState(0);
-}
-export default main

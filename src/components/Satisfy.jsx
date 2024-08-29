@@ -13,7 +13,7 @@ function satisfy (){
     const testimonials = testyData();
     return (
         <>
-            <section className="sm:py-24 py-12 relative z-20 bg-gradient-to-b from-transparent via-[#FAF4E7] to-transparent">
+            <div className="sm:py-24 py-12 relative z-20 bg-gradient-to-b from-transparent via-[#FAF4E7] to-transparent">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
                     <div className="relative mb-10">
                         <h2 className="text-3xl font-bold text-[#1F2937] text-center md:text-4xl xl:text-5xl">
@@ -67,7 +67,7 @@ function satisfy (){
                         ))}
                     </Swiper>
                 </div>
-            </section>
+            </div>
         </>
     );
 }

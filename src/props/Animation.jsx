@@ -29,7 +29,7 @@ const Animation = () => {
                     }
                 });
             } else {
-                if (st === 200) {
+                if (st === 10) {
                     animatedBoxes.forEach((box) => {
                         box.classList.remove('animated');
                     });

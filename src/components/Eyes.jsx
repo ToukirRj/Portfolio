@@ -3,7 +3,7 @@ import serviceData from '../datas/serviceData';
 const Eyes = () => {
     return (
         <>
-            <section className="sm:py-24 py-12 relative z-20">
+            <div className="pb-20 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-8">
                     <div className="sm:mt-12 mt-8 ">
                         <div className='grid grid-cols-2 gap-10 mx-[70px]'>
@@ -41,14 +41,14 @@ const Eyes = () => {
                                             </div>
                                         </div>
                                         <img className='absolute -bottom-10 -right-10 -z-10 w-[420px]' src={service.img} alt="img"/>
-                                        <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FF8045]/[0.85] to-transparent -z-10'></span>
+                                        <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-[#FAF4E7]/[0.85] to-transparent -z-10'></span>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div> 
                 </div>
-            </section>
+            </div>
         </>
     )
 }

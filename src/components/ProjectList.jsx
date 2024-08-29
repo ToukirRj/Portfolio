@@ -5,7 +5,7 @@ const proImageSrc = (index) => `./img/projects/${index + 1}.webp`;
 function ProjectList (){
     return (
         <div>
-            <section className="sm:pt-20 sm:pb-24 py-12 relative">
+            <div className="sm:pt-20 sm:pb-24 py-12 relative">
                 <div className='h-[800px] w-[800px] absolute left-[3%] -top-[250px] opacity-40 gradient-stops'></div>
                 <div className='h-[800px] w-[800px] absolute right-[3%] -bottom-[250px] opacity-40 gradient-stops'></div>
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -37,7 +37,7 @@ function ProjectList (){
                         </div>
                     </div>
                 </div>
-            </section> 
+            </div> 
         </div>
     );
 }

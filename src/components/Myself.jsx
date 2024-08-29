@@ -6,7 +6,7 @@ import statisticData from '../datas/statisticData';
 const Myself = () => {
     return (
         <>
-            <section id="about" className="py-20 relative z-20">
+            <div id="about" className="py-20 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
                     <div className="mx-4 sm:mx-0">
                         <div className="grid grid-cols-12 sm:px-0 px-[20px] mb-12 items-center">
@@ -75,7 +75,7 @@ const Myself = () => {
                                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                         </div>
                                     </div>
-                                    <h2 className="ms-4 text-[2.6rem] font-bold text-[#1F2937]">{statistic.value}</h2>
+                                    <h2 className="ms-4 text-[39px] font-bold text-[#1F2937]">{statistic.value}</h2>
                                     <div className='flex items-center justify-center py-6'>
                                         <img className='max-w-[240px] w-full opacity-80' src={statistic.image} alt='chart'/>
                                     </div>
@@ -84,7 +84,7 @@ const Myself = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
