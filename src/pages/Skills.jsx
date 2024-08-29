@@ -7,7 +7,7 @@ function Skills(){
     <>
         <MainLayout>
             <div className="pt-20">
-                <div className="animatable">
+                <div className="">
                     <Weapons/>
                 </div>
             </div>

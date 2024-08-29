@@ -1,8 +1,6 @@
 
 import Header from './Header'
 import Footer from './Footer'
-import Animation from '../props/Animation'
-import SmoothScroll from '../props/SmoothScroll'
 import CanvasAnimation from '../props/CanvasAnimation'
 
 // eslint-disable-next-line react/prop-types
@@ -14,8 +12,6 @@ function MainLayout({children}){
                 <CanvasAnimation/>
                 {children}
             <Footer/>
-            <Animation/>
-            <SmoothScroll/>
         </>
     )
 }

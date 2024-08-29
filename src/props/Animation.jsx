@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const Animation = () => {
     useEffect(() => {
-        const animatedBoxes = document.querySelectorAll('.animatable');
+        const animatedBoxes = document.querySelectorAll('.');
         let lastScrollTop = 0;
 
         const observer = new IntersectionObserver((entries) => {

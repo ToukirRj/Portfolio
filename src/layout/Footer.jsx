@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <>
             <section className="sm:py-24 py-12 relative">
-                <div className="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0 animatable">
+                <div className="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0 ">
                     <h2 className="sm:text-[57px] text-[21px] text-center font-bold sm:leading-[67px] leading-[26px] text-gray-800 w-full max-w-5xl mx-auto">
                         One step to connect with me <br/>from everywhere
                     </h2>

@@ -7,7 +7,7 @@ import CircularProgress from '../props/CircularProgress';
 const Weapons = () => {
   return (
     <div className="pb-16 relative z-20">
-      <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
+      <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 ">
         <div className="relative">
           <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">
             My<span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Weapons</span> Power

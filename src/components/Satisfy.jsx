@@ -14,7 +14,7 @@ function satisfy (){
     return (
         <>
             <div className="sm:py-24 py-12 relative z-20 bg-gradient-to-b from-transparent via-[#FAF4E7] to-transparent">
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 animatable">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 ">
                     <div className="relative mb-10">
                         <h2 className="text-3xl font-bold text-[#1F2937] text-center md:text-4xl xl:text-5xl">
                             Satisfaction 
@@ -25,7 +25,7 @@ function satisfy (){
                         </p>
                     </div>
                 </div>
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 ">
                     <Swiper
                         modules={[Navigation, A11y]}
                         spaceBetween={20}

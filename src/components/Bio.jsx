@@ -8,7 +8,7 @@ const Bio = () => {
         <>
             <div className="sm:py-24 py-12 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="relative text-center animatable">
+                    <div className="relative text-center ">
                         <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937] text-center">Biography 
                             <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Experiences</span>
                         </h2>
@@ -18,7 +18,7 @@ const Bio = () => {
                     </div>
                     <div className="sm:mt-16 mt-8 relative z-10">
                         <div className="gap-6 space-y-0 flex sm:flex-row flex-col items-center">
-                            <div className="sm:w-1/2 w-full animatable">
+                            <div className="sm:w-1/2 w-full ">
                                 <div className="mt-2 px-8">
                                     <h2 className="flex items-center justify-start border-b-2 border-dotted border-[#1F2937]/[.5]">
                                         <span className="text-[27px] tracking-tight font-[600] text-[#1F2937]">Full Time (Official)</span>
@@ -46,7 +46,7 @@ const Bio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="sm:w-1/2 w-full animatable">
+                            <div className="sm:w-1/2 w-full ">
                                 <div className="mt-2 px-8">
                                     <h2 className="flex items-center justify-start border-b-2 border-dotted border-[#1F2937]/[.5]">
                                         <span className="text-[27px] tracking-tight font-[600] text-[#1F2937]">Freelance (Online)</span>

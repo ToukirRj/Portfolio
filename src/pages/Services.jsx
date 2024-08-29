@@ -6,7 +6,7 @@ function Services(){
   return (
     <>
         <MainLayout>
-            <div className="pt-20 animatable">
+            <div className="pt-20 ">
                 <Eyes/>
             </div>
         </MainLayout>

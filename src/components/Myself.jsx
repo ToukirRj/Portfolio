@@ -7,7 +7,7 @@ const Myself = () => {
     return (
         <>
             <div id="about" className="py-20 relative z-20">
-                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0 animatable">
+                <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0">
                     <div className="mx-4 sm:mx-0">
                         <div className="grid grid-cols-12 sm:px-0 px-[20px] mb-12 items-center">
                             <div className="col-span-3">
@@ -16,7 +16,7 @@ const Myself = () => {
                                     <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text leading-[57px]">Facts</span></h2>
                                     <p className='mt-1 text-[#1F2937] sm:text-[17px] text-[14px] font-[300] tracking-wide leading-[27px]'>My unique strategy that makes the target more specific</p>
                                     <div className="mt-4 flex justify-start">
-                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
                                             <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-normal">Let&apos;s talk</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
@@ -68,17 +68,18 @@ const Myself = () => {
                         </div>
                         <div className="grid grid-cols-4 gap-6 sm:px-0 px-[20px] mb-16">
                             {statisticData.map(statistic => (
-                                <div key={statistic.id} className="snap-center backdrop-blur-lg bg-white/[0.25] py-2 px-3 rounded-[40px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
-                                    <div className='flex flex-row items-center justify-between'>
+                                <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-white/[0.25] rounded-[40px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
+                                    <div className='flex flex-row items-center justify-between p-3'>
                                         <span className="ms-4 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
                                         <div className="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                         </div>
                                     </div>
-                                    <h2 className="ms-4 text-[39px] font-bold text-[#1F2937]">{statistic.value}</h2>
-                                    <div className='flex items-center justify-center py-6'>
-                                        <img className='max-w-[240px] w-full opacity-80' src={statistic.image} alt='chart'/>
+                                    <h2 className="ms-7 -mt-2 text-[46px] leading-[46px] font-bold text-[#1F2937]">{statistic.value}</h2>
+                                    <div className='flex items-center justify-center pt-6'>
+                                        <img className='max-w-[200px] w-full opacity-80' src={statistic.image} alt='chart'/>
                                     </div>
+                                    <span className='absolute bottom-0 h-[230px] w-full bg-gradient-to-t from-white via-transparent to-transparent'></span>
                                 </div>
                             ))}
                         </div>

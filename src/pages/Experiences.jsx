@@ -7,7 +7,7 @@ function Experiences(){
     <>
         <MainLayout>
             <div className="pt-20">
-                <div className="animatable">
+                <div className="">
                     <Bio/>
                 </div>
             </div>

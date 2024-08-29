@@ -7,7 +7,7 @@ function About(){
     <>
         <MainLayout>
             <div className="pt-20">
-                <div className="animatable">
+                <div className="">
                     <Myself/>
                 </div>
             </div>

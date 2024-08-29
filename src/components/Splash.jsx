@@ -9,7 +9,7 @@ const Splash = () => {
             <div className='relative z-20'>
                 <div className="sm:pt-[200px] pb-12 relative z-10">
                     <div className="mx-auto px-4 sm:px-12 xl:max-w-7xl xl:px-0">
-                        <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20 animatable">
+                        <div className="items-center justify-center sm:gap-12 gap-5 flex sm:flex-row flex-col relative z-20 ">
                             <div className="sm:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.25] shadow-[0_5px_60px_0px_rgba(2,24,93,0.075)]">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 sm:text-[41px] text-[26px] font-[700] text-[#1f2937] tracking-tight sm:leading-[55px] leading-[30px] w-full text-center">
@@ -17,7 +17,7 @@ const Splash = () => {
                                 </h1>
                                 <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10">
                                     <div className="flex justify-center">
-                                        <Link className="group h-[50px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
                                             <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">WhatsApp</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
