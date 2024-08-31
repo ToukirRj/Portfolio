@@ -32,16 +32,16 @@ const Myself = () => {
                                     <div className='flex flex-row justify-between items-center'>
                                         <h2 className="text-[26px] font-[600] tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                         <div className='flex flex-row text-[14px] font-[500] text-[#1F2937] tracking-wide gap-2'>
-                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.25]'>
+                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.18]'>
                                                 <p>Accessible</p>
                                             </div>
-                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.25]'>
+                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.18]'>
                                                 <p>Collaborative</p>
                                             </div>
-                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.25]'>
+                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.18]'>
                                                 <p>Empathetic</p>
                                             </div>
-                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.25]'>
+                                            <div className='h-[30px] px-4 w-auto rounded-[30px] flex items-center bg-[#FF8045]/[.18]'>
                                                 <p>Iterative</p>
                                             </div>
                                         </div>

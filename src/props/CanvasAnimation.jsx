@@ -1,5 +1,4 @@
 
-
 import { useRef, useEffect } from 'react';
 
 const CanvasAnimation = () => {
@@ -101,3 +100,7 @@ const CanvasAnimation = () => {
 }
 
 export default CanvasAnimation;
+
+
+
+

@@ -125,24 +125,6 @@ header{
 
 
 //steps works
-.steplist{
-    span > .bgclr{
-        @apply bg-[#1F2937];
-    }
-}
-.steplist:first-child {
-    span > .bgclr{
-        @apply bg-[#FF8045];
-    }
-}
-.steplist:last-child {
-    span > .bgclr{
-        @apply bg-[#17b057];
-    }
-    .bar{
-        @apply hidden;
-    }
-}
 .tags{
     span{
         @apply text-[#FF8045] bg-[#FF8045]/[.18] border-[#FF8045]/[.35];
@@ -213,6 +195,15 @@ header{
 
 .circular-progress-wrapper .CircularProgressbar .CircularProgressbar-trail {
     stroke-width: var(--trail-stroke-width);
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	dominant-baseline: ideographic !important;
+}
+
+.CircularProgressbar .CircularProgressbar-text{
+    @apply text-[17px] #{!important};
+    @apply font-[600];
 }
 
 .animatable{

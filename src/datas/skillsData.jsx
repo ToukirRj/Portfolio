@@ -5,7 +5,7 @@ const skillsData = [
     title: 'UI-UX Design',
     skills: [
       { name: 'Figma', icon:'./img/skills/1.webp', percent: 90 },
-      { name: 'XD', icon:'./img/skills/2.webp', percent: 95 },
+      { name: 'Adobe XD', icon:'./img/skills/2.webp', percent: 95 },
       { name: 'PSD', icon:'./img/skills/3.webp', percent: 80 },
     ],
   },
@@ -20,9 +20,9 @@ const skillsData = [
   {
     title: 'Development',
     skills: [
-      { name: 'JavaScript Frame', icon:'./img/skills/7.webp', percent: 85 },
-      { name: 'React Library', icon:'./img/skills/8.webp', percent: 80 },
-      { name: 'Laravel', icon:'./img/skills/9.webp', percent: 70 },
+      { name: 'JavaScript', icon:'./img/skills/7.webp', percent: 85 },
+      { name: 'React', icon:'./img/skills/8.webp', percent: 80 },
+      { name: 'Next JS', icon:'./img/skills/9.webp', percent: 70 },
     ],
   },
 ];

@@ -7,7 +7,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 const CircularProgress = ({ percentage, pathStrokeWidth, trailStrokeWidth }) => {
     const [displayPercentage, setDisplayPercentage] = useState(0);
-    const ref = useRef(null);
+    const ref = useRef(null);      
 
     useEffect(() => {
         const startAnimation = () => {
@@ -50,8 +50,8 @@ const CircularProgress = ({ percentage, pathStrokeWidth, trailStrokeWidth }) => 
             ref={ref}
             className="circular-progress-wrapper"
             style={{
-                width: 120,
-                height: 120,
+                width: 110,
+                height: 110,
                 '--path-stroke-width': `${pathStrokeWidth}px`,
                 '--trail-stroke-width': `${trailStrokeWidth}px`,
             }}
@@ -60,12 +60,12 @@ const CircularProgress = ({ percentage, pathStrokeWidth, trailStrokeWidth }) => 
                 value={displayPercentage}
                 text={`${displayPercentage}%`}
                 styles={buildStyles({
-                    rotation: 0.604,
+                    rotation: 0.6,
                     strokeLinecap: 'round',
                     // pathColor: `rgba(62, 152, 199, ${displayPercentage / 100})`,
                     pathColor: '#17B057',
-                    textColor: '#000',
-                    trailColor: '#ddd',
+                    textColor: '#1F2937',                                          
+                    trailColor: '#1F2937',
                     pathTransitionDuration: 0.5,
                 })}
                 strokeWidth={pathStrokeWidth}
@@ -82,8 +82,13 @@ CircularProgress.propTypes = {
 };
 
 CircularProgress.defaultProps = {
-    pathStrokeWidth: 8,
-    trailStrokeWidth: 3,
+    pathStrokeWidth: 5,
+    trailStrokeWidth: 2,
 };
 
 export default CircularProgress;
+
+
+
+
+                        
