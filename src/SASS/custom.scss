@@ -125,19 +125,9 @@ header{
 
 
 //steps works
-.tags{
-    span{
-        @apply text-[#FF8045] bg-[#FF8045]/[.18] border-[#FF8045]/[.35];
-    }
-}
-.tags{
-    span:first-child{
-        @apply text-[#17b057] bg-[#17b057]/[.18] border-[#17b057]/[.35];
-    }
-}
-.tags{
-    span:last-child{
-        @apply text-[#b05bc3] bg-[#b05bc3]/[.18] border-[#b05bc3]/[.35];
+.step:last-child{
+    .line{
+        @apply hidden;
     }
 }
 
@@ -204,18 +194,6 @@ header{
 .CircularProgressbar .CircularProgressbar-text{
     @apply text-[17px] #{!important};
     @apply font-[600];
-}
-
-.animatable{
-    opacity:0;
-    transform:translateY(100px);
-    transition-duration:.55s;
-    // transition-timing-function:cubic-bezier(.175,.885,.32,1.275);
-    transition-property: opacity, transform;
-}
-.animatable.animated{
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .header {
