@@ -17,7 +17,7 @@ const Home = () => {
       <Weapons/>
       <Steps/>
       <Bio/>
-      <Satisfy/>
+      {/* <Satisfy/> */}
     </MainLayout>
   );
 };

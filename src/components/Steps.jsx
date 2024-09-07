@@ -5,7 +5,7 @@ import stepsData from '../datas/stepsData'
 const Steps = () => {
     return (
         <>
-            <div className="sm:py-20 py-12 relative z-20">
+            <div className="sm:py-18 py-12 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div className='grid grid-cols-2 gap-10 place-items-center mx-[50px]'>
                         <div className="w-full relative">
@@ -25,13 +25,13 @@ const Steps = () => {
                                     <span className='absolute -z-50 -top-[4px] -left-[34px] w-[40px] h-[40px] rounded-l-[40px] rounded-tr-[40px] bg-[#1F2937] flex items-center justify-center'>
                                         <h3 className='text-[20px] font-[600] text-white'>{step.id}</h3>
                                     </span>
-                                    <div className="px-5 py-4 backdrop-blur-lg bg-white/[.085] shadow-[0_3px_20px_0px_rgba(2,24,93,0.11)] rounded-l-[30px] rounded-r-[50px]">
+                                    <div className="px-5 py-4 backdrop-blur-lg bg-white/[.25] shadow-[0_3px_45px_0px_rgba(2,24,93,0.12)] rounded-l-[30px] rounded-r-[50px]">
                                         <div className='flex items-center justify-between'>
                                             <div>
                                                 <div className="px-4 py-[3px] w-auto rounded-[30px] bg-[#FF8045]/[.28] text-[12px] font-[500] text-[#1F2937] tracking-wide table">{step.topic}</div>
                                                 <h4 className="mt-2 text-[17px] font-[400] text-[#1F2937] tracking-normal">{step.Name}</h4>
                                             </div>
-                                            <div class="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
+                                            <div className="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
                                                 <img className="h-8 w-8" src={step.image} alt="steps"/>
                                             </div>
                                         </div>
