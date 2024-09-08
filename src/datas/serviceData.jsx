@@ -5,24 +5,24 @@ const serviceData = [
     "img": "./img/services/1.svg",
     "imgPath": "./img/services/ui.svg",
     "title": "UI-UX Design",
-    "description":"From design to development, we manage it all.",
-    "tools": ["UI-UX", "Prototype", "Development"]
+    "description":"Crafting Intuitive Interfaces for Seamless Experiences.",
+    "tools": ["Figma", "XD", "PSD", "Sketch", "Prototype"]
   },
   {
     "id": 2,
     "img": "./img/services/2.svg",
     "imgPath": "./img/services/web.svg",
     "title": "Web Design",
-    "description":"From design to development, we manage it all.",
-    "tools": ["UI-UX", "Prototype", "Development"]
+    "description":"Building Your Perfect Visions into Stunning Websites.",
+    "tools": ["HTML", "CSS", "SCSS", "Bootstrap", "Tailwind"]
   },
   {
     "id": 3,
     "img": "./img/services/3.svg",
     "imgPath": "./img/services/frontend.svg",
     "title": "Front-End Development",
-    "description":"From design to development, we manage it all.",
-    "tools": ["UI-UX", "Prototype", "Development"]
+    "description":"Connect Design with Function & Dynamic Meets Emotion.",
+    "tools": ["Next JS", "React", "API's", "HTML/CSS", "Laravel"]
   }
 ];
 

@@ -29,9 +29,9 @@ const Eyes = () => {
                                         <h4 className="relative mt-8 pe-[10px] text-[28px] font-[600] text-[#1F2937] sm:text-start text-center leading-[35px] w-[84%]">
                                             {service.description}
                                         </h4>                      
-                                        <div className='flex gap-2 mt-[200px]'>
+                                        <div className='gap-2 mt-[200px]'>
                                             {service.tools.map((tool, index) => (
-                                                <span key={index} className="px-2 py-[2px] flex items-center justify-center text-[#1F2937] font-[600] text-[13px] rounded-[5px] bg-white shadow-xl tracking-wide">
+                                                <span key={index} className="inline-flex px-[10px] py-[2px] me-2 mt-2 items-center justify-center text-[#1F2937] font-[500] text-[13px] rounded-[7px] bg-white shadow-[0_3px_15px_0px_rgba(2,24,93,0.17)] tracking-wider">
                                                     {tool}
                                                 </span>
                                             ))}
