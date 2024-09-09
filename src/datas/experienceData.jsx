@@ -8,6 +8,7 @@ export const experienceData1 = [
         company: 'Next IT Ltd.',
         position: 'UI-UX Engineer',
         logo: './img/jobs/next.webp',
+        img:"./img/services/1.svg"
     },
     {
         id : '2',
@@ -17,30 +18,23 @@ export const experienceData1 = [
         company: 'WAN IT Ltd.',
         position: 'Frontend Engineer',
         logo: './img/jobs/wan.webp',
+        img:"./img/services/2.svg"
     },
     {
         id : '3',
         link: 'http://sakoyatsoft.net/',
         startDate: 'Mar 2015',
         endDate: 'Feb 2017',
-        company: 'SakoyatSoft',
+        company: 'Sakoyat Soft',
         position: 'Web Designer',
         logo: './img/jobs/sako.webp',
+        img:"./img/services/3.svg"
     },
 ];
 
 export const experienceData2 = [
     {
         id : '1',
-        link: 'https://www.fiverr.com/toukirjoy',
-        startDate: 'Mar 2017',
-        endDate: 'Present',
-        company: 'Fiverr',
-        position: 'Frontend Engineer',
-        logo: './img/jobs/fiverr.webp',
-    },
-    {
-        id : '2',
         link: 'https://www.upwork.com/freelancers/toukir',
         startDate: 'Aug 2020',
         endDate: 'Present',
@@ -49,7 +43,7 @@ export const experienceData2 = [
         logo: './img/jobs/upwork.webp',
     },
     {
-        id : '3',
+        id : '2',
         link: 'https://dribbble.com/toukirjoy',
         startDate: 'May 2018',
         endDate: 'Present',
@@ -57,4 +51,13 @@ export const experienceData2 = [
         position: 'UI-UX Engineer',
         logo: './img/jobs/dribbble.webp',
     },
+    {
+        id : '3',
+        link: 'https://www.linkedin.com/in/toukirrj/',
+        startDate: 'Mar 2017',
+        endDate: 'Present',
+        company: 'Linkedin',
+        position: 'Frontend | UX/UI Engineer',
+        logo: './img/jobs/linkedin.webp',
+    }
 ];
