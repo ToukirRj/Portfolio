@@ -18,7 +18,7 @@ export const experienceData1 = [
         company: 'WAN IT Ltd.',
         position: 'Frontend Engineer',
         logo: './img/jobs/wan.webp',
-        img:"./img/services/2.svg"
+        img:"./img/services/3.svg"
     },
     {
         id : '3',
@@ -28,7 +28,7 @@ export const experienceData1 = [
         company: 'Sakoyat Soft',
         position: 'Web Designer',
         logo: './img/jobs/sako.webp',
-        img:"./img/services/3.svg"
+        img:"./img/services/2.svg"
     },
 ];
 
@@ -41,6 +41,7 @@ export const experienceData2 = [
         company: 'Upwork',
         position: 'Frontend Engineer',
         logo: './img/jobs/upwork.webp',
+        img:"./img/services/3.svg"
     },
     {
         id : '2',
@@ -50,6 +51,7 @@ export const experienceData2 = [
         company: 'Dribbble',
         position: 'UI-UX Engineer',
         logo: './img/jobs/dribbble.webp',
+        img:"./img/services/1.svg"
     },
     {
         id : '3',
@@ -59,5 +61,6 @@ export const experienceData2 = [
         company: 'Linkedin',
         position: 'Frontend | UX/UI Engineer',
         logo: './img/jobs/linkedin.webp',
+        img:"./img/services/2.svg"
     }
 ];

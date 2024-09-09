@@ -3,7 +3,7 @@ import serviceData from '../datas/serviceData';
 const Eyes = () => {
     return (
         <>
-            <div className="pt-8 pb-20 relative z-20">
+            <div className="pt-20 pb-16 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-8">
                     <div className='grid grid-cols-2 gap-10 mx-[70px]'>
                         <div className='text-end'>

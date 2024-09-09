@@ -66,7 +66,7 @@ const Myself = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid grid-cols-4 gap-6 sm:px-0 px-[20px] mb-16">
+                        <div className="grid grid-cols-4 gap-6 sm:px-0 px-[20px]">
                             {statisticData.map(statistic => (
                                 <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-white/[0.25] rounded-[40px] shadow-[0_3px_30px_0px_rgba(2,24,93,0.09)]">
                                     <div className='flex flex-row items-center justify-between p-3'>

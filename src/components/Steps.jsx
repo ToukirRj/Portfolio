@@ -5,7 +5,7 @@ import stepsData from '../datas/stepsData'
 const Steps = () => {
     return (
         <>
-            <div className="sm:py-18 py-12 relative z-20">
+            <div className="py-20 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div className='grid grid-cols-2 gap-10 place-items-center mx-[50px]'>
                         <div className="w-full relative">
@@ -19,7 +19,7 @@ const Steps = () => {
                             </div>
                             <img src={Step} alt="steps"/>
                         </div>
-                        <div className="w-full ps-10 pt-8">
+                        <div className="w-full ps-10">
                             {stepsData.map(step => (
                                 <div key={step.id} className="step relative z-10 w-full mt-[17px]">
                                     <span className='absolute -z-50 -top-[4px] -left-[34px] w-[40px] h-[40px] rounded-l-[40px] rounded-tr-[40px] bg-[#1F2937] flex items-center justify-center'>

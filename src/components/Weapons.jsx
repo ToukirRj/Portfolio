@@ -6,7 +6,7 @@ import CircularProgress from '../props/CircularProgress';
 
 const Weapons = () => {
   return (
-    <div className="pt-14 pb-16 relative z-20">
+    <div className="py-20 relative z-20">
       <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 ">
         <div className="relative">
           <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">
@@ -20,7 +20,7 @@ const Weapons = () => {
         <div className="mt-7 relative z-10">
           <div className="grid grid-cols-3 gap-8">
             {skillsData.map((category, index) => (
-              <div key={index} className="w-full backdrop-blur-lg bg-white/[.25] shadow-[0_3px_35px_0px_rgba(2,24,93,0.095)] rounded-[45px] overflow-hidden p-10">
+              <div key={index} className="w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.07] to-white/[0.15] shadow-[0_3px_40px_0px_rgba(2,24,93,0.14)] rounded-[45px] overflow-hidden p-10">
                 <h2 className="text-[23px] font-[600] text-center tracking-tight text-[#1F2937]">{category.title}</h2>
                 <div className="flex flex-wrap justify-center items-center">
                   {category.skills.map((skill, skillIndex) => (
