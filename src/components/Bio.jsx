@@ -26,24 +26,24 @@ const Bio = () => {
                                     <div className="tracking-normal mt-4">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="overflow-hidden mt-4 px-9 pb-8 pt-6 block relative backdrop-blur-lg bg-white/[0.25] shadow hover:shadow-lg hover:bg-white transition-all duration-500 justify-between rounded-[45px]">
+                                            className="overflow-hidden mt-4 px-6 pb-6 pt-4 block relative backdrop-blur-lg bg-white/[0.25] shadow hover:shadow-lg hover:bg-white transition-all duration-500 justify-between rounded-[35px]">
                                                 <div className="flex gap-3 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
                                                     <div>
-                                                        <span className="block w-max text-[17px] font-[600] text-[#1F2937]">{expo.position}</span>
-                                                        <div className="text-[13px] text-[#1F2937] font-[500] uppercase sm:ml-0 sm:mt-0 mt-1 ml-[52px]">{expo.company}</div>
+                                                        <span className="block w-max text-[17px] font-[600] text-[#1F2937]">{expo.company}</span>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 items-center justify-start mt-4">
+                                                <div className="flex gap-3 items-center justify-between mt-4">
+                                                    <div className="text-[13px] text-[#1F2937] font-[500] sm:ml-0 sm:mt-0 mt-1 ml-[52px] tracking-wider">{expo.position}</div>
                                                     <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-[#FF8045]/[0.3] text-[14px] text-[#1F2937] font-[500] uppercase sm:ml-0 sm:mt-0 mt-1 ml-[52px]">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
                                                         <time>{expo.endDate}</time>
                                                     </dd>
                                                 </div>
-                                                <div className="h-20 w-20 absolute right-[10px] top-[10px] rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
+                                                <div className="h-16 w-16 absolute right-[10px] top-[10px] rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 1024 1024" className='relative ease-in-out duration-500'>
                                                         <path fill="#17B057" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
                                                         <path fill="#17B057" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
@@ -70,7 +70,7 @@ const Bio = () => {
                                                     </div>
                                                     <div>
                                                         <span className="block w-max text-[17px] font-[600] text-[#1F2937]">{expo.position}</span>
-                                                        <div className="text-[13px] text-[#1F2937] font-[500] uppercase sm:ml-0 sm:mt-0 mt-1 ml-[52px]">{expo.company}</div>
+                                                        <div className="text-[13px] text-[#1F2937] font-[500] sm:ml-0 sm:mt-0 mt-1 ml-[52px] tracking-wider">{expo.company}</div>
                                                     </div>
                                                 </div>
                                                 <div className="flex gap-3 items-center justify-start mt-4">
