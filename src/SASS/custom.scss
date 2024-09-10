@@ -271,3 +271,8 @@ svg.mouse #wheel {
 .each-service:nth-child(3){
     @apply relative -top-[150px];
 }
+@media only screen and (max-width: 767px) {
+    .each-service:nth-child(3){
+        @apply relative -top-0;
+    }
+}

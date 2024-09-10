@@ -6,13 +6,13 @@ import CircularProgress from '../props/CircularProgress';
 
 const Weapons = () => {
   return (
-    <div className="py-20 relative z-20">
-      <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 ">
-        <div className="relative">
-          <h2 className="xl:text-[55px] md:text-4xl sm:text-3xl text-[23px] font-bold text-[#1F2937]">
-            My<span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 leading-[67px]">Weapons</span> Power
+    <div className="md:py-20 py-6 relative z-20">
+      <div className="mx-auto px-4 md:px-12 xl:max-w-6xl xl:px-0 ">
+        <div className="relative md:text-start text-center">
+          <h2 className="xl:text-[55px] md:text-4xl text-4xl font-bold text-[#1F2937]">
+            My<span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 md:leading-[67px] leading-[45px]">Weapons</span> Power
           </h2>
-          <p className="mt-2 text-[#1F2937] sm:w-4/6 sm:text-[19px] text-[14px] font-[300] tracking-wide leading-[30px]">
+          <p className="mt-2 text-[#1F2937] md:w-4/6 md:text-[19px] text-[19px] font-[300] tracking-wide leading-[30px]">
             As a professional, the percentage of my skills by <br/>platform and language
           </p>
         </div>

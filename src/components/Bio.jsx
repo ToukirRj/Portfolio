@@ -75,7 +75,7 @@ const Bio = () => {
                                                         <path fill="#17B057" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                                     </svg>
                                                 </div>
-                                                <img class="absolute -bottom-[135px] right-0 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
+                                                <img className="absolute -bottom-[135px] right-0 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
                                             </Link>
                                         ))}
                                     </div>
@@ -112,7 +112,7 @@ const Bio = () => {
                                                         <path fill="#17B057" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                                     </svg>
                                                 </div>
-                                                <img class="absolute -bottom-[135px] right-0 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
+                                                <img className="absolute -bottom-[135px] right-0 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
                                             </Link>
                                         ))}
                                     </div>
