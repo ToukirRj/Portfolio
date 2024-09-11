@@ -14,8 +14,8 @@ const Home = () => {
       <Myself/>
       <Eyes/>
       <Weapons/>
-      <Steps/>
       <Bio/>
+      <Steps/>
       {/* <Satisfy/> */}
     </MainLayout>
   );

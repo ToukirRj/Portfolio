@@ -8,7 +8,7 @@ const Myself = () => {
         <>
             <div id="about" className="md:py-20 py-6 relative z-20">
                 <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
-                    <div className="grid md:grid-cols-12 grid-cols-1 mb-12 items-center">
+                    <div className="grid md:grid-cols-12 grid-cols-1 md:mb-12 mb-5 items-center">
                         <div className="col-span-3">
                             <div className="md:ps-4 ps-0 md:mt-5 mt-0 md:text-start text-center">
                                 <h2 className="xl:text-[51px] text-[37px] font-bold text-[#1F2937] leading-[53px]">Effective  
@@ -76,7 +76,7 @@ const Myself = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                     </div>
                                 </div>
-                                <h2 className="ms-7 -mt-2 md:text-[46px] text-[32px] leading-[46px] font-bold text-[#1F2937]">{statistic.value}</h2>
+                                <h2 className="ms-7 -mt-2 md:text-[46px] text-[40px] leading-[46px] font-bold text-[#1F2937]">{statistic.value}</h2>
                                 <div className='flex items-center justify-center md:pt-6 pt-1'>
                                     <img className='max-w-[200px] w-full opacity-80' src={statistic.image} alt='chart'/>
                                 </div>
