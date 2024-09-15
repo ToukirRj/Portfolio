@@ -1,5 +1,7 @@
-import Home from './pages/Home';
-// import { useEffect } from 'react';
+
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   // useEffect(() => {
@@ -28,9 +30,58 @@ function App() {
   //   };
   // }, []);
 
+  const [loading, setLoading] = useState(true);
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const location = useLocation(); // Hook to get the current route
+
+  useEffect(() => {
+    // Function to handle initial page load
+    const handlePageLoad = () => {
+      setLoading(false);
+      setIsInitialLoad(false);
+    };
+
+    // Add event listener for window load
+    window.addEventListener('load', handlePageLoad);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('load', handlePageLoad);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isInitialLoad) {
+      // Reset loading state on route change
+      setLoading(true);
+
+      // Timer to simulate loading delay
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 100); // Adjust the timeout duration as needed
+
+      return () => clearTimeout(timer); // Cleanup timer on unmount
+    }
+  }, [isInitialLoad, location.pathname]); // Runs on route change
+
+
   return (
     <>
-      <Home />
+      <div>
+      {loading ? 
+        <div className="loader-area">
+          <div className="waveform">
+              <div className="wave-bar"></div>
+              <div className="wave-bar"></div>
+              <div className="wave-bar"></div>
+              <div className="wave-bar"></div>
+              <div className="wave-bar"></div>
+          </div>
+      </div>
+      : 
+        <Outlet/>
+      }
+    </div>
     </>
   );
 }

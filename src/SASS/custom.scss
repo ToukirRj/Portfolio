@@ -140,7 +140,7 @@ header{
 }
 .wave-bar {
     // animation: waves 250s linear infinite alternate;
-    @apply w-full h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#17b057];
+    @apply w-[4px] h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#17b057];
 }
 .wave-bar:nth-child(2) {
 	animation-delay: 100ms;
@@ -148,22 +148,14 @@ header{
 }
 .wave-bar:nth-child(3) {
 	animation-delay: 200ms;
-	@apply bg-[#B05BC3];
+	@apply bg-[#1F2937];
 }
 .wave-bar:nth-child(4) {
 	animation-delay: 120ms;
-	@apply bg-[#17b057];
+	@apply bg-[#F97F40];
 }
 .wave-bar:nth-child(5) {
 	animation-delay: 70ms;
-	@apply bg-[#F97F40];
-}
-.wave-bar:nth-child(6) {
-	animation-delay: 200ms;
-	@apply bg-[#B05BC3];
-}
-.wave-bar:nth-child(7) {
-	animation-delay: 20ms;
 	@apply bg-[#17b057];
 }
 @keyframes waves {
