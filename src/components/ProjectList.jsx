@@ -5,12 +5,14 @@ const proImageSrc = (index) => `./img/projects/${index + 1}.webp`;
 function ProjectList (){
     return (
         <div>
-            <div className="sm:pt-20 sm:pb-24 py-12 relative">
+            <div className="md:py-20 py-6 relative">
                 <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div className="text-center mb-8 relative z-10 ">
-                        <h2 className="text-3xl font-bold text-[#1F2937] md:text-4xl xl:text-5xl">Best Recent <span className="text-[#FF8045]">Projects</span></h2>
-                        <p className="mx-auto max-w-full mt-2 text-gray-600 sm:w-3/6 w-full sm:text-[16px] text-[14px] font-[400] tracking-wide leading-[21px]">
-                            Sample project of my some works. These will give you a good idea
+                    <div className='text-center'>
+                        <h2 className="md:text-[61px] text-[47px] font-bold text-[#1F2937] md:leading-[74px] leading-[55px]">Best Recent 
+                            <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3">Project</span> <br/>
+                        </h2>
+                        <p className="mx-auto max-w-full mt-1 text-[#1F2937] w-full md:text-[19px] text-[19px] font-[300] md:leading-[37px] leading-[29px] tracking-wide">
+                            Sample project of my some works. Take a good idea about my concepts
                         </p>
                     </div>
                     <div className="relative">
