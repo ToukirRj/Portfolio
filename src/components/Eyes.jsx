@@ -17,7 +17,7 @@ const Eyes = () => {
                             </div>
                         </div>
                         {serviceData.map(service => (
-                            <div key={service.id} className="each-service backdrop-blur-lg bg-white/[.45] shadow-[0_3px_35px_0px_rgba(2,24,93,0.1)] md:rounded-[64px] rounded-[44px] overflow-hidden">
+                            <div key={service.id} className="each-service backdrop-blur-lg bg-white/[.15] shadow-[0_0px_15px_0px_rgba(2,24,93,0.085)] md:rounded-[64px] rounded-[44px] overflow-hidden">
                                 <div className='w-full relative'>
                                     <div className='absolute right-0 top-0 md:h-[130px] h-[90px] md:w-[130px] w-[90px] rounded-full bg-white flex items-center justify-center shadow'>
                                         <img width="50" height="50" src={service.imgPath} alt='icon'/>  

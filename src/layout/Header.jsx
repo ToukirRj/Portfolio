@@ -19,11 +19,11 @@ function Header() {
                         <Link to="/"><img src={logo} className='sm:w-[57px] w-[44px]' alt='logo'/></Link>
                         <nav ref={navRef} className='space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm'>
                             <NavLink to="/" activeclassname="active">Home</NavLink>
+                            <NavLink to="/Portfolio" activeclassname="active">Portfolio</NavLink>
                             <NavLink to="/About" activeclassname="active">About</NavLink>
                             <NavLink to="/Services" activeclassname="active">Services</NavLink>
                             <NavLink to="/Skills" activeclassname="active">Skills</NavLink>
                             <NavLink to="/Experiences" activeclassname="active">Experiences</NavLink>
-                            <NavLink to="/Portfolio" activeclassname="active">Portfolio</NavLink>
                             <button onClick={showNavbar} className='close-btn hidden'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path fill="red" d="m19.41 18l8.29-8.29a1 1 0 0 0-1.41-1.41L18 16.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29l-8.3 8.29A1 1 0 1 0 9.7 27.7l8.3-8.29l8.29 8.29a1 1 0 0 0 1.41-1.41Z" className="clr-i-outline clr-i-outline-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg>
                             </button>

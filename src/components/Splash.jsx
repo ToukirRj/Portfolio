@@ -10,7 +10,7 @@ const Splash = () => {
                 <div className="md:pt-[200px] pt-[110px] pb-12 relative z-10">
                     <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
                         <div className="items-center justify-center md:gap-12 gap-5 flex md:flex-row flex-col relative z-20 ">
-                            <div className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.25] shadow-[0_5px_60px_0px_rgba(2,24,93,0.075)]">
+                            <div className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.15] shadow-[0_0px_10px_0px_rgba(2,24,93,0.09)]">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 md:text-[41px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
                                     Toukir Rahman

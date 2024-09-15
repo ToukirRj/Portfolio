@@ -1,88 +1,95 @@
 const projectData = [
   {
-    title: 'aDiant Traveler',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '1',
+    title: 'Project-01',
+    image: './img/projects/1.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'SolidWorks',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '2',
+    title: 'Project-02',
+    image: './img/projects/2.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'PartnerFusion',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '3',
+    title: 'Project-03',
+    image: './img/projects/3.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'PlutoPeer',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '4',
+    title: 'Project-04',
+    image: './img/projects/4.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'WayGate',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '5',
+    title: 'Project-05',
+    image: './img/projects/5.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'GlatiFly',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '6',
+    title: 'Project-06',
+    image: './img/projects/6.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Aesthetics Essentials',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '7',
+    title: 'Project-07',
+    image: './img/projects/7.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Statpile',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '8',
+    title: 'Project-08',
+    image: './img/projects/8.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'SafeRide',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '9',
+    title: 'Project-09',
+    image: './img/projects/9.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Celestial Unity',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '10',
+    title: 'Project-10',
+    image: './img/projects/10.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Roluxary',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '11',
+    title: 'Project-11',
+    image: './img/projects/11.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 't2m',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '12',
+    title: 'Project-12',
+    image: './img/projects/12.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Phone Manager',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '13',
+    title: 'Project-13',
+    image: './img/projects/13.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'Maxco',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '14',
+    title: 'Project-14',
+    image: './img/projects/14.webp',
+    content: 'This is the content for Sidebar'
   },
   {
-    title: 'E-Commerce',
-    tags: ['UI-UX', 'Prototype', 'Development'],
+    id: '15',
+    title: 'Project-15',
+    image: './img/projects/15.webp',
+    content: 'This is the content for Sidebar'
   },
-  {
-    title: 'YourSocialOffer',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  },
-  {
-    title: 'CSSD App',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  },
-  {
-    title: 'Robust',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  },
-  {
-    title: 'Education Result',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  },
-  {
-    title: 'Freelance App',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  },
-  {
-    title: 'TrueTrend',
-    tags: ['UI-UX', 'Prototype', 'Development'],
-  }
+
 ];
 
 export default projectData;
