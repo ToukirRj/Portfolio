@@ -36,7 +36,7 @@ const Bio = () => {
                                                         <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.company}</div>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 items-center justify-start mt-4">
+                                                <div className="flex gap-3 items-center justify-startnpm install --save aos@next mt-4">
                                                     <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-[#FF8045]/[0.35] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
