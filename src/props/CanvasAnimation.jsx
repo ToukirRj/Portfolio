@@ -15,7 +15,7 @@ const CanvasAnimation = () => {
     canvas.height = height * scale;
     ctx.scale(scale, scale);
 
-    const colors = ['#F7EF00','#F60002','#F503F7'];
+    const colors = ['#F52920','#B8F622','#F61FF5','#24F5F4'];
     const mousePosition = {
       x: undefined,
       y: undefined
@@ -27,12 +27,12 @@ const CanvasAnimation = () => {
       this.radius = radius;
       this.dx = dx;
       this.dy = dy;
-      this.color = colors[Math.floor(Math.random() * 5)]
+      this.color = colors[Math.floor(Math.random() * 4)]
       this.scale = this.radius;
       this.draw = () => {
         ctx.fillStyle = this.color;
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.scale, 0, Math.PI * 2);
+        ctx.arc(this.x, this.y, this.scale, 4, Math.PI * 10);
         ctx.fill();
       };
     }
@@ -40,11 +40,11 @@ const CanvasAnimation = () => {
     const circles = []
 
     function create() {
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 4; i++) {
         const x = Math.floor(Math.random() * width);
         const y = Math.floor(Math.random() * height);
-        const size = Math.floor(Math.random() * 250)
-        const dx = Math.floor(Math.random() * 2) - 0;
+        const size = Math.floor(Math.random() * 200)
+        const dx = Math.floor(Math.random() * 4) - 0;
         const dy = Math.floor(Math.random() * 4) - 0;
         let c1 = new Circle(x, y, size, dx, dy);
         c1.draw();

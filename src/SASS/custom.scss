@@ -213,7 +213,7 @@ svg.mouse #wheel {
 }
 
 .canvas {
-	filter: blur(200px);
+	// filter: blur(200px);
     @apply opacity-[0.32] fixed -z-10 top-0 left-0 w-full h-[100vh];
 }
 
