@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "flowbite": "^2.1.1",
     "flowbite-react": "^0.6.4",
     "framer-motion": "^11.3.28",
