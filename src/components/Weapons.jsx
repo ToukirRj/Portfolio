@@ -20,7 +20,7 @@ const Weapons = () => {
         <div className="md:mt-7 mt-4 relative z-10">
           <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4">
             {skillsData.map((category, index) => (
-              <div key={index} className="w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.09] to-white/[0.15] shadow-[0_0px_7px_0px_rgba(2,24,93,0.12)] rounded-[45px] overflow-hidden p-10">
+              <div key={index} className="w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0px_7px_0px_rgba(2,24,93,0.15)] rounded-[45px] overflow-hidden p-10">
                 <h2 className="text-[23px] font-[600] text-center tracking-tight text-[#1F2937]">{category.title}</h2>
                 <div className="flex flex-wrap justify-center items-center">
                   {category.skills.map((skill, skillIndex) => (

@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <footer className="md:mt-12 mt-6 relative">
                 <div className="md:mb-20 mb-10 relative mx-auto max-w-full lg:max-w-6xl md:px-0 px-4">
-                    <div className='md:py-12 py-7 px-4 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.07] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[45px] overflow-hidden'>
+                    <div className='md:py-12 py-7 px-4 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[45px] overflow-hidden'>
                         <h2 className="md:text-[50px] text-[25px] text-center md:font-bold font-[700] md:leading-[57px] leading-[30px] text-gray-800 w-full max-w-5xl mx-auto">
                             One step to connect with me <br/>from everywhere
                         </h2>

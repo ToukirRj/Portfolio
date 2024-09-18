@@ -1,106 +1,84 @@
-
-import { useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const CanvasAnimation = () => {
   const canvasRef = useRef(null);
-
+  
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    const scale = window.devicePixelRatio;
-    canvas.width = width * scale;
-    canvas.height = height * scale;
-    ctx.scale(scale, scale);
-
-    const colors = ['#F52920','#B8F622','#F61FF5','#24F5F4'];
-    const mousePosition = {
-      x: undefined,
-      y: undefined
-    }
-
-    function Circle(x, y, radius, dx, dy) {
-      this.x = x;
-      this.y = y;
-      this.radius = radius;
-      this.dx = dx;
-      this.dy = dy;
-      this.color = colors[Math.floor(Math.random() * 4)]
-      this.scale = this.radius;
-      this.draw = () => {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.scale, 4, Math.PI * 10);
-        ctx.fill();
-      };
-    }
-
-    const circles = []
-
-    function create() {
-      for (let i = 0; i < 4; i++) {
-        const x = Math.floor(Math.random() * width);
-        const y = Math.floor(Math.random() * height);
-        const size = Math.floor(Math.random() * 200)
-        const dx = Math.floor(Math.random() * 4) - 0;
-        const dy = Math.floor(Math.random() * 4) - 0;
-        let c1 = new Circle(x, y, size, dx, dy);
-        c1.draw();
-        circles.push(c1);
+    const canvasContext = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    class Circle {
+      constructor(x, y, dx, dy, radius, color) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.color = color;
       }
-      update();
+      
+      draw = () => {
+        canvasContext.beginPath();
+        canvasContext.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
+        canvasContext.lineWidth = 2;
+        canvasContext.fillStyle = this.color;
+        canvasContext.fill();
+      }
+      
+      update = () => {
+        if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+          this.dx = -this.dx;
+        }
+
+        if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+          this.dy = -this.dy;
+        }
+
+        this.x += this.dx;
+        this.y += this.dy;
+
+        this.draw();
+      }
     }
-    create()
+    
+    const colorPalette = ['#FF7700', '#16C95F', '#D428FF', '#FF2F32'];
+    const circleArray = [];
 
-    function update() {
-      ctx.clearRect(0, 0, width, height);
-      circles.forEach(circle => {
-        if (circle.x > width) {
-          circle.dx = -circle.dx;
-        }
-        if (circle.x < 0) {
-          circle.dx = -circle.dx;
-        }
+    // Ensure that all four colors are used
+    for (let i = 0; i < colorPalette.length; i++) {
+      const x = Math.random() * (innerWidth - 200) + 50;
+      const y = Math.random() * (innerHeight - 200) + 50;
+      const radius = 230;
 
-        if (circle.y > height) {
-          circle.dy = -circle.dy;
-        }
-        if (circle.y < 0) {
-          circle.dy = -circle.dy;
-        }
+      // Increased speed: larger range for dx and dy
+      const dx = (Math.random() - 0.5) * 12;  // Adjusted to increase speed
+      const dy = (Math.random() - 0.5) * 12;  // Adjusted to increase speed
 
-        circle.x += circle.dx;
-        circle.y += circle.dy;
-
-        circle.draw();
-      })
-      requestAnimationFrame(update)
+      const color = colorPalette[i]; // Use one color per iteration
+      
+      circleArray.push(new Circle(x, y, dx, dy, radius, color));
     }
 
-    document.addEventListener('mousemove', (event) => {
-      mousePosition.x = event.x;
-      mousePosition.y = event.y;
-    })
+    const animate = () => {
+      requestAnimationFrame(animate);
+      canvasContext.clearRect(0, 0, innerWidth, innerHeight);
 
-    document.addEventListener('touchmove', (event) => {
-      mousePosition.x = event.touches[0].clientX;
-      mousePosition.y = event.touches[0].clientY;
-    })
+      for (let i = 0; i < circleArray.length; i++) {
+        circleArray[i].update();
+      }
+    };
 
-    // Clean-up
+    animate();
+
+    // Clean up on component unmount
     return () => {
-      document.removeEventListener('mousemove', () => {});
-      document.removeEventListener('touchmove', () => {});
+      cancelAnimationFrame(animate);
     };
   }, []);
-
-  return <canvas ref={canvasRef} className="canvas"></canvas>;
-}
+  
+  return <canvas ref={canvasRef}></canvas>;
+};
 
 export default CanvasAnimation;
-
-
-
-
