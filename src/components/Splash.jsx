@@ -33,7 +33,7 @@ const Splash = () => {
                             </div>
                             <div className="md:w-3/5 w-full sm:block flex flex-col items-center z-10 md:mt-2 mt-6">
                                 <h4 className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto">Front-End Engineer | UX/UI Engineer</h4>
-                                <h1 className="my-[23px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center">
+                                <h1 className="md:my-[23px] my-[17px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center">
                                     Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
                                 <p className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] md:text-start text-center mb-[25px]">
                                     A safe hand to take your vision & the weight of your project off your shoulders, to getting done 

@@ -1,6 +1,6 @@
 
 import ProjectData from '../datas/projectData';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function ProjectList (){
     const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,23 @@ function ProjectList (){
       setActiveData(data);
       setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            // Disable scrolling
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Clean up to restore scroll behavior when the component unmounts
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
+
     return (
         <div className='md:py-20 py-6 w-full'>
             <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
@@ -24,33 +41,45 @@ function ProjectList (){
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
                     {ProjectData.map((item) => (
                         <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-1 w-full h-auto rounded-[19px] bg-[#1F2937]/[.09] group transition-all duration-300 overflow-hidden'>
-                            <div className='w-full h-auto overflow-hidden bg-[#156834] rounded-[15px] transition-all duration-300'>
-                                <img src={item.image} alt='pro-img' className='group-hover:opacity-50 transition-all duration-300'/>
+                            <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[15px] transition-all duration-300'>
+                                <img src={item.image} alt='pro-img' className='group-hover:opacity-40 transition-all duration-300'/>
                             </div>
-                            {/* <h3 className='text-slate-400 text-[19px] font-[500] text-center py-4'>{item.title}</h3> */}
-                            <span className="invisible group-hover:visible absolute top-0 bottom-0 left-0 right-0 mx-auto my-auto w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                            <div className='absolute bottom-0 left-0 w-full h-full text-center px-3 scale-0 group-hover:scale-100 bg-gradient-to-t from-[#1F2937]/[.9] via-[#1F2937]/[.035] to-transparent flex items-end justify-center'>
+                                <h3 className='m-0 text-[15px] text-white font-[400] text-center py-3 tracking-wide'>{item.title}</h3>
+                            </div>
+                            <span className="absolute top-0 scale-0 group-hover:scale-100 bottom-0 left-0 right-0 mx-auto my-auto w-14 h-14 bg-white rounded-full flex items-center justify-center transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#25AD56" d="M15.85 3.85L17.3 5.3l-2.18 2.16c-.39.39-.39 1.03 0 1.42s1.03.39 1.42 0L18.7 6.7l1.45 1.45a.5.5 0 0 0 .85-.36V3.5c0-.28-.22-.5-.5-.5h-4.29a.5.5 0 0 0-.36.85m-12 4.3L5.3 6.7l2.16 2.18c.39.39 1.03.39 1.42 0s.39-1.03 0-1.42L6.7 5.3l1.45-1.45A.5.5 0 0 0 7.79 3H3.5c-.28 0-.5.22-.5.5v4.29c0 .45.54.67.85.36m4.3 12L6.7 18.7l2.18-2.16c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L5.3 17.3l-1.45-1.45a.5.5 0 0 0-.85.36v4.29c0 .28.22.5.5.5h4.29a.5.5 0 0 0 .36-.85m12-4.3L18.7 17.3l-2.16-2.18c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l2.18 2.16l-1.45 1.45a.5.5 0 0 0 .36.85h4.29c.28 0 .5-.22.5-.5v-4.29a.5.5 0 0 0-.85-.36"/></svg>
                             </span>
-                            <div className='invisible absolute bottom-0 left-0 w-full h-auto p-3 pt-16 bg-gradient-to-t from-[#1F2937]/[.9] to-transparent group-hover:visible'>
-                                <div className='w-full h-[48px] flex items-center justify-center backdrop-blur-lg bg-white/[0.75] p-2 rounded-[7px] text-center'>
-                                    <h3>{item.title}</h3>
-                                </div>
-                            </div>
                         </a>
                     ))}
                 </div>
             </div>
 
 
-            <div className={`fixed z-[99999] bottom-0 left-0 w-full h-[94vh] bg-[#FAF4E7]/[.85] backdrop-blur-lg text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out z-50`}>
-                <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
-                        Close
-                </button>
+            <div className={`fixed z-[99999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto bg-[#FAF4E7] text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out z-50 rounded-t-[30px]`}>
+                <div className="sticky top-0 z-10 w-full">
+                    <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
+                        <h2 className="text-[23px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center">{activeData.title}</h2>
+                    </div>
+                    <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#F60002" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="11.999" r="9"/><path d="m15 9l-6 6m0-6l6 6"/>
+                            </g>
+                        </svg>   
+                    </button>
+                </div>
+
 
                 {activeData && (
-                    <div className="p-4">
-                        <h2 className="text-xl font-semibold">{activeData.title}</h2>
-                        <p className="mt-4">{activeData.content}</p>
+                    <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
+                        <div className="relative">
+                            <img src={activeData.image} alt='pro-img' className='w-full h-auto rounded-[15px]'/>
+                            <div className="w-full py-14">
+                                <h1>Short Intro</h1>
+                                <p className="mt-4">{activeData.content}</p>
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>

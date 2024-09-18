@@ -11,7 +11,7 @@ const Eyes = () => {
                                 <h2 className="md:text-[69px] text-[47px] font-bold text-[#1F2937] md:leading-[80px] leading-[55px]">My 
                                     <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3">Eyes</span> <br/>to Work
                                 </h2>
-                                <p className="mx-auto max-w-full mt-2 text-[#1F2937] w-full md:text-[23px] text-[19px] font-[300] md:leading-[37px] leading-[29px]">
+                                <p className="mx-auto max-w-full mt-2 text-[#1F2937] w-full md:text-[23px] text-[17px] font-[300] md:leading-[37px] leading-[29px] md:tracking-normal tracking-wide">
                                     Depend on customer satisfaction, Here are the services I provide
                                 </p>
                             </div>

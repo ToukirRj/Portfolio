@@ -1,25 +1,47 @@
 
 import { Link } from 'react-router-dom'
 import socialLinksData from '../datas/socialLinksData';
+import Chat from '/img/chat.webp'
 
 const Footer = () => {
     return (
         <>
             <footer className="md:mt-12 mt-6 relative">
                 <div className="md:mb-20 mb-10 relative mx-auto max-w-full lg:max-w-6xl md:px-0 px-4">
-                    <div className='md:py-12 py-7 px-4 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[45px] overflow-hidden'>
-                        <h2 className="md:text-[50px] text-[25px] text-center md:font-bold font-[700] md:leading-[57px] leading-[30px] text-gray-800 w-full max-w-5xl mx-auto">
-                            One step to connect with me <br/>from everywhere
-                        </h2>
-                        <div className="md:mt-5 mt-3 flex justify-center">
-                            <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
-                                <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
-                                <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">WhatsApp</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
-                                    <path fill="#fff" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
-                                    <path fill="#fff" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
-                                </svg>
-                            </Link>       
+                    <div className='text-center md:py-12 py-7 md:px-8 px-5 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[55px] overflow-hidden'>
+                        <div className='grid md:grid-cols-5 grid-cols-1 md:place-items-center place-items-inherit'>
+                            <div className='md:col-span-2 col-span-1'>
+                                <img src={Chat} alt='chat' className='w-auto max-w-full md:h-[280px] h-auto mx-auto md:mb-0 mb-6'/>
+                            </div>
+                            <div className='md:col-span-3 col-span-1'>
+                                <div className='relative w-full text-center'>
+                                    <span className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto">Quick Project Contract</span>
+                                    <h2 className="my-3 md:text-[45px] text-[21px] md:text-start text-center md:font-bold font-[700] md:leading-[52px] leading-[30px] text-gray-800 w-full max-w-5xl mx-auto">
+                                        One step to connect with me from everywhere
+                                    </h2>
+                                    <p className='text-[15px] leading-[27px] font-[400] tracking-wide text-[#1F2937] md:text-start text-center mb-[25px]'>
+                                        Have a project on mind? And, Want it visible with a distinct design? Just inform me, I&apos;m interested in how to serve best and aim to be your reliable ideal person.
+                                    </p>
+                                    <div className="md:mt-5 mt-3 flex md:justify-start md:flex-row flex-col items-center justify-center md:space-x-3 space-x-0 md:space-y-0 space-y-3">
+                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                            <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
+                                            <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">Quick Hire</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
+                                                <path fill="#fff" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
+                                                <path fill="#fff" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
+                                            </svg>
+                                        </Link>       
+                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                            <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
+                                            <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">WhatsApp</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
+                                                <path fill="#fff" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
+                                                <path fill="#fff" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
+                                            </svg>
+                                        </Link>       
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
