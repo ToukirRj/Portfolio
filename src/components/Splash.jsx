@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import Selfsign from '/img/me.webp'
 import socialLinksData from '../datas/socialLinksData';
+import AOS from 'aos';
+
+AOS.init();
 
 // eslint-disable-next-line react/prop-types
 const Splash = () => {
@@ -10,7 +13,7 @@ const Splash = () => {
                 <div className="md:pt-[200px] pt-[110px] pb-12 relative z-10">
                     <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
                         <div className="items-center justify-center md:gap-12 gap-5 flex md:flex-row flex-col relative z-20 ">
-                            <div className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-white/[0.15] shadow-[0_0px_10px_0px_rgba(2,24,93,0.09)]">
+                            <div data-aos="fade-up" className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 md:text-[41px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
                                     Toukir Rahman
@@ -40,7 +43,7 @@ const Splash = () => {
                                 <div className="flex items-center md:justify-start justify-center grid-cols-4 md:space-x-5 space-x-0 md:gap-0 gap-2 mx-auto">
                                     {socialLinksData.map(link => (
                                         <Link key={link.id} to={link.url} target={link.target}
-                                            className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow backdrop-blur-lg bg-white/[0.25] rounded-xl hover:shadow-lg hover:bg-white transition-all">
+                                            className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.035] to-white/[0.15] rounded-xl hover:shadow-lg hover:bg-white transition-all">
                                             <div className="flex flex-col items-center mx-auto">
                                                 <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
                                                 <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p>

@@ -27,7 +27,7 @@ const Myself = () => {
                             </div>
                         </div>
                         <div className="col-span-9">
-                            <div className='backdrop-blur-lg bg-white/[0.15] py-8 md:px-10 px-3 rounded-[45px] shadow-[0_0px_10px_0px_rgba(2,24,93,0.09)]'>
+                            <div className='backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] py-8 md:px-10 px-3 rounded-[45px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]'>
                                 <div className='flex md:flex-row flex-col justify-between md:items-center items-center'>
                                     <h2 className="text-[26px] font-[600] tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                     <div className='md:flex table text-center flex-row text-[14px] font-[500] text-[#1F2937] tracking-wide gap-2'>
@@ -69,7 +69,7 @@ const Myself = () => {
                     </div>
                     <div className="grid md:grid-cols-4 grid-cols-1 md:gap-6 gap-3">
                         {statisticData.map(statistic => (
-                            <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-white/[0.15] rounded-[40px] shadow-[0_0px_15px_0px_rgba(2,24,93,0.085)]">
+                            <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] rounded-[40px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]">
                                 <div className='flex flex-row items-center justify-between p-3'>
                                     <span className="ms-4 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
                                     <div className="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">

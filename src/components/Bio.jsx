@@ -19,14 +19,14 @@ const Bio = () => {
                     <div className="md:mt-8 mt-4 relative z-10">
                         <div className="md:gap-8 gap-4 grid md:grid-cols-2 grid-cols-1">
                             <div className="w-full">
-                                <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-white/[.25] shadow-[0_0px_7px_0px_rgba(2,24,93,0.08)] md:rounded-[45px] rounded-[40px]">
+                                <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)] md:rounded-[45px] rounded-[40px]">
                                     <h2 className="flex items-center justify-center">
                                         <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Full Time (Official)</span>
                                     </h2>
                                     <div className="tracking-normal mt-4">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-8 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.2] to-white shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[40px] rounded-[28px]">
+                                            className="group overflow-hidden mt-4 md:px-8 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.08] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[40px] rounded-[28px]">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
@@ -36,7 +36,7 @@ const Bio = () => {
                                                         <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.company}</div>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 items-center justify-start mt-4">
+                                                <div className="flex gap-3 items-center justify-startnpm install --save aos@next mt-4">
                                                     <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-[#FF8045]/[0.35] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
@@ -56,14 +56,14 @@ const Bio = () => {
                                 </div>
                             </div>
                             <div className="w-full ">
-                                <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-white/[.25] shadow-[0_0px_7px_0px_rgba(2,24,93,0.08)] md:rounded-[45px] rounded-[40px]">
+                                <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.07] to-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)] md:rounded-[45px] rounded-[40px]">
                                     <h2 className="flex items-center justify-center">
                                         <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Freelance (Online)</span>
                                     </h2>
                                     <div className="tracking-normal mt-4">
                                         {experienceData2.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-8 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.35] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]">
+                                            className="group overflow-hidden mt-4 md:px-8 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.2] to-white shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
@@ -86,7 +86,7 @@ const Bio = () => {
                                                         <path fill="#17B057" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                                     </svg>
                                                 </div>
-                                                <img className="absolute md:-bottom-[145px] md:right-0 -bottom-[150px] -right-10 -z-10 w-[280px] opacity-30" src={expo.img} alt="img"></img>
+                                                {/* <img className="absolute md:-bottom-[145px] md:right-0 -bottom-[150px] -right-10 -z-10 w-[280px] opacity-30" src={expo.img} alt="img"></img> */}
                                             </Link>
                                         ))}
                                     </div>

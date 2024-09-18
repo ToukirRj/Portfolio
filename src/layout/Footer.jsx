@@ -30,7 +30,7 @@ const Footer = () => {
                             <div className="flex items-center md:justify-start justify-center grid-cols-4 md:space-x-5 space-x-0 md:gap-0 gap-2 mx-auto">
                                 {socialLinksData.map(link => (
                                     <Link key={link.id} to={link.url} target={link.target}
-                                        className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow backdrop-blur-lg bg-white/[0.25] rounded-xl hover:shadow-lg hover:bg-white transition-all">
+                                        className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.08] to-white/[0.15] rounded-xl hover:shadow-lg hover:bg-white transition-all">
                                         <div className="flex flex-col items-center mx-auto">
                                             <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
                                             <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p>
