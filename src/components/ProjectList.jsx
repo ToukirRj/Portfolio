@@ -13,14 +13,10 @@ function ProjectList (){
 
     useEffect(() => {
         if (isOpen) {
-            // Disable scrolling
             document.body.style.overflow = 'hidden';
         } else {
-            // Enable scrolling
             document.body.style.overflow = 'auto';
         }
-
-        // Clean up to restore scroll behavior when the component unmounts
         return () => {
             document.body.style.overflow = 'auto';
         };
@@ -40,8 +36,8 @@ function ProjectList (){
                 </div>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
                     {ProjectData.map((item) => (
-                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-1 w-full h-auto rounded-[19px] bg-[#1F2937]/[.09] group transition-all duration-300 overflow-hidden'>
-                            <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[15px] transition-all duration-300'>
+                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-1 w-full h-auto rounded-[19px] bg-[#1F2937]/[.15] group transition-all duration-300 overflow-hidden'>
+                            <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[17px] transition-all duration-300'>
                                 <img src={item.image} alt='pro-img' className='group-hover:opacity-40 transition-all duration-300'/>
                             </div>
                             <div className='absolute bottom-0 left-0 w-full h-full text-center px-3 scale-0 group-hover:scale-100 bg-gradient-to-t from-[#1F2937]/[.9] via-[#1F2937]/[.035] to-transparent flex items-end justify-center'>
@@ -54,44 +50,35 @@ function ProjectList (){
                     ))}
                 </div>
             </div>
-
-
             <div className={`fixed z-[99999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto bg-[#FAF4E7] text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out z-50 rounded-t-[30px]`}>
-                <div className="sticky top-0 z-10 w-full">
-                    <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
-                        <h2 className="text-[23px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center">{activeData.title}</h2>
-                    </div>
-                    <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                            <g fill="none" stroke="#F60002" strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="11.999" r="9"/><path d="m15 9l-6 6m0-6l6 6"/>
-                            </g>
-                        </svg>   
-                    </button>
-                </div>
-
-
-                {activeData && (
-                    <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
-                        <div className="relative">
-                            <img src={activeData.image} alt='pro-img' className='w-full h-auto rounded-[15px]'/>
-                            <div className="w-full py-14">
-                                <h1>Short Intro</h1>
-                                <p className="mt-4">{activeData.content}</p>
+                {activeData && (  
+                    <>
+                        <div className="sticky top-0 z-10 w-full">
+                            <div className="mx-auto md:max-w-5xl max-w-full md:px-0 px-4">
+                                <h2 className="text-[23px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center">{activeData.title}</h2>
+                            </div>
+                            <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#F60002" strokeLinecap="round" strokeLinejoin="round">
+                                        <circle cx="12" cy="11.999" r="9"/><path d="m15 9l-6 6m0-6l6 6"/>
+                                    </g>
+                                </svg>   
+                            </button>
+                        </div>
+                        <div className="mx-auto md:max-w-5xl max-w-full md:px-0 px-4">
+                            <div className="relative">
+                                <img src={activeData.image} alt='pro-img' className='w-full h-auto rounded-[15px]'/>
+                                <div className="mx-auto md:max-w-[40rem] max-w-full pt-10 pb-[150px]">
+                                    <h1 className='text-[23px] text-[#1F2937] font-[700]'>Short Intro</h1>
+                                    <p className="mt-4 text-[15px] text-[#1F2937] font-[400] tracking-wide leading-[29px]">{activeData.content}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </>
                 )}
             </div>
-
-
-            <div 
-                className={`fixed z-[999] top-0 left-0 w-full h-full bg-black bg-opacity-50 ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out`}
-                onClick={() => setIsOpen(false)}
-            ></div>
+            <div className={`fixed z-[999] top-0 left-0 w-full h-full bg-[#1F2937] bg-opacity-70 ${isOpen ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out`} onClick={() => setIsOpen(false)}></div>
         </div>
-
-
     );
 }
 

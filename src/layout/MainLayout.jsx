@@ -1,19 +1,27 @@
 
-import Header from './Header'
-import Footer from './Footer'
-import CanvasAnimation from '../props/CanvasAnimation'
+// MainLayout.jsx
+import Header from './Header';
+import Footer from './Footer';
+import CanvasAnimation from '../props/CanvasAnimation';
+import RightOffCanvas from '../props/RightOffCanvas';
+import { useState } from 'react';
 
-// eslint-disable-next-line react/prop-types
-function MainLayout({children}){
-    window. scrollTo(0, 0)
+function MainLayout({ children }) {
+  const [isOffCanvasOpen, setOffCanvasOpen] = useState(false);
+
+  const toggleOffCanvas = () => {
+    setOffCanvasOpen(prev => !prev);
+  };
+
   return (
-        <>
-            <Header/>
-                <CanvasAnimation/>
-                {children}
-            <Footer/>
-        </>
-    )
+    <>
+      <Header onToggleOffCanvas={toggleOffCanvas}/>
+        <CanvasAnimation/>
+        {children}
+        <RightOffCanvas isOpen={isOffCanvasOpen} onClose={() => setOffCanvasOpen(false)}/>
+      <Footer onToggleOffCanvas={toggleOffCanvas}/>
+    </>
+  );
 }
 
-export default MainLayout
+export default MainLayout;

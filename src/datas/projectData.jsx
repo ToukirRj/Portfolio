@@ -16,7 +16,7 @@ const projectData = [
     id: '3',
     title: 'Planto- E-commerce',
     image: './img/projects/3.webp',
-    content: "Planto is a e-commerce platform for the green platation to make life better with green environment."
+    content: "Planto is a e-commerce platform for the green platation to make life better with green environment. they play a crucial role in mitigating climate change. Through photosynthesis, green leaves absorb carbon dioxide from the atmosphere and release oxygen, acting as natural air purifiers. Forests, plants, and trees, with their vast green canopies, help regulate the Earth's temperature."
   },
   {
     id: '4',

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import socialLinksData from '../datas/socialLinksData';
 import Chat from '/img/chat.webp'
 
-const Footer = () => {
+const Footer = ({ onToggleOffCanvas }) => {
     return (
         <>
             <footer className="md:mt-12 mt-6 relative">
@@ -23,7 +23,9 @@ const Footer = () => {
                                         Have a project on mind? And, Want it visible with a distinct design? Just inform me, I&apos;m interested in how to serve best and aim to be your reliable ideal person.
                                     </p>
                                     <div className="md:mt-5 mt-3 flex md:justify-start md:flex-row flex-col items-center justify-center md:space-x-3 space-x-0 md:space-y-0 space-y-3">
-                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500"
+                                            onClick={onToggleOffCanvas}>
+
                                             <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
                                             <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-[0.5px]">Quick Hire</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
