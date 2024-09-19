@@ -10,7 +10,7 @@ const Myself = () => {
                 <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
                     <div className="grid md:grid-cols-12 grid-cols-1 md:mb-12 mb-5 items-center">
                         <div className="col-span-3">
-                            <div className="md:ps-4 ps-0 md:mt-5 mt-0 md:text-start text-center">
+                            <div className="md:ps-4 ps-0 md:mt-5 mt-0 md:text-start text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                                 <h2 className="xl:text-[51px] text-[37px] font-bold text-[#1F2937] leading-[53px]">Effective  
                                 <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text leading-[57px] md:ps-0 ps-2">Facts</span></h2>
                                 <p className='mt-1 text-[#1F2937] md:text-[17px] text-[16px] font-[300] tracking-wide leading-[27px]'>My unique strategy that makes the target more specific</p>
@@ -26,7 +26,7 @@ const Myself = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-9">
+                        <div className="col-span-9" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <div className='backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] py-8 md:px-10 px-3 rounded-[45px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]'>
                                 <div className='flex md:flex-row flex-col justify-between md:items-center items-center'>
                                     <h2 className="text-[26px] font-[600] tracking-tight text-[#1F2937]">Inner latent behave</h2>
@@ -69,7 +69,7 @@ const Myself = () => {
                     </div>
                     <div className="grid md:grid-cols-4 grid-cols-1 md:gap-6 gap-3">
                         {statisticData.map(statistic => (
-                            <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] rounded-[40px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]">
+                            <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] rounded-[40px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                                 <div className='flex flex-row items-center justify-between p-3'>
                                     <span className="ms-4 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
                                     <div className="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">

@@ -6,9 +6,15 @@ import CanvasAnimation from '../props/CanvasAnimation';
 import RightOffCanvas from '../props/RightOffCanvas';
 import ScrollTo from '../props/ScrollTo';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function MainLayout({ children }) {
+  useEffect(() => {
+      AOS.init();
+  }, []);
+
   const [isOffCanvasOpen, setOffCanvasOpen] = useState(false);
 
   const toggleOffCanvas = () => {
