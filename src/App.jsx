@@ -4,31 +4,31 @@ import { useLocation } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
 function App() {
-  // useEffect(() => {
-  //   const disableContextMenu = (e) => {
-  //     e.preventDefault();
-  //   };
+  useEffect(() => {
+    const disableContextMenu = (e) => {
+      e.preventDefault();
+    };
 
-  //   const handleKeyDown = (e) => {
-  //     // Disable F12, Ctrl+Shift+I (DevTools), Ctrl+Shift+C (Inspect)
-  //     if (
-  //       e.key === 'F12' || 
-  //       (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
+    const handleKeyDown = (e) => {
+      // Disable F12, Ctrl+Shift+I (DevTools), Ctrl+Shift+C (Inspect)
+      if (
+        e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))
+      ) {
+        e.preventDefault();
+      }
+    };
 
-  //   // Attach event listeners
-  //   window.addEventListener('contextmenu', disableContextMenu);
-  //   window.addEventListener('keydown', handleKeyDown);
+    // Attach event listeners
+    window.addEventListener('contextmenu', disableContextMenu);
+    window.addEventListener('keydown', handleKeyDown);
 
-  //   // Cleanup event listeners on unmount
-  //   return () => {
-  //     window.removeEventListener('contextmenu', disableContextMenu);
-  //     window.removeEventListener('keydown', handleKeyDown);
-  //   };
-  // }, []);
+    // Cleanup event listeners on unmount
+    return () => {
+      window.removeEventListener('contextmenu', disableContextMenu);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   const [loading, setLoading] = useState(true);
   const [isInitialLoad, setIsInitialLoad] = useState(true);

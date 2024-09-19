@@ -71,7 +71,7 @@ const Footer = ({ onToggleOffCanvas }) => {
                                 ))}
                             </div>
                         </div>
-                        <div className="mt-5 mx-auto max-w-6xl w-full text-[#1f2937] tracking-normal text-[12px] font-[500] text-center">
+                        <div className="mt-5 mx-auto max-w-6xl w-full text-[#1f2937] tracking-normal text-[12px] font-[500] text-center md:mb-0 mb-6">
                             &copy; <b>Toukir Rahman</b> 2024 - Present. All right reserved
                         </div>
                     </div>
