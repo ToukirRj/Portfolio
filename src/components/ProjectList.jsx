@@ -55,7 +55,7 @@ function ProjectList (){
                     <>
                         <div className="sticky top-0 z-10 w-full">
                             <div className="mx-auto md:max-w-5xl max-w-full md:px-0 px-4">
-                                <h2 className="text-[23px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center">{activeData.title}</h2>
+                                <h2 className="md:text-[23px] text-[17px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center md:ps-0 pe-[45px]">{activeData.title}</h2>
                             </div>
                             <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ function ProjectList (){
                             <div className="relative">
                                 <img src={activeData.image} alt='pro-img' className='w-full h-auto rounded-[15px]'/>
                                 <div className="mx-auto md:max-w-[40rem] max-w-full pt-10 pb-[150px]">
-                                    <h1 className='text-[23px] text-[#1F2937] font-[700]'>Short Intro</h1>
+                                    <h1 className='md:text-[23px] text-[17px] text-[#1F2937] font-[700]'>Short Intro</h1>
                                     <p className="mt-4 text-[15px] text-[#1F2937] font-[400] tracking-wide leading-[29px]">{activeData.content}</p>
                                 </div>
                             </div>

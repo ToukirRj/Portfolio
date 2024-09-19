@@ -15,14 +15,14 @@ const Myself = () => {
                                 <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text leading-[57px] md:ps-0 ps-2">Facts</span></h2>
                                 <p className='mt-1 text-[#1F2937] md:text-[17px] text-[16px] font-[300] tracking-wide leading-[27px]'>My unique strategy that makes the target more specific</p>
                                 <div className="mt-4 flex md:justify-start justify-center md:mb-0 mb-5">
-                                    <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-6 pe-[12px] bg-[#17b057] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
-                                        <span className="w-[38px] h-[38px] group-hover:w-[38px] group-hover:h-[38px] absolute -z-[1] left-[5px] opacity-50 group-hover:opacity-100 bg-[#1e8160] group-hover:bg-[#2b6e58] rounded-full ease-in-out duration-500 btn-left"></span>
-                                        <span className="text-[#fff] group-hover:text-[#fff] text-[14px] font-[400] tracking-normal">Let&apos;s talk</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px] group-hover:ms-[12px] ease-in-out duration-500'>
+                                    <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-4 pe-[12px] bg-[#20bd62] hover:bg-[#299c59] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
+                                        <span className="w-[38px] h-[38px] absolute -z-[1] left-[5px] bg-[#2b6e58] group-hover:bg-[#235847] rounded-full btn-left ease-in-out duration-500"></span>
+                                        <span className="text-[#fff] text-[14px] font-[400] tracking-[0.5px]">Let&apos;s talk</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ms-[12px]'>
                                             <path fill="#fff" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
                                             <path fill="#fff" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                         </svg>
-                                    </Link>   
+                                    </Link> 
                                 </div>
                             </div>
                         </div>

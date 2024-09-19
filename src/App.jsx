@@ -32,19 +32,20 @@ function App() {
 
   const [loading, setLoading] = useState(true);
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  const location = useLocation(); // Hook to get the current route
+  const location = useLocation();
 
   useEffect(() => {
-    // Function to handle initial page load
     const handlePageLoad = () => {
       setLoading(false);
       setIsInitialLoad(false);
     };
 
-    // Add event listener for window load
-    window.addEventListener('load', handlePageLoad);
+    if (document.readyState === 'complete') {
+      handlePageLoad();
+    } else {
+      window.addEventListener('load', handlePageLoad);
+    }
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('load', handlePageLoad);
     };
@@ -52,17 +53,15 @@ function App() {
 
   useEffect(() => {
     if (!isInitialLoad) {
-      // Reset loading state on route change
       setLoading(true);
 
-      // Timer to simulate loading delay
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 100); // Adjust the timeout duration as needed
+      }, 100);
 
-      return () => clearTimeout(timer); // Cleanup timer on unmount
+      return () => clearTimeout(timer);
     }
-  }, [isInitialLoad, location.pathname]); // Runs on route change
+  }, [isInitialLoad, location.pathname]);
 
 
   return (

@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+
+import { useEffect, useRef } from 'react';
 
 const CanvasAnimation = () => {
   const canvasRef = useRef(null);
@@ -43,14 +44,14 @@ const CanvasAnimation = () => {
       }
     }
     
-    const colorPalette = ['#FF7700', '#16C95F', '#D428FF', '#FF2F32'];
+    const colorPalette = ['#FF7700', '#14DA65', '#D428FF', '#FF2F32', '#9AC81B'];
     const circleArray = [];
 
     // Ensure that all four colors are used
     for (let i = 0; i < colorPalette.length; i++) {
       const x = Math.random() * (innerWidth - 200) + 50;
       const y = Math.random() * (innerHeight - 200) + 50;
-      const radius = 230;
+      const radius = 250;
 
       // Increased speed: larger range for dx and dy
       const dx = (Math.random() - 0.5) * 12;  // Adjusted to increase speed

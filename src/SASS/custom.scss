@@ -71,7 +71,7 @@ header{
             @apply fixed top-0 left-0 z-10 h-[100vh] w-full flex flex-col items-center justify-center gap-2 bg-white/[0.5] backdrop-blur-lg transition-[1.5s] transform translate-y-[-100vh];
             .close-btn{
                 @apply visible block absolute top-[1rem] right-[1rem];
-                @apply mt-0 #{!important};
+                margin-top:0 !important;
             }
             a{
                 @apply text-[15px] text-[#000];
@@ -85,43 +85,44 @@ header{
 
 
 //testimonial slider
-.swiper-button-prev,
-.swiper-button-next{
-    @apply h-full #{!important};
-    @apply top-[15px] #{!important};
-    @apply w-[170px] #{!important};
-    &::after {
-        @apply text-white font-[900] bg-[#17b057] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
-        @apply text-[16px] #{!important};
-    }
-}
-.swiper-button-prev{
-    @apply bg-gradient-to-r from-[#FAF4E7] via-[#faf4e7de] to-transparent;
-    @apply left-[-35px] #{!important};
-}
-.swiper-button-next{
-    @apply bg-gradient-to-l from-[#FAF4E7] via-[#faf4e7de] to-transparent;
-    @apply right-[-35px] #{!important};
-}
-@media only screen and (max-width:1023px){
-    .swiper{
-        @apply relative;
-    }
-    .swiper-button-prev,
-    .swiper-button-next{
-        @apply h-auto #{!important};
-        @apply top-auto #{!important};
-        @apply bottom-3 #{!important};
-        @apply w-auto #{!important};
-        @apply z-10 #{!important};
-    }
-    .swiper-button-prev{
-        @apply left-[35%] #{!important};
-    }
-    .swiper-button-next{
-        @apply right-[35%] #{!important};
-    }
-}
+// .swiper-button-prev,
+// .swiper-button-next{
+//     height: 100% !important;
+//     top: 15px !important;
+//     width: 170px !important;
+//     &::after {
+//         @apply text-white font-[900] bg-[#17b057] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
+//         @apply text-[16px] #{!important};
+//     }
+// }
+// .swiper-button-prev{
+//     @apply bg-gradient-to-r from-[#FAF4E7] via-[#faf4e7de] to-transparent;
+//     @apply left-[-35px] #{!important};
+// }
+// .swiper-button-next{
+//     @apply bg-gradient-to-l from-[#FAF4E7] via-[#faf4e7de] to-transparent;
+//     @apply right-[-35px] #{!important};
+// }
+// @media only screen and (max-width:1023px){
+//     .swiper{
+//         @apply relative;
+//     }
+//     .swiper-button-prev,
+//     .swiper-button-next{
+//         @apply h-auto #{!important};
+//         @apply top-auto #{!important};
+//         @apply bottom-3 #{!important};
+//         @apply w-auto #{!important};
+//         @apply z-10 #{!important};
+        
+//     }
+//     .swiper-button-prev{
+//         left:35% !important;
+//     }
+//     .swiper-button-next{
+//         right:35% !important;
+//     }
+// }
 
 
 //steps works
@@ -184,8 +185,8 @@ header{
 }
 
 .CircularProgressbar .CircularProgressbar-text{
-    @apply text-[17px] #{!important};
     @apply font-[600];
+    font-size:17px !important;
 }
 
 .header {
@@ -214,7 +215,7 @@ svg.mouse #wheel {
 
 canvas {
 	filter: blur(250px);
-    @apply opacity-[.36] fixed -z-10 top-0 left-0 w-full h-[100vh];
+    @apply opacity-[.30] fixed -z-10 top-0 left-0 w-full h-[100vh];
 }
 
 .default.canvas {
@@ -222,7 +223,7 @@ canvas {
     @apply opacity-[0.6] absolute -z-10 top-0 left-0 w-full h-[100vh];
 }
 
-.group:hover .btn-left{
+.btn-left{
     left:calc(100% - 43px);
 }
 
