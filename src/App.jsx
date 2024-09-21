@@ -63,6 +63,18 @@ function App() {
     }
   }, [isInitialLoad, location.pathname]);
 
+  useEffect(() => {
+    // Check if the font is already loaded
+    if (document.fonts) {
+      document.fonts.ready.then(() => {
+        setLoading(true); // Set fontsLoaded to true when fonts are loaded
+      });
+    } else {
+      // Fallback if the browser doesn't support `document.fonts`
+      setLoading(true);
+    }
+  }, []);
+
 
   return (
     <>
