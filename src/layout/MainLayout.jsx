@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import { useState , useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import luxy from 'luxy.js';
+// import luxy from 'luxy.js';
 
 function MainLayout({ children }) {
   useEffect(() => {
@@ -22,28 +22,17 @@ function MainLayout({ children }) {
     setOffCanvasOpen(prev => !prev);
   };
 
-  useEffect(() => {
-    // Initialize luxy.js
-    luxy.init({
-      wrapperSpeed: 0.015,
-      wrapper: '#luxy',
-    });
-
-    // Clean up by resetting the state
-    return () => {
-      if (typeof window !== "undefined") {
-        // Reset the scroll position to 0 when the component is unmounted
-        window.removeEventListener('scroll', luxy.scroll);
-        window.removeEventListener('resize', luxy.resize);
-        document.removeEventListener('DOMContentLoaded', luxy.init);
-        // You can manually reset the scroll position or any other necessary cleanup
-      }
-    };
-  }, []);
+   // Smooth scroll function
+   const smoothScroll = (target) => {
+    const element = document.querySelector(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
-      <div id="luxy">
+      <div id="scroll-container">
         <Header onToggleOffCanvas={toggleOffCanvas}/>
           {children}
           <RightOffCanvas isOpen={isOffCanvasOpen} onClose={() => setOffCanvasOpen(false)}/>        
