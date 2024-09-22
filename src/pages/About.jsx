@@ -5,13 +5,11 @@ import Myself from '../components/Myself'
 function About(){
   return (
     <>
-        <MainLayout>
-            <div className="pt-20">
-                <div className="">
-                    <Myself/>
-                </div>
-            </div>
-        </MainLayout>
+      <MainLayout>
+        <div className="pt-20">
+          <Myself/>
+        </div>
+      </MainLayout>
     </>
   )
 }

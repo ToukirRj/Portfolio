@@ -8,13 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Mont']
-      }
     }
-  },
-  corePlugins: {
-    fontFamily: false
   },
   plugins: [
   ],

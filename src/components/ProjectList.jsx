@@ -24,7 +24,7 @@ function ProjectList (){
 
 
     return (
-        <div className='md:py-20 py-6 w-full'>
+        <div className='md:py-20 py-6 w-full relative z-[9999999999]'>
             <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
                 <div className='text-center mb-12' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <h2 className="md:text-[52px] text-[43px] font-bold text-[#1F2937] md:leading-[60px] leading-[53px]">Best Recent 
@@ -50,7 +50,7 @@ function ProjectList (){
                     ))}
                 </div>
             </div>
-            <div className={`fixed z-[99999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto bg-[#FAF4E7] text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out z-50 rounded-t-[30px]`}>
+            <div className={`fixed z-[99999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto bg-[#FAF4E7] text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out rounded-t-[30px]`}>
                 {activeData && (  
                     <>
                         <div className="sticky top-0 z-10 w-full">

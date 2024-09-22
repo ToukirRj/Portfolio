@@ -5,11 +5,11 @@ import Eyes from '../components/Eyes'
 function Services(){
   return (
     <>
-        <MainLayout>
-            <div className="pt-20 ">
-                <Eyes/>
-            </div>
-        </MainLayout>
+      <MainLayout>
+        <div className="pt-20 ">
+          <Eyes/>
+        </div>
+      </MainLayout>
     </>
   )
 }

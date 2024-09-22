@@ -5,13 +5,11 @@ import Bio from '../components/Bio'
 function Experiences(){
   return (
     <>
-        <MainLayout>
-            <div className="pt-20">
-                <div className="">
-                    <Bio/>
-                </div>
-            </div>
-        </MainLayout>
+      <MainLayout>
+        <div className="pt-20">
+          <Bio/>
+        </div>
+      </MainLayout>
     </>
   )
 }
