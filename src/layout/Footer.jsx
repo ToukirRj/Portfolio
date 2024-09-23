@@ -7,7 +7,7 @@ import Chat from '/img/chat.webp'
 const Footer = ({ onToggleOffCanvas }) => {
     return (
         <>
-            <footer className="md:mt-12 mt-6 relative">
+            <footer className="md:mt-12 mt-6">
                 <div className="md:mb-20 mb-10 relative mx-auto max-w-full lg:max-w-6xl md:px-0 px-4">
                     <div className='text-center md:py-12 py-7 md:px-8 px-5 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[55px] overflow-hidden' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <div className='grid md:grid-cols-5 grid-cols-1 md:place-items-center place-items-inherit'>

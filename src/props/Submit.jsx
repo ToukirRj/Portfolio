@@ -49,7 +49,7 @@ const Submit = () => {
             <div className="h-[80vh] overflow-y-auto w-full">
                 <ToastContainer
                     position="top-center"
-                    autoClose={1000000000000}
+                    autoClose={1000}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
