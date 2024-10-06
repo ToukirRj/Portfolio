@@ -35,7 +35,7 @@ function ProjectList (){
                     </p>
                 </div>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
-                    {ProjectData.map((item) => (
+                    {ProjectData.sort((a, b) => b.id - a.id).map((item) => (
                         <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-1 w-full h-auto rounded-[19px] bg-[#1F2937]/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                             <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[17px] transition-all duration-300'>
                                 <img src={item.image} alt='pro-img' className='group-hover:opacity-40 transition-all duration-300'/>
