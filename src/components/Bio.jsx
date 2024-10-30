@@ -8,7 +8,7 @@ const Bio = () => {
         <>
             <div className="md:py-16 py-6 relative z-20">
                 <div className="mx-auto px-4 md:px-12 xl:max-w-6xl xl:px-0 relative z-10">
-                    <div className="relative md:text-start text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div className="relative md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
                         <h2 className="xl:text-[55px] text-4xl font-bold text-[#1F2937]">Biography 
                             <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3 md:leading-[79px] leading-[50px]">Experiences</span>
                         </h2>
@@ -18,7 +18,7 @@ const Bio = () => {
                     </div>
                     <div className="md:mt-8 mt-4 relative z-10">
                         <div className="md:gap-8 gap-4 grid md:grid-cols-2 grid-cols-1">
-                            <div className="w-full" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                            <div className="w-full" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
                                 <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)] md:rounded-[45px] rounded-[40px]">
                                     <h2 className="flex items-center justify-center">
                                         <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Full Time (Official)</span>
@@ -26,7 +26,7 @@ const Bio = () => {
                                     <div className="tracking-normal mt-4">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.12] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.12] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
@@ -55,7 +55,7 @@ const Bio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
+                            <div className="w-full" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                                 <div className="md:p-10 p-4 relative overflow-hidden backdrop-blur-lg bg-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)] md:rounded-[45px] rounded-[40px]">
                                     <h2 className="flex items-center justify-center">
                                         <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Freelance (Online)</span>
@@ -63,7 +63,7 @@ const Bio = () => {
                                     <div className="tracking-normal mt-4">
                                         {experienceData2.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.12] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
+                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.12] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>

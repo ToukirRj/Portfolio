@@ -6,7 +6,7 @@ const Eyes = () => {
             <div className="md:pt-20 pt-6 md:pb-16 pb-6 relative z-20">
                 <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-8">
                     <div className='grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4 md:mx-[70px] mx-0'>
-                        <div className="text-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div className="text-end" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
                             <div className='md:w-[65%] w-full mx-auto md:mt-[50px] mt-0 md:text-start text-center'>
                                 <h2 className="md:text-[69px] text-[47px] font-bold text-[#1F2937] md:leading-[80px] leading-[55px]">My 
                                     <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3">Eyes</span> <br/>to Work
@@ -17,7 +17,7 @@ const Eyes = () => {
                             </div>
                         </div>
                         {serviceData.map(service => (
-                            <div key={service.id} className="each-service backdrop-blur-lg bg-white/[.15] shadow-[0_0px_15px_0px_rgba(2,24,93,0.085)] md:rounded-[64px] rounded-[44px] overflow-hidden" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
+                            <div key={service.id} className="each-service backdrop-blur-lg bg-white/[.15] shadow-[0_0px_15px_0px_rgba(2,24,93,0.085)] md:rounded-[64px] rounded-[44px] overflow-hidden" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                                 <div className='w-full relative'>
                                     <div className='absolute right-0 top-0 md:h-[130px] h-[90px] md:w-[130px] w-[90px] rounded-full bg-white flex items-center justify-center shadow'>
                                         <img width="50" height="50" src={service.imgPath} alt='icon'/>  
