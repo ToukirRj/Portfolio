@@ -11,7 +11,7 @@ const Splash = () => {
                 <div className="md:pt-[200px] pt-[110px] pb-12 relative z-10">
                     <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
                         <div className="items-center justify-center md:gap-12 gap-5 flex md:flex-row flex-col relative z-20 ">
-                            <div data-aos="fade-up" data-aos-duration="500" className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]">
+                            <div className="md:w-2/5 w-full relative backdrop-blur-lg rounded-[60px] px-[30px] pt-[30px] pb-[40px] bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                 <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
                                 <h1 className="my-2 md:text-[41px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
                                     Toukir Rahman
@@ -30,18 +30,18 @@ const Splash = () => {
                                 </div>
                             </div>
                             <div className="md:w-3/5 w-full sm:block flex flex-col items-center z-10 md:mt-2 mt-6">
-                                <h4 data-aos="fade-up" data-aos-duration="500" className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto">Front-End Engineer | UX/UI Engineer</h4>
-                                <h1 data-aos="fade-up" data-aos-duration="700" className="md:my-[23px] my-[17px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center">
+                                <h4 className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">Front-End Engineer | UX/UI Engineer</h4>
+                                <h1 className="md:my-[23px] my-[17px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">
                                     Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
-                                <p data-aos="fade-up" data-aos-duration="900" className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] md:text-start text-center mb-[25px]">
+                                <p className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] md:text-start text-center mb-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
                                     A safe hand to take your vision & the weight of your project off your shoulders, to getting done 
                                     perfectly. A Professional Website Application Engineer with a passion for creating inspiring and influential designs. Committed to working with honesty and dedication.
                                 </p>
-                                <h1 data-aos="fade-up" data-aos-duration="1100" className="text-[21px] font-semibold tracking-tight text-[#1f2937] mb-2 md:text-start text-center">Get Me Connect Now on</h1>
+                                <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] mb-2 md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1>
                                 <div className="flex items-center md:justify-start justify-center grid-cols-4 md:space-x-4 space-x-0 md:gap-0 gap-2 mx-auto">
                                     {socialLinksData.map(link => (
                                         <Link key={link.id} to={link.url} target={link.target}
-                                            data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow-[0_1px_3px_0px_rgba(2,24,93,0.2)] backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.035] to-white/[0.15] rounded-[15px] hover:shadow-lg hover:bg-white/[0.8] transition-all">
+                                            className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 shadow-[0_1px_3px_0px_rgba(2,24,93,0.2)] backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.035] to-white/[0.15] rounded-[15px] hover:shadow-lg hover:bg-white/[0.8] transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
                                             <div className="flex flex-col items-center mx-auto">
                                                 <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
                                                 <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p>
