@@ -9,13 +9,13 @@ const Footer = ({ onToggleOffCanvas }) => {
         <>
             <footer className="md:mt-12 mt-6">
                 <div className="md:mb-20 mb-10 relative mx-auto max-w-full lg:max-w-6xl md:px-0 px-4">
-                    <div className='text-center md:py-12 py-7 md:px-8 px-5 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[55px] overflow-hidden' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div className='text-center md:py-12 py-7 md:px-8 px-5 w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.15] to-white/[0.15] shadow-[0_0_5px_0px_rgba(2,24,93,0.15)] rounded-[55px] overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                         <div className='grid md:grid-cols-5 grid-cols-1 md:place-items-center place-items-inherit'>
-                            <div className='md:col-span-2 col-span-1' data-aos="fade-up" data-aos-duration="1050" data-aos-delay="250">
+                            <div className='md:col-span-2 col-span-1' data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                                 <img src={Chat} alt='chat' className='w-auto max-w-full md:h-[280px] h-auto mx-auto md:mb-0 mb-6'/>
                             </div>
                             <div className='md:col-span-3 col-span-1'>
-                                <div className='relative w-full text-center' data-aos="fade-up" data-aos-duration="1250" data-aos-delay="450">
+                                <div className='relative w-full text-center' data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
                                     <span className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto">Quick Project Contract</span>
                                     <h2 className="my-3 md:text-[45px] text-[21px] md:text-start text-center md:font-bold font-[700] md:leading-[52px] leading-[30px] text-gray-800 w-full max-w-5xl mx-auto">
                                         One step to connect with me from everywhere
@@ -57,7 +57,7 @@ const Footer = ({ onToggleOffCanvas }) => {
                 </div>
                 <div className='md:py-16 py-12 bg-white/[0.15] backdrop-blur-lg shadow-[0_3px_45px_0px_rgba(2,24,93,0.075)]'>
                     <div className="relative mx-auto px-4 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0">
-                        <div className='flex flex-col items-center justify-center' data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                        <div className='flex flex-col items-center justify-center' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                             <h1 className="md:text-[21px] text-[19px] font-semibold tracking-tight text-[#1f2937] mb-2">Get Me Connect Now on</h1>
                             <div className="flex items-center md:justify-start justify-center grid-cols-4 md:space-x-5 space-x-0 md:gap-0 gap-2 mx-auto">
                                 {socialLinksData.map(link => (
